@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[ajaxbaidu.plugin]]></item>
+	<item id="RevisionID"><![CDATA[14045]]></item>
+	<item id="SN"><![CDATA[201304111818dbfYSsfj]]></item>
+	<item id="RevisionDateline"><![CDATA[1364813550]]></item>
+	<item id="Data">
+		<item id="/ajaxbaidu.class.php"><![CDATA[1332ccd87e58bdf5b2d6d54c7fcc04b8]]></item>
+		<item id="/discuz_plugin_ajaxbaidu_SC_GBK.xml"><![CDATA[b42e409e45e2113809f9c7098c8f3fe5]]></item>
+		<item id="/discuz_plugin_ajaxbaidu_SC_UTF8.xml"><![CDATA[7cc175814dc690ebc856f2c989485aaa]]></item>
+		<item id="/discuz_plugin_ajaxbaidu_TC_BIG5.xml"><![CDATA[f56b77567710ff194d1333956505a990]]></item>
+		<item id="/discuz_plugin_ajaxbaidu_TC_UTF8.xml"><![CDATA[77bcf99e7874ad7a663fb4cf1fc09518]]></item>
+		<item id="/js/jquery-1.4.2.min.js"><![CDATA[10092eee563dec2dca82b77d2cf5a1ae]]></item>
+		<item id="/search_list.php"><![CDATA[b1629d69ac624d3bf2b6e15b5b44b738]]></item>
+	</item>
+</root>

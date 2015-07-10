@@ -1,0 +1,29 @@
+<!--{template common/header}-->
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a> <em>&rsaquo;</em> $topic[title]
+	</div>
+</div>
+<link id="style_css" rel="stylesheet" type="text/css" href="static/topic/t1/style.css">
+<style id="diy_style" type="text/css">#frame1 {  border:#FFFFFF !important;margin-top:0px !important;}#frameVsYm9s {  border:#ffffff !important;}#portal_block_1509 {  border-left-color:#ffffff !important;}#portal_block_1510 .dxb_bc a {  color:#3399cc !important;}#portal_block_1592 {  border:#999999 !important;}</style>
+<style>
+.wp{ width:100%; height:100%;}
+
+
+
+</style>
+<div id="widgets">
+</div>
+<div class="wp">
+<!--[diy=diypage]--><div id="diypage" class="area"><div id="frame1" class=" frame move-span frame-1 cl"><div id="frame1_left" class="column frame-1-c"><div id="frame1_left_temp" class="move-span temp"></div><!--{block/1511}--><!--{block/1592}--></div></div><div id="frameVsYm9s" class=" frame move-span cl frame-2-1"><div id="frameVsYm9s_left" class="column frame-2-1-l"><div id="frameVsYm9s_left_temp" class="move-span temp"></div><!--{block/1510}--></div><div id="frameVsYm9s_center" class="column frame-2-1-r"><div id="frameVsYm9s_center_temp" class="move-span temp"></div><!--{block/1509}--><!--{block/1512}--></div></div></div><!--[/diy]-->
+<!--{if $topic['allowcomment']==1}-->
+	{eval
+		$data = &$topic;
+		$common_url = "portal.php?mod=comment&id=$topicid&idtype=topicid";
+		$form_url = "portal.php?mod=portalcp&ac=comment";
+		$commentlist = portaltopicgetcomment($topicid);	}
+	<!--{template portal/portal_comment}-->
+<!--{/if}-->
+</div>
+
+<!--{template common/footer}-->

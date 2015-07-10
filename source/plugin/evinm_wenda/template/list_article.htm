@@ -1,0 +1,813 @@
+<!--{subtemplate common/header}-->
+<link rel="stylesheet" href="source/plugin/evinm_wenda/template/style/global.css">
+<link rel="stylesheet" href="source/plugin/evinm_wenda/template/style/style.css">
+<link rel="stylesheet" href="source/plugin/evinm_wenda/template/style/article.css">
+<script src="source/plugin/evinm_wenda/template/js/5.js"></script>
+ 
+    <div id="doc4">
+        <!--{subtemplate evinm_wenda:head}-->		
+        <div id="bd" class="grid-3 clearfix">
+            <div class="article">			
+				<!--{if $vip[uid]}-->
+				<div class="cl mtm mbm">
+					<div class="doctor-yq">
+						<em title="特约专家" class="ico-yq">
+						</em>
+						<div class="doctor-yq-cons">
+							<a href="<!--{if $rewrite == '1'}-->wenda/home_mypage.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mypage<!--{/if}-->" class="pic" style="margin-top:5px;">
+								$vip['avatar']
+							</a>
+							<span class="doctor-info">
+								<span class="doc-name">
+									<a href="<!--{if $rewrite == '1'}-->wenda/home_mypage.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mypage<!--{/if}-->" title="" class="z">
+										$vip[name] 
+									</a>
+									<span title="LV{$vip[lvl]}" class="z ico-lv ico-lv-{$vip[lvl]}" style="height:16px; margin-top:6px; margin-left:5px;"></span>
+								</span>
+								<span class="doc-ks">
+									本分类
+								</span>
+								<span class="doc-ks">
+									特约专家
+								</span>
+
+							</span>
+							<span class="doctor-pj">
+								<p class="cons_text">
+									专家资料
+								</p>
+								<dl>
+									<dt>
+										采纳率
+									</dt>
+									<dd class="jd_bg" title="采纳率：$info[cnl]">
+										<i style="width:$info[cnl]%">
+										</i>
+									</dd>
+									<dd class="jd_fs">
+										$info[cnl]%
+									</dd>
+								</dl>
+								<dl class="jd2">
+									<dt>
+										回答数
+									</dt>
+									<dd class="jd_fs">
+										$info['num_a']
+									</dd>
+								</dl>
+							</span>
+							<div class="y cl" style="width:200px; height:80px; <!--{if $config[fenlei_vip] != ""}--> background:url($config[fenlei_vip]) no-repeat; margin-top:-6px;<!--{/if}-->">
+								
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!--{/if}-->
+				
+				
+                <div class="mod-question">
+                    <div class="hd cl">
+						<div class="cl">
+							<div class="cl z">
+								<span class="ico">
+								</span>
+								<h3 class="title" style="padding:0">
+									$ask['subject']
+								</h3>
+								<span class="wealth">
+									$ask[coin]
+									<script language="JavaScript"> 
+									function delete_confirm(e) { 
+									 if (event.srcElement.outerText=="删除") 
+									  event.returnValue=confirm("您确认删除这个问题嘛?"); 
+									 } 
+									 document.onclick=delete_confirm; 
+									</script>
+									<!--{if $ask['uid'] == $_G['uid']}-->
+										<span class="pipe"> | </span>
+										<a href="plugin.php?id=evinm_wenda:list_article&qid={$ask['id']}&deletewt=yes">删除</a> 
+									<!--{/if}-->	
+								</span>	
+							</div>
+							
+							<!--{if $ask['lasttime'] > 0 && $ask['over'] !=1}-->						
+							<span class="y" style="margin-top:8px;">
+								剩余：$ask['lasttime']小时
+							</span>
+							<!--{/if}-->
+						</div>
+                        <div class="label">
+							<!--{if $ask['ishidden'] == '1'}-->
+								<span class="pubtime">{$config['nick_nm']}</span>
+							<!--{else}-->
+							<a target="_blank" href="home.php?mod=space&uid=$ask[uid]&do=profile" class="author">
+                                $ask[username]
+                            </a>
+							<!--{/if}-->
+                            |
+                            <span class="pubtime">
+                                $ask['posttime']
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bd cl ptm pbm" style="padding:10px 25px;">						
+						<div>$ask['message']</div>
+						<!--{if $ask['pic'] != ""}-->
+						<div class="cl ptm pbm" ><img src="$ask['pic']" style="max-width: 680px;width: expression(this.width > 680 : true);"/></div>
+						<!--{/if}-->
+						
+						<!-- 问题补充 -->
+						<!--{if $askadd_num != 0 }-->
+						<div class="askadd cl mtm">
+							<h3><b>问题补充：</b></h3>
+							<div>$askadd['message']</div>
+							<!--{if $askadd['pic'] != ""}-->
+							<div class="cl ptm pbm" ><img src="$askadd['pic']" style="max-width: 680px;width: expression(this.width > 680 : true);"/></div>
+							<!--{/if}-->						
+						</div>
+						<!--{/if}-->
+                    </div>
+					
+					<div class="ft cl mtm">
+						<!--{if $ask[over] == 1}-->
+
+						<!--{elseif $ask[over] == 0 && $_G[uid] == $ask[uid]}-->
+						<!--{eval $icd = $ask['id']+1;}-->
+						<div class="ope-title"> <strong>处理提问</strong> 及时采纳满意回答并感谢回答者，可获得<span>{$config['rule_jifen'][3]}{$config['czjl_name']}奖励</span>。 还可以补充内容或提高悬赏吸引更多回答者： </div>
+						<div class="ope-action clearfix" id="ope-action">
+							<ul>
+								<li>
+									<a href="javascript:;" onclick="quickrelay({$ask['id']})" id="btn{$ask['id']}" alog-action="qb-ask-addit">
+										<i class="i-added">
+										</i>
+										补充问题
+									</a>
+								</li>
+								<li class="ope-spliter">
+								</li>
+								<li>
+									<a href="javascript:;" onclick="quickrelay({$icd})" id="btn{$icd}" alog-action="qb-add-reward">
+										<i class="i-enhance">
+										</i>
+										提高悬赏
+									</a>
+								</li>
+								<li class="ope-spliter">
+								</li>
+<!-- 							<li>
+									<a href="#" alog-action="qb-adopt-btn">
+										<i class="i-adopt">
+										</i>
+										在线求助
+									</a>
+								</li> -->
+								<li class="ope-spliter ope-spliter-on" style="display: none;">
+								</li>
+							</ul>
+						</div>	
+						
+						
+						<div id="replybox_{$ask['id']}" style="display:none;" class="ope-action-show show-enhance flw_replybox cl" style="">
+							<div class="mod-answer-form" style="padding:0; border:none;">
+								<div class="bd">
+									<form enctype="multipart/form-data" action="" method="post">
+										<div id="editorwraper" class="textarea" style="padding:0">
+										<div class="tedt" style="border:none; width:100%;">
+											<div class="bar">
+												<!--{eval $seditor = array('fastpost', array('bold', 'color', 'img', 'link', 'smilies'), $guestpost ? 1 : 0);}-->
+												<!--{subtemplate common/seditor}-->
+											</div>
+											<div class="area">
+													<textarea rows="10" cols="80" name="message" id="fastpostmessage" tabindex="12" class="pt">$askadd['message']</textarea>
+											</div>
+										</div>
+										</div>
+										<input name="ask_id" type="hidden" value="1349447622129340">
+										<input id="js-verify-answer" name="verify" type="hidden" value="">
+										<span class="addimg">
+											添加图片：<input name="user_upload_file[]" type="file" id="subjectimage" size="52">
+										</span>	
+										<a class="btn btn-32-gray btn-2" href="javascript:;" style="margin-left:15px;" onclick="display({$ask['id']})"  >
+											<em>										
+												取消										
+											</em>
+										</a>
+										<input type="submit" class="btn btn-2"  name="btn_moreq"  value="确定">	
+									
+									</form>
+								</div>
+							</div>
+						</div>
+						
+						<div id="replybox_{$icd}" style="display:none;" class="ope-action-show show-enhance flw_replybox cl" style="">
+							<p>
+								当您对问题悬赏更多积分时，该问题将会出现在所属分类的高悬赏问题列表上方，提高被回答者看到的几率。
+								<br>								
+							</p>
+							<p>
+							<form action="" method="post">
+								追加悬赏
+								<select name="enhance">
+									<option value="5" selected="selected">
+										5
+									</option>
+									<option value="10">
+										10
+									</option>
+									<option value="15">
+										15
+									</option>
+									<option value="20">
+										20
+									</option>
+									<option value="30">
+										30
+									</option>
+									<option value="40">
+										40
+									</option>
+									<option value="50">
+										50
+									</option>
+								</select>
+								分
+							</p>
+							<p class="act-buttons">
+								<span class="btn btn-2" style="padding:0;"><input type="submit" name="btn_zjxs" value="确定"></span>
+								<a class="btn btn-32-gray btn-2" href="javascript:;" onclick="display({$icd})"  >
+									<em>										
+										取消										
+									</em>
+								</a>
+							</p>
+							</form>
+						</div>
+						<!--{/if}-->						
+					</div>
+                </div>
+				<!--{if $ask[over] == 0 && $_G[uid] && $_G['uid'] != $ask['uid']}-->
+				<!--{if $vip[uid] != "" && $config[is_onlyvip] == 1}-->
+					<!--{if $vip[uid] == $_G['uid']}-->
+						<div class="mod-answer-form">
+							<div class="hd">
+								<h4>
+									我来回答
+								</h4>
+							</div>
+							<div class="bd">
+								<form enctype="multipart/form-data" action="" method="post">
+									<div id="editorwraper" class="textarea" style="padding:0">
+									<div class="tedt" style="border:none; width:100%;">
+										<div class="bar">
+											<!--{eval $seditor = array('fastpost', array('bold', 'color', 'img', 'link', 'smilies'), $guestpost ? 1 : 0);}-->
+											<!--{subtemplate common/seditor}-->
+										</div>
+										<div class="area">
+												<textarea rows="10" cols="80" name="message" id="fastpostmessage" tabindex="12" class="pt"></textarea>
+										</div>
+									</div>
+									</div>
+									<input name="ask_id" type="hidden" value="1349447622129340">
+									<input id="js-verify-answer" name="verify" type="hidden" value="">
+									<span class="addimg">
+										添加图片：<input name="user_upload_file[]" type="file" id="subjectimage" size="52">
+									</span>
+									
+									<input type="submit" class="btn btn-2"  name="btn_answer"  value="提交回答">
+									
+								</form>
+							</div>
+						</div>
+					<!--{else}-->
+					
+					<!--{/if}-->
+				<!--{else}-->
+					<!--{if $ask['is_anserd'] == 0}-->
+					<div class="mod-answer-form">
+						<div class="hd">
+							<h4>
+								我来回答
+							</h4>
+						</div>
+						<div class="bd">
+							<form enctype="multipart/form-data" action="" method="post">
+								<div id="editorwraper" class="textarea" style="padding:0">
+								<div class="tedt" style="border:none; width:100%;">
+									<div class="bar">
+										<!--{eval $seditor = array('fastpost', array('bold', 'color', 'img', 'link', 'smilies'), $guestpost ? 1 : 0);}-->
+										<!--{subtemplate common/seditor}-->
+									</div>
+									<div class="area">
+											<textarea rows="10" cols="80" name="message" id="fastpostmessage" tabindex="12" class="pt"></textarea>
+									</div>
+								</div>
+								</div>
+								<input name="ask_id" type="hidden" value="1349447622129340">
+								<input id="js-verify-answer" name="verify" type="hidden" value="">
+								<span class="addimg">
+									添加图片：<input name="user_upload_file[]" type="file" id="subjectimage" size="52">
+								</span>
+								
+								<input type="submit" class="btn btn-2"  name="btn_answer"  value="提交回答">
+								
+							</form>
+						</div>
+					</div>
+					<!--{/if}-->
+				<!--{/if}-->
+
+				<!--{elseif $ask[over] == 1 && $answer_best[username] != ""}-->
+				<div class="mod-answer-one mod-answer-best">
+					<div class="hd">
+						<h4>
+							满意回答
+						</h4>
+						<p class="pubtime">
+							$answer_best['posttime']
+						</p>
+						<div class="ico-best">
+						</div>
+					</div>
+					<div class="bd">
+						<div class="econtent">
+						<!--{if $istdyhz == 2}-->
+								<p>
+									对不起！系统置了查看答案的权限，您所在的用户组暂无权限查看此答案！
+								</p>
+						<!--{else}-->
+							<!--{if $config['issale'] == 1 && $ask['sale'] == 1 && $isabuy < 1 && $answer_best['uid'] != $_G['uid'] && $_G['uid'] != $ask['uid']}-->
+								<p>
+									此答案已被设置为出售，您需要支付 <span class = "f60">$sale</span> 积分来购买此答案。<a href="plugin.php?id=evinm_wenda:list_article&qid={$_GET['qid']}&buy=1"><span class = "f60">立即购买！</span></a>
+								</p>
+							<!--{else}-->
+								<p>
+									$answer_best['message']
+								</p>
+								<!--{if $answer_best['pic'] !=""}-->
+								<div class="cl ptm pbm" ><img src="$answer_best['pic']" style="max-width: 680px;width: expression(this.width > 680 : true);"/></div>
+								<!--{/if}-->
+							<!--{/if}-->
+						<!--{/if}-->
+						</div>
+					</div>
+					<div class="ft" style="position: relative;">
+						<div class="vcard-user">
+							<a target="_blank" href="home.php?mod=space&uid=$answer_best[uid]" class="pic">
+								$answer_best['avatar']
+							</a>
+							<div class="text">
+								<p class="name">
+									回答者：
+									<a target="_blank" href="home.php?mod=space&uid=$answer_best[uid]">
+										$answer_best[username]
+									</a>
+								</p>
+								<p>
+									等级：
+									<span title="LV$answer_best[lvl]" class="ico-lv ico-lv-$answer_best[lvl]">
+									</span>
+								</p>
+								<p>
+									采纳率：
+									<em>
+										$best_user_info[cnl] %
+									</em>
+								</p>
+							</div>
+						</div>
+<!-- 						<a class="btn btn-1 btn-zan ">
+							<span>
+								0
+							</span>
+						</a>
+						<span class="tips js-ilike-tips">
+							+1
+						</span> -->
+					</div>
+				</div>
+				<!--{elseif $ask['lasttime'] <= 0}-->
+				<div class="mod-answer-one mod-answer-best">
+					<div class="hd" style="padding-left:25px;">
+						<h4>
+							问题已关闭,未选择满意答案！
+						</h4>
+					</div>
+					<div class="bd">
+						<div class="econtent">
+							<p>
+								$answer_best['message']
+							</p>
+							<!--{if $answer_best['pic'] !=""}-->
+							<div class="cl ptm pbm" ><img src="$answer_best['pic']" style="max-width: 680px;width: expression(this.width > 680 : true);"/></div>
+							<!--{/if}-->
+						</div>
+					</div>
+				</div>
+				<!--{/if}-->
+				
+				<!--{if $ask[nums_a] == 0 || $ask_num == 0}-->					
+				<!--{else}-->
+                <div class="mod-answer-list" id="answerList">
+                    <div class="hd">
+                        <h4>
+                            回答
+                            <span>
+                                ( $ask[nums_a] )
+                            </span>
+                        </h4>
+                        <span class="ico">
+                        </span>
+                    </div>
+                    <div class="bd">
+                        <ul class="list">
+							<!--{if $list_answers}-->	
+							<!--{loop $list_answers $list_answer}-->
+							<!--{if $list_answer['iszw'] == 0}-->
+							<!--{eval $zwqid = $list_answer['id'];}-->
+							
+                            <li class="item">
+                                <div class="label">
+                                    <a target="_blank" href="home.php?mod=space&uid={$list_answer['uid']}" style="color: #0063C8;">
+                                        $list_answer['username']
+                                    </a>
+                                    |
+                                    <span title="LV$list_answer['lvl']" class="ico-lv ico-lv-$list_answer['lvl']">
+                                    </span>
+                                    |
+                                    <span class="pubtime">
+                                        $list_answer['posttime']
+                                    </span>
+									<!--{if $_G[adminid] == 1}-->	
+                                    |
+                                    <span class="pubtime">
+                                        <a href="plugin.php?id=evinm_wenda:list_article&qid={$ask['id']}&action=delhf&ansid={$list_answer['id']}&ansuid={$list_answer['uid']}" style="color: #888">删除答案</a>
+                                    </span>
+									<script language="JavaScript"> 
+									function delete_confirm(e) { 
+									 if (event.srcElement.outerText=="删除答案") 
+									  event.returnValue=confirm("您确认删除这条答案嘛?"); 
+									 } 
+									 document.onclick=delete_confirm; 
+									</script> 
+									<!--{/if}-->
+                                </div>
+								
+<!--                                 <a data-agree="0" data-ask_id="1349447622129340" data-ans_id="1349447890065379"
+                                class="btn btn-1 btn-zan ">
+                                    <span>
+                                        0
+                                    </span>
+                                </a> -->
+								
+<!--                                 <span class="tips js-ilike-tips">
+                                    +1
+                                </span> -->
+								
+                                <div class="econtent" >
+									<div>$list_answer['message']</div>
+									<!--{if $list_answer['pic'] !=""}-->
+									<div class="cl ptm pbm" ><img src="$list_answer['pic']" style="max-width: 680px;width: expression(this.width > 680 : true);"/></div>
+									<!--{/if}-->
+									
+									<!-- 追问 -->
+									<!--{loop $list_answers_zw $list_answer_zw}-->
+									<!--{if $list_answer_zw['iszw'] != 0 && $list_answer_zw['zw_aid'] == $list_answer['id']}-->
+									<!--{if $list_answer_zw['iszw'] == 1}-->
+									<dl class="replyask line mtm mbm cl">
+										<dt class="ask">
+											追问
+										</dt>
+										<dd class="replyask-content" >
+											<p>
+												$list_answer_zw['message']
+											</p>
+											<!--{if $list_answer_zw['pic'] !=""}-->
+											<div class="cl ptm pbm" ><img src="$list_answer_zw['pic']" style="max-width: 680px;width: expression(this.width > 580 : true);"/></div>
+											<!--{/if}-->								
+										</dd>
+									</dl>
+									<!--{elseif $list_answer_zw['iszw'] == 2}-->
+										<dl class="replyask line mtm mbm cl">
+											<dt class="reply">
+												回答
+											</dt>
+											<dd class="replyask-content line">												
+												<p>
+													$list_answer_zw['message']
+												</p>
+												<!--{if $list_answer_zw['pic'] !=""}-->
+												<div class="cl ptm pbm" ><img src="$list_answer_zw['pic']" style="max-width: 680px;width: expression(this.width > 580 : true);"/></div>
+												<!--{/if}-->
+											</dd>
+										</dl>
+									<!--{/if}-->
+									
+									<!--{/if}-->
+									<!--{/loop}-->
+                                </div>	
+
+								<!-- 按钮显示 -->
+								<!--{if $ask[uid] == $_G[uid]}-->
+									<a href="javascript:;" onclick="quickrelay({$list_answer[id]}22)" id="btn{$list_answer[id]}22" alog-action="qb-add-reward"class="z btn-set-best btn-set-zw" style="padding-right:10px;"><span>追问</span></a>
+								<!--{elseif $_G[uid] == $list_answer['uid'] && $list_answer['yzw'] > 0}-->
+									<a href="javascript:;" onclick="quickrelay({$list_answer[id]}22)" id="btn{$list_answer[id]}22" alog-action="qb-add-reward"class="z btn-set-best btn-set-zwda" style="padding-right:10px;"><span>补充答案</span></a>
+								<!--{/if}-->
+								
+								
+								<!--{if $ask[uid] == $_G[uid] && $ask[over] == 0}-->
+								<form action="" method="post" class="z">
+									<input type="hidden" name="qid"  value = "$ask[id]">
+									<input type="hidden" name="model"  value = "sb">
+									<input type="hidden" name="bestuid"  value = "$list_answer[uid]">
+									<input type="hidden" name="bestid"  value = "$list_answer[id]">
+									<input type="hidden" name="coin"  value = "$ask[coin]">
+									<span class="z cl">
+									<input type="submit" class="btn-set-best" value="" name="setbest" style="width: 110px;height: 28px;">
+									</span>
+										<!--{if $config[issale] == 1 && $ask[coin] >= $config[sale_low]}-->	
+											<span class="z cl" style="margin-left:10px; margin-top:7px;">
+												<input name="sale" type="checkbox" value="1" /> 出售答案
+											</span>
+										<!--{/if}-->
+								</form>	
+								<!--{/if}-->
+								<div class="cl" style="width:100%;height:1px;clear:both;"></div>
+								<div id="replybox_{$list_answer[id]}22" style="display:none;" class="flw_replybox cl" style="">
+									
+									<div class="mod-answer-form" style="padding:0; border:none;">
+										<div class="mtm">
+											<!--{if $ask[uid] == $_G[uid]}-->
+											<div class="zwtitle">继续追问：</div>
+											<!--{elseif $_G[uid] == $list_answer['uid'] && $list_answer['yzw'] > 0}-->
+											<div class="zwtitle">补充答案：</div>
+											<!--{/if}-->
+											<form enctype="multipart/form-data" action="" method="post">
+												<div id="editorwraper" class="textarea" style="padding:0">
+												<div class="tedt" style="border:none; width:100%;">
+													<div class="bar">
+														<!--{eval $seditor = array('fastpost', array('bold', 'color', 'img', 'link', 'smilies'), $guestpost ? 1 : 0);}-->
+														<!--{subtemplate common/seditor}-->
+													</div>
+													<div class="area">
+															<textarea rows="10" cols="80" name="message" id="fastpostmessage" tabindex="12" class="pt"></textarea>
+													</div>
+												</div>
+												</div>
+												<input name="zw_hid" type="hidden" value="{$list_answer[id]}">
+												<input name="zw_uid" type="hidden" value="{$list_answer[uid]}">
+												<!--{if $ask[uid] == $_G[uid]}-->
+												<input name="zw_ac" type="hidden" value="1">
+												<!--{elseif $_G[uid] == $list_answer['uid'] && $list_answer['yzw'] > 0}-->
+												<input name="zw_ac" type="hidden" value="2">
+												<!--{/if}-->
+												<input id="js-verify-answer" name="verify" type="hidden" value="">
+												<span class="addimg">
+													添加图片：<input name="user_upload_file[]" type="file" id="subjectimage" size="52">
+												</span>	
+												<a class="btn btn-32-gray btn-2" href="javascript:;" style="margin-left:15px;" onclick="display({$list_answer[id]}22)"  >
+													<em>										
+														取消										
+													</em>
+												</a>
+												<input type="submit" class="btn btn-2"  name="btn_zhuiwen"  value="确定">										
+											</form>
+										</div>
+									</div>
+								</div>
+								
+                            </li>
+							<!--{/if}-->
+							<!--{/loop}-->
+							<!--{/if}-->
+                        </ul>
+                    </div>
+                </div>
+				<!--{/if}-->
+				
+                <div class="mod-relevant">
+                    <div class="hd">
+                        <h4>
+                            相关问题
+                        </h4>
+                    </div>
+                    <div class="bd">
+                        <div class="cls-qa-list-1">
+                            <ul class="list">
+							<!--{if $list_like}-->	
+							<!--{loop $list_like $like}-->
+                                <li>
+                                    <span class="s0">
+                                        <span class="wealth">
+                                            $like['coin']
+                                        </span>
+                                        <a target="_blank" href="<!--{if $rewrite == '1'}-->wenda/{$like['id']}<!--{else}--> plugin.php?id=evinm_wenda:list_article&qid=$like['id']<!--{/if}-->">
+											$like['subject']
+                                        </a>
+                                    </span>
+                                    <span class="s1">
+                                        <span class="pubtime">
+                                            $like['posttime']
+                                        </span>
+                                    </span>
+                                </li>
+							<!--{/loop}-->
+							<!--{/if}-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+				<!--{if $config[isopenshare] == 1}-->
+				<div class="wgt-share mtm cl">
+					<div class="line f-info">
+						<!-- JiaThis Button BEGIN -->
+						<div class="jiathis_style"><span class="jiathis_txt">分享到：</span>
+						<a class="jiathis_button_qzone"></a>
+						<a class="jiathis_button_tsina"></a>
+						<a class="jiathis_button_tqq"></a>
+						<a class="jiathis_button_renren"></a>
+						<a class="jiathis_button_kaixin001"></a>
+						<a class="jiathis_button_douban"></a>
+						<a class="jiathis_button_tieba"></a>
+						<a class="jiathis_button_baidu"></a>
+						<a class="jiathis_button_115"></a>
+						<a class="jiathis_button_hi"></a>
+						<a class="jiathis_button_xiaoyou"></a>
+						<a class="jiathis_button_qq"></a>
+						<a class="jiathis_button_xianguo"></a>
+						<a class="jiathis_button_fav"></a>
+						<a class="jiathis_button_51"></a>
+						<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+						</div>
+						<script type="text/javascript" >
+						var jiathis_config={
+							summary:"",
+							hideMore:false
+						}
+						</script>
+						<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+						<!-- JiaThis Button END -->
+
+					</div>
+				</div>
+				<!--{/if}-->
+            </div>
+            <div class="aside">
+            <div class="extra">
+				<!--{if $_G[uid]}-->
+				<div class="mod-userinfo">
+					<div class="info">
+						<a href="<!--{if $rewrite == '1'}-->wenda/home_mypage.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mypage<!--{/if}-->" class="pic" style="margin-top:5px;">
+							$user_info['avatar'] 
+						</a>
+						<div class="text">
+							<p class="name">
+								<a href="<!--{if $rewrite == '1'}-->wenda/home_mypage.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mypage<!--{/if}-->">
+									{$_G[username]}
+								</a>
+							</p>
+							<p>
+								$config['points_name'] ：
+								<span class="wealth">
+									$config['points_user']
+								</span>
+							</p>
+							<p>
+								<span title="LV{$config['lvl']}" class="ico-lv ico-lv-{$config['lvl']}">
+								</span>
+								经验值：$config['exp']
+							</p>
+						</div>
+					</div>
+					<div class="status">
+						<table>
+							<tbody>
+								<tr>
+									<th class="first">
+										回答数
+									</th>
+									<th>
+										采纳率
+									</th>
+									<th>
+										提问数
+									</th>
+								</tr>
+								<tr>
+									<td class="first">
+										<a href="<!--{if $rewrite == '1'}-->wenda/home_mya.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mya<!--{/if}-->">
+											$config['a_num']
+										</a>
+									</td>
+									<td>
+										<a href="<!--{if $rewrite == '1'}-->wenda/home_mypage.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mypage<!--{/if}-->">
+											$user_info[cnl]%
+										</a>
+									</td>
+									<td>
+										<a href="<!--{if $rewrite == '1'}-->wenda/home_mya.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mya<!--{/if}-->">
+											$config['ask_num']
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="qa-btn">
+						<ul class="clearfix">
+							<li class="asked">
+								<a href="<!--{if $rewrite == '1'}-->wenda/home_myq.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=myq<!--{/if}-->">
+									我提问的
+								</a>
+							</li>
+							<li class="answered">
+								<a href="<!--{if $rewrite == '1'}-->wenda/home_mya.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mya<!--{/if}-->">
+									我回答的
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			<!--{else}-->
+                <div class="mod-userlogin">
+                    <div class="bd clearfix">
+                        <a href="member.php?mod=logging&action=login&referer={echo rawurlencode($dreferer)}" onclick="showWindow('login', this.href);return false;" class="btn-login">
+                            <span>
+                                登录
+                            </span>
+                        </a>
+                        <a href="member.php?mod={$_G[setting][regname]}" class="btn-reg ">
+                            <span>
+                                注册
+                            </span>
+                        </a>
+                    </div>
+                </div>
+				<!--{/if}-->
+				</div>
+				<div class="cl mtm">
+				$config[list_ad1]
+				</div>
+            </div>
+        </div>
+ 
+ 
+ 
+    </div>
+
+    <script src="source/plugin/evinm_wenda/template/js/1.js">    </script>
+    <script src="source/plugin/evinm_wenda/template/js/2.js">    </script>    
+	<script src="source/plugin/evinm_wenda/template/js/3.js">    </script>
+    <script src="source/plugin/evinm_wenda/template/js/4.js">    </script>
+
+	<script type="text/javascript">
+		
+		var parentReplyId = '';
+
+		function addClass(id,stylestr){
+		var o=document.getElementById(id);
+		o.className=o.className+" "+stylestr;
+		o=null;
+		}		
+		
+		function quickrelay(feedid) {
+		
+			$('replybox_'+feedid).style.display = 'none';
+			
+			var replyboxid = 'replybox_'+feedid;
+			if($(replyboxid).style.display == 'block') {
+				$(replyboxid).style.display = 'none';
+			}
+			
+			if(parentReplyId && parentReplyId != feedid) {
+				var oldbox = $('replybox_'+parentReplyId);
+
+				oldbox.style.display = 'none';
+			}
+			
+			if($(replyboxid).style.display == 'block' ) {
+				$(replyboxid).style.display = 'none';						
+				
+			} else {				
+
+				$(replyboxid).style.display = 'block';
+				//addClass('btn'+feedid,'bt-qkanswer-on')	;				
+			}
+
+			parentReplyId = feedid;
+		}
+		
+		function display(feedid) {
+			$('replybox_'+feedid).style.display = 'none';				
+		}
+
+
+	</script>	
+	<style type="text/css">
+	input.btn-set-best {border:0;}
+	
+	</style>
+<!--{subtemplate common/footer}-->
+
+</html>

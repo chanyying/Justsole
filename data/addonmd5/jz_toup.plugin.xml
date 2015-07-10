@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[jz_toup.plugin]]></item>
+	<item id="RevisionID"><![CDATA[11678]]></item>
+	<item id="SN"><![CDATA[2013041118uDZd4VnoZO]]></item>
+	<item id="RevisionDateline"><![CDATA[1360060737]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_jz_toup_SC_GBK.xml"><![CDATA[7236e467f7ebcf8bc67bc843b738d592]]></item>
+		<item id="/discuz_plugin_jz_toup_SC_UTF8.xml"><![CDATA[be3caf52a084283737fdb09c4770f7f2]]></item>
+		<item id="/discuz_plugin_jz_toup_TC_BIG5.xml"><![CDATA[11b4927ebda67a7c0a414c6d2e32a43b]]></item>
+		<item id="/discuz_plugin_jz_toup_TC_UTF8.xml"><![CDATA[02bb98a0639222d644ab1d43deff8493]]></item>
+		<item id="/img/bdtb.gif"><![CDATA[4ca40bab4e268d11e60b6e9e5bb9a87c]]></item>
+		<item id="/img/bdtp.png"><![CDATA[76694a800614d674f75e909eac07d4da]]></item>
+		<item id="/img/bq.png"><![CDATA[9ca33ce58401c2bc654393b0ba24105f]]></item>
+		<item id="/img/csdn.png"><![CDATA[a1dd7d5171f76c23bcbc79c9d700f8f2]]></item>
+		<item id="/img/e.gif"><![CDATA[bf4dea6e092187ad1869cf44e5ee8495]]></item>
+		<item id="/img/e.png"><![CDATA[a63ad2e9d43d3c213a48d8d3a2734e42]]></item>
+		<item id="/img/hq.gif"><![CDATA[0868ed50927e765792863b4a06fda690]]></item>
+		<item id="/img/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/img/lan.gif"><![CDATA[55be19c49c67953b415a9e0f7453b4cb]]></item>
+		<item id="/img/mb.png"><![CDATA[c4919fcdab618ccbd2cff34e1f55191a]]></item>
+		<item id="/img/moji.png"><![CDATA[9df7d6e353904c560f0dc7b6ef5a4e41]]></item>
+		<item id="/img/qqm.png"><![CDATA[b97d1c8de358506ab044a0a229fdd162]]></item>
+		<item id="/img/qzone.png"><![CDATA[6de55920e416a3b389d52e8e9e42ae7b]]></item>
+		<item id="/img/rocket.png"><![CDATA[bcb51f3cc167a716c3dc0a34786a036b]]></item>
+		<item id="/img/rqq.png"><![CDATA[4d60f46d0bffdc0aab743c7781be05af]]></item>
+		<item id="/img/tm.png"><![CDATA[a7ff1aa2dd7b0668187db18d55d8509b]]></item>
+		<item id="/img/xht.gif"><![CDATA[49571cf2628f66d9b3e51b329ac03fd3]]></item>
+		<item id="/img/zw.png"><![CDATA[7d45c3a137715109d6c7de791b071312]]></item>
+		<item id="/js/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/js/top.js"><![CDATA[7acdaf15de24510a1af6e8f947fec03c]]></item>
+		<item id="/jz_toup.class.php"><![CDATA[8b845c94b70cec4a006be7eb354aebb4]]></item>
+		<item id="/style.inc.php"><![CDATA[de16bd23ebf2f779f2b10560aebbbc8f]]></item>
+	</item>
+</root>

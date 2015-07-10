@@ -1,0 +1,5 @@
+<?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('index');
+block_get('1687,1688');?><?php include template('common/header'); ?><style id="diy_style" type="text/css">#portal_block_1687 {  margin-left:-40px !important;}#portal_block_1688 .dxb_bc a {  color:#3399cc !important;}#portal_block_1688 .dxb_bc {  color:#666666 !important;}#frameIvNiO1 {  margin-top:20px !important;}#portal_block_1688 {  margin-left:-40px !important;}</style>
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"><div id="frameIvNiO1" class=" frame move-span cl frame-3-1"><div id="frameIvNiO1_left" class="column frame-3-1-l"><div id="frameIvNiO1_left_temp" class="move-span temp"></div><?php block_display('1687');?></div><div id="frameIvNiO1_center" class="column frame-3-1-r"><div id="frameIvNiO1_center_temp" class="move-span temp"></div><?php block_display('1688');?></div></div></div><!--[/diy]-->
+</div><?php include template('common/footer'); ?>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[doconline.plugin]]></item>
+	<item id="RevisionID"><![CDATA[10511]]></item>
+	<item id="SN"><![CDATA[2013041612oOhCbOQhLM]]></item>
+	<item id="RevisionDateline"><![CDATA[1370507897]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_doconline_SC_GBK.xml"><![CDATA[280f5ea5283f278bf5108bdf6a664a6b]]></item>
+		<item id="/discuz_plugin_doconline_SC_UTF8.xml"><![CDATA[01f4bbb6e5f3f0596de83fdd30e355a4]]></item>
+		<item id="/discuz_plugin_doconline_TC_BIG5.xml"><![CDATA[b0a4c03d2766712a113d9fcce16475bd]]></item>
+		<item id="/discuz_plugin_doconline_TC_UTF8.xml"><![CDATA[a30c723d92f916864fac0cbf2ef16662]]></item>
+		<item id="/doconline.class.php"><![CDATA[19eea1e39045c9d9a4677b4d3b4f35c0]]></item>
+		<item id="/doconline.php"><![CDATA[0654dd05af16cb29477e9727c5e798c0]]></item>
+		<item id="/help.inc.php"><![CDATA[d1846f9e24938c0594ca375d5247e265]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/install.php"><![CDATA[5436a42c089d88317ba65d73022d027b]]></item>
+		<item id="/uninstall.php"><![CDATA[5436a42c089d88317ba65d73022d027b]]></item>
+	</item>
+</root>

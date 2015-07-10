@@ -1,0 +1,438 @@
+<!--{subtemplate common/header}-->
+<link rel="stylesheet" href="source/plugin/evinm_wenda/template/style/global.css">
+<link rel="stylesheet" href="source/plugin/evinm_wenda/template/style/style.css">
+<link rel="stylesheet" href="source/plugin/evinm_wenda/template/style/list.css">
+
+ 
+    <div id="doc4">
+		<!--{subtemplate evinm_wenda:head}-->
+         <div class="mbx"><a href="plugin.php?id=evinm_wenda:list&fcid=$mood_list['id']">$_G[setting][bbname]</a></div>
+        <div id="bd" class="grid-3 clearfix">
+            <div class="article">
+                <div class="mod-category">
+                    <div class="hd">
+                    </div>
+                    <div class="bd">
+                        <h4>
+                            按分类查找
+                        </h4>
+                        <div class="list">
+                            <ul class="clearfix">
+								<!--{if $list_list}-->	
+								<!--{loop $list_list $mood_list}-->
+									<li <!--{if $cid == $mood_list['id']}--> class="a"<!--{/if}-->>
+										<!--{if $isone == 1}-->
+										<a href="<!--{if $rewrite == '1'}-->wenda/list-f{$mood_list['id']}.html<!--{else}-->plugin.php?id=evinm_wenda:list&fcid=$mood_list['id']<!--{/if}-->">
+											$mood_list['name']
+										</a>
+										<!--{else}-->
+										<a href="<!--{if $rewrite == '1'}-->wenda/list-c{$mood_list['id']}.html<!--{else}-->plugin.php?id=evinm_wenda:list&cid=$mood_list['id']<!--{/if}-->">
+											$mood_list['name']
+										</a>
+										<!--{/if}-->										
+									</li>
+								<!--{/loop}-->
+								<!--{/if}-->
+                            </ul>
+                        </div>
+                        <h4>
+                            按关键词查找
+                        </h4>
+                        <div class="form">
+                            <form action="<!--{if $rewrite == '1'}-->wenda/search.html<!--{else}-->plugin.php?id=evinm_wenda:search<!--{/if}-->" method="post">
+                                <div class="sh-ipt">
+                                    <input name="s" value="" maxlength="30" type="text">
+                                    <input name="filt" value="10" type="hidden">
+                                </div>
+                                <div class="sh-btn">
+                                    <button type="submit">
+                                        搜索
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+				
+				<!--{if $vip[uid]}-->
+				<div class="cl mtm mbm">
+					<div class="doctor-yq">
+						<em title="特约专家" class="ico-yq">
+						</em>
+						<div class="doctor-yq-cons">
+							<a href="<!--{if $rewrite == '1'}-->wenda/home_mypage.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mypage<!--{/if}-->" class="pic" style="margin-top:5px;">
+								$vip['avatar']
+							</a>
+							<span class="doctor-info">
+								<span class="doc-name">
+									<a href="<!--{if $rewrite == '1'}-->wenda/home_mypage.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mypage<!--{/if}-->" title="" class="z">
+										$vip[name] 
+									</a>
+									<span title="LV{$vip[lvl]}" class="z ico-lv ico-lv-{$vip[lvl]}" style="height:16px; margin-top:6px; margin-left:5px;"></span>
+								</span>
+								<span class="doc-ks">
+									本分类
+								</span>
+								<span class="doc-ks">
+									特约专家
+								</span>
+
+							</span>
+							<span class="doctor-pj">
+								<p class="cons_text">
+									专家资料
+								</p>
+								<dl>
+									<dt>
+										采纳率
+									</dt>
+									<dd class="jd_bg" title="采纳率：$info[cnl]">
+										<i style="width:$info[cnl]%">
+										</i>
+									</dd>
+									<dd class="jd_fs">
+										$info[cnl]%
+									</dd>
+								</dl>
+								<dl class="jd2">
+									<dt>
+										回答数
+									</dt>
+									<dd class="jd_fs">
+										$info['num_a']
+									</dd>
+								</dl>
+							</span>
+							<div class="y cl" style="width:200px; height:80px; <!--{if $config[fenlei_vip] != ""}--> background:url($config[fenlei_vip]) no-repeat; margin-top:-6px;<!--{/if}-->">
+								
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!--{/if}-->
+                <div class="mod-answer-list">
+                    <div class="hd">
+                        <ul class="tab-card">
+                            <li  <!--{if empty($es) || $es == D}-->class="on"<!--{/if}-->>
+                                <a href="<!--{if $rewrite == '1'}-->	
+									
+										<!--{if empty($_GET[fcid]) && empty($_GET[cid])}-->
+											wenda/list-0-D.html
+										<!--{elseif empty($_GET[cid]) && !empty($_GET[fcid])}-->
+											wenda/list-D-f{$_GET[fcid]}.html
+										<!--{elseif !empty($_GET[cid]) && empty($_GET[fcid])}-->
+											wenda/list-D-c{$_GET[cid]}.html							
+										<!--{/if}-->
+
+								<!--{else}-->plugin.php?id=evinm_wenda:list&es=D&fcid={$fcid}&cid={$cid}<!--{/if}-->">
+                                    待解决问题
+                                </a>
+                            </li>
+                            <li <!--{if $es == Y}-->class="on"<!--{/if}-->>
+                                <a href="<!--{if $rewrite == '1'}-->
+										<!--{if empty($_GET[fcid]) && empty($_GET[cid])}-->
+											wenda/list-0-Y.html
+										<!--{elseif empty($_GET[cid]) && !empty($_GET[fcid])}-->
+											wenda/list-Y-f{$_GET[fcid]}.html
+										<!--{elseif !empty($_GET[cid]) && empty($_GET[fcid])}-->
+											wenda/list-Y-c{$_GET[cid]}.html							
+										<!--{/if}-->
+								<!--{else}-->plugin.php?id=evinm_wenda:list&es=Y&fcid={$fcid}&cid={$cid}<!--{/if}-->">
+                                    已解决
+                                </a>
+                            </li>
+                            <li <!--{if $es == G}-->class="on"<!--{/if}-->>
+                                <a href="<!--{if $rewrite == '1'}-->
+										<!--{if empty($_GET[fcid]) && empty($_GET[cid])}-->
+											wenda/list-0-G.html
+										<!--{elseif empty($_GET[cid]) && !empty($_GET[fcid])}-->
+											wenda/list-G-f{$_GET[fcid]}.html
+										<!--{elseif !empty($_GET[cid]) && empty($_GET[fcid])}-->
+											wenda/list-G-c{$_GET[cid]}.html							
+										<!--{/if}-->
+								
+								<!--{else}-->plugin.php?id=evinm_wenda:list&es=G&fcid={$fcid}&cid={$cid}<!--{/if}-->">
+                                    高悬赏
+                                </a>
+                            </li>
+							<li <!--{if $es == L}-->class="on"<!--{/if}-->>
+                                <a href="<!--{if $rewrite == '1'}-->
+										<!--{if empty($_GET[fcid]) && empty($_GET[cid])}-->
+											wenda/list-0-L.html
+										<!--{elseif empty($_GET[cid]) && !empty($_GET[fcid])}-->
+											wenda/list-L-f{$_GET[fcid]}.html
+										<!--{elseif !empty($_GET[cid]) && empty($_GET[fcid])}-->
+											wenda/list-L-c{$_GET[cid]}.html							
+										<!--{/if}-->
+								<!--{else}-->plugin.php?id=evinm_wenda:list&es=L&fcid={$fcid}&cid={$cid}<!--{/if}-->">
+                                    零回答
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bd cl">
+                        <div class="cls-qa-table">
+							<!--{if (empty($es) || $es == D) && $_G[adminid] == 1}-->
+							<form action="" method="post">
+							<!--{/if}-->
+                            <table>
+                                <tbody>
+                                    <tr>
+										<!--{if (empty($es) || $es == D) && $_G[adminid] == 1}-->
+                                        <th style="width:30px;">
+                                            删?
+                                        </th>
+										<!--{/if}-->
+                                        <th class="s0">
+                                            标题
+                                        </th>
+                                        <th class="s1">
+                                            回答数
+                                        </th>
+                                        <th class="s2" style="width: 130px;">
+                                            时间
+                                        </th>
+                                    </tr>
+									<!--{if $ask_list}-->	
+									<!--{loop $ask_list $ask}-->
+									<tr>
+										<!--{if (empty($es) || $es == D) && $_G[adminid] == 1}-->
+                                        <td class="s0">
+                                            <input class="checkbox" type="checkbox" name="delete[]" value="$ask['id']" style="margin-top:8px;">
+                                        </td>
+										<!--{/if}-->
+										<td class="titlee">
+											<div class="tit-mini">												
+												<div class="wrap">
+													<span class="wealth">$ask['coin']</span>
+													<a target="_blank" title="{$ask['subject']}" href="<!--{if $rewrite == '1'}-->wenda/{$ask['id']}<!--{else}-->plugin.php?id=evinm_wenda:list_article&qid={$ask['id']}<!--{/if}-->"
+													class="lnk">{$ask['subject']}</a><span class="cate">[<a target="_blank" href="<!--{if $rewrite == '1'}-->
+													wenda/list-c{$ask['fenlei']}.html<!--{else}-->plugin.php?id=evinm_wenda:list&es=d&fcid=&cid=$ask['fenlei']<!--{/if}-->">$ask['fname']</a>]</span>													
+												</div>
+												<!--{if $_G[uid] && $es != Y }-->	
+													<!--{if $_G[adminid] ==1 && ($es == D || empty($es)) }-->													
+													<!--{else}-->
+														<!--{if $ask['is_anserd'] != 0}-->													
+														<div class="js-answer-tips" style="display: block; ">已回答</div>
+														<!--{else}-->
+															<!--{if $vip[uid]!="" && $config[is_onlyvip] ==1}-->
+																<!--{if $vip[uid]!== $_G['uid']}-->
+																	<a href="javascript:;" onclick="quickrelay({$ask['id']})" id="btn{$ask['id']}" class="bt-qkanswer">我来回答</a>
+																<!--{else}-->
+																
+																<!--{/if}-->
+															<!--{elseif $_G[uid] != $ask[uid]}-->
+																<a href="javascript:;" onclick="quickrelay({$ask['id']})" id="btn{$ask['id']}" class="bt-qkanswer">我来回答</a>
+															<!--{/if}-->													
+														<!--{/if}-->
+													<!--{/if}-->
+												<!--{/if}-->
+											</div>
+											<!--{if $_G[uid] && $es != Y }-->
+												<!--{if $_G[adminid] ==1 && ($es == D || empty($es)) }-->												
+
+												<!--{else}-->
+												<div id="replybox_{$ask['id']}" class="flw_replybox cl"  style="display:none;">
+												<form action="" method="post">
+													<div class="quirk-answer">
+														<div class="textarea">
+															<textarea  name="answer" cols="30" rows="10" ></textarea>
+														</div>
+														<input name="askid" type="hidden" value="{$ask['id']}" />
+														<input name="qfcid" type="hidden" value="{$_GET['fcid']}" />
+														<input name="qcid" type="hidden" value="{$_GET['cid']}" />
+														<span class="btn btn-2" style="margin-left:10px;"><a href="javascript:;" onclick="display({$ask['id']})"  >↑ 关闭</a></span>		
+														<span class="btn btn-2"><input type="submit" name="quirk_btn" value="提交回答"></span>											
+													</div>											
+												</form>	
+												</div>
+												<!--{/if}-->
+											<!--{/if}-->
+											
+										</td>
+										<td>
+											$ask['nums_a']
+										</td>
+										<td>
+											$ask['posttime'] 
+										</td>
+									</tr>
+									<!--{/loop}-->
+									<!--{/if}-->
+									
+									<!--{if (empty($es) || $es == D) && $_G[adminid] == 1}-->
+										<tr>
+											<td></td>
+											<td>
+												<p class="o pns z" >
+												<input type="submit" name="del_button" class="pn" value="提交" style="width:60px;">
+												</p>
+											</td>
+											<td></td>
+											<td></td>
+										</tr>
+									<!--{/if}-->
+                                </tbody>
+                            </table>
+							<!--{if (empty($es) || $es == D) && $_G[adminid] == 1}-->
+							</form>
+							<!--{/if}-->
+                        </div>
+						<div class="cl mbm" style="text-align:center; margin-top:15px;">
+                            $multi
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<script type="text/javascript">
+				
+				var parentReplyId = '';
+
+				function addClass(id,stylestr){
+				var o=document.getElementById(id);
+				o.className=o.className+" "+stylestr;
+				o=null;
+				}		
+				
+				function quickrelay(feedid) {
+				
+					$('replybox_'+feedid).style.display = 'none';
+					
+					var replyboxid = 'replybox_'+feedid;
+					if($(replyboxid).style.display == 'block') {
+						$(replyboxid).style.display = 'none';
+					}
+					
+					if(parentReplyId && parentReplyId != feedid) {
+						var oldbox = $('replybox_'+parentReplyId);
+
+						oldbox.style.display = 'none';
+					}
+					
+					if($(replyboxid).style.display == 'block' ) {
+						$(replyboxid).style.display = 'none';						
+						
+					} else {				
+
+						$(replyboxid).style.display = 'block';
+						//addClass('btn'+feedid,'bt-qkanswer-on')	;				
+					}
+
+					parentReplyId = feedid;
+				}
+				
+				function display(feedid) {
+					$('replybox_'+feedid).style.display = 'none';				
+				}
+
+
+			</script>
+            <div class="aside">
+            <div class="extra">
+				<!--{if $_G[uid]}-->
+				<div class="mod-userinfo">
+					<div class="info">
+						<a href="<!--{if $rewrite == '1'}-->wenda/home_mypage.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mypage<!--{/if}-->" class="pic" style="margin-top:5px;">
+							$user_info['avatar']
+						</a>
+						<div class="text">
+							<p class="name">
+								<a href="<!--{if $rewrite == '1'}-->wenda/home_mypage.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mypage<!--{/if}-->">
+									{$_G[username]}
+								</a>
+							</p>
+							<p>
+								$config['points_name'] ：
+								<span class="wealth">
+									$config['points_user']
+								</span>
+							</p>
+							<p>
+								<span title="LV{$config['lvl']}" class="ico-lv ico-lv-{$config['lvl']}">
+								</span>
+								经验值：$config['exp']
+							</p>
+						</div>
+					</div>
+					<div class="status">
+						<table>
+							<tbody>
+								<tr>
+									<th class="first">
+										回答数
+									</th>
+									<th>
+										采纳率
+									</th>
+									<th>
+										提问数
+									</th>
+								</tr>
+								<tr>
+									<td class="first">
+										<a href="<!--{if $rewrite == '1'}-->wenda/home_mya.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mya<!--{/if}-->">
+											$config['a_num']
+										</a>
+									</td>
+									<td>
+										<a href="<!--{if $rewrite == '1'}-->wenda/home_mypage.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mypage<!--{/if}-->">
+											$user_info[cnl]%
+										</a>
+									</td>
+									<td>
+										<a href="<!--{if $rewrite == '1'}-->wenda/home_mya.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mya<!--{/if}-->">
+											$config['ask_num']
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="qa-btn">
+						<ul class="clearfix">
+							<li class="asked">
+								<a href="<!--{if $rewrite == '1'}-->wenda/home_myq.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=myq<!--{/if}-->">
+									我提问的
+								</a>
+							</li>
+							<li class="answered">
+								<a href="<!--{if $rewrite == '1'}-->wenda/home_mya.html<!--{else}-->plugin.php?id=evinm_wenda:my&ac=mya<!--{/if}-->">
+									我回答的
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			<!--{else}-->
+                <div class="mod-userlogin">
+                    <div class="bd clearfix">
+                        <a href="member.php?mod=logging&action=login&referer={echo rawurlencode($dreferer)}" onclick="showWindow('login', this.href);return false;" class="btn-login">
+                            <span>
+                                登录
+                            </span>
+                        </a>
+                        <a href="member.php?mod={$_G[setting][regname]}" class="btn-reg ">
+                            <span>
+                                注册
+                            </span>
+                        </a>
+                    </div>
+                </div>
+			<!--{/if}-->				
+
+				</div>
+				<div class="cl mtm">
+				$config[list_ad1]
+				</div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+	
+<!--{subtemplate common/footer}-->
+
+</html>

@@ -1,0 +1,182 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<div class="dzactivity cl">
+
+<div id="pt" class="bm cl">
+    <div class="z">
+        <a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em><a href="forum.php"{if $_G['setting']['forumjump']} id="fjump" onmouseover="delayShow(this, 'showForummenu($_G[fid])');" class="showmenu" {/if}>{$_G[setting][navs][2][navname]}</a><em>&raquo;</em><a href="plugin.php?id=dz55625_activity:huodong">{lang dz55625_activity:addhuodong}</a><em>&raquo;</em>{lang dz55625_activity:viewlist}
+    </div>
+</div>
+    
+<div class="view_top">
+<!--{loop $mythreads $mythread}-->
+	<div id="viewTleft">
+    	<div id="viewls">
+        	<h2>{lang dz55625_activity:viewbaom} {$mythread[nember]} {lang dz55625_activity:viewren}</h2>
+            <h3><img src="{$mythread[img]}"></h3>
+            <dl>
+                <dt>{$mythread[title]}</dt>
+                <dd>
+                    <p><strong>{lang dz55625_activity:viewleixing}</strong>{$listclass[$mythread[did]]}</p>
+                    <p><strong>{lang dz55625_activity:viewdidian}</strong>{$mythread[address]}</p>
+                    <p><strong>{lang dz55625_activity:viewrexian}</strong>{$mythread[tel]}</p>
+                    <p><strong>{lang dz55625_activity:viewuser}</strong>{$mythread[author]}</p>
+                    <p><strong>{lang dz55625_activity:viewtime}</strong>{echo date('Y-m-d H:i',$mythread[ktime])} - {echo date('Y-m-d H:i',$mythread[jtime])}</p>
+                    <p><strong>{lang dz55625_activity:jssytime}</strong><span class="endtime" value="{$mythread[jtime]}"></span></p>
+                    
+                </dd>
+            </dl>
+        </div>
+        
+        <div id="viewlx">
+        <ul>
+        <DIV class=bshare-custom><A class=bshare-qzone href="javascript:void(0);"></A><A class=bshare-sinaminiblog href="javascript:void(0);"></A><A class=bshare-renren href="javascript:void(0);"></A><A class=bshare-qqmb href="javascript:void(0);"></A><A class=bshare-douban href="javascript:void(0);"></A><A class=bshare-qqxiaoyou href="javascript:void(0);"></A><A class=bshare-qqshuqian href="javascript:void(0);"></A><A class=bshare-itieba href="javascript:void(0);"></A><A class=bshare-51 href="javascript:void(0);"></A><A class=bshare-tianya href="javascript:void(0);"></A><A class=bshare-sohuminiblog href="javascript:void(0);"></A><A class=bshare-neteasemb href="javascript:void(0);"></A><A class=bshare-kaixin001 href="javascript:void(0);"></A><A class="bshare-more bshare-more-icon more-style-sharethis" buttonIndex="0"></A><SPAN class="BSHARE_COUNT bshare-share-count">0</SPAN></DIV>
+<SCRIPT type=text/javascript charset=utf-8 src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=fba4e86d-5fec-4493-b554-d7b3b4736eb4&amp;pophcol=2&amp;lang=zh"></SCRIPT>
+<SCRIPT type=text/javascript charset=utf-8 src="http://static.bshare.cn/b/bshareC0.js"></SCRIPT>
+        </ul>
+        <dl><a onclick="showDialog('{lang dz55625_activity:btntipxi} $set[credit] $person['extcredits'][$set[extcredit]]['title']', 'confirm', '{lang dz55625_activity:viewqueok}', function () { window.location.href='plugin.php?id=dz55625_activity:huodong&mod=view&option=xianhua&vid=$mythread[id]'; return false; })" id="xianhua">{lang dz55625_activity:xianhuas}({$mythread[xianhua]})</a>&nbsp;<a onclick="showDialog('{lang dz55625_activity:btntipxin} $set[credit] $person['extcredits'][$set[extcredit]]['title']', 'confirm', '{lang dz55625_activity:viewqueok}', function () { window.location.href='plugin.php?id=dz55625_activity:huodong&mod=view&option=jidan&vid=$mythread[id]'; return false; })" id="jidan">{lang dz55625_activity:jidans}({$mythread[jidan]})</a></dl>
+        </div>
+    </div>
+    
+     <div id="mingdan">
+     <table width="100%">
+     <tr class="headers">
+       <td>{lang dz55625_activity:bmname}</td><td>{lang dz55625_activity:bmtels}</td><td>{lang dz55625_activity:bmqqks}</td><td>{lang dz55625_activity:bmdate}</td><td>{lang dz55625_activity:hchakan}</td>
+     </tr>
+     {loop $baomings $baoming}
+      <tr class="hover">
+        <td>{$baoming[author]}</td>
+        <!--{if $mythread['author'] != $_G['username']}-->
+        	<td>{$baoming[tels]}</td>
+            <td>{$baoming[qicq]}</td>
+        <!--{else}-->
+        	<td>{$baoming[telx]}</td>
+            <td>{$baoming[qicx]}</td>
+        <!--{/if}-->
+       
+        <td>{$baoming[dateline]}</td>
+        <td><!--{if $mythread[uid] == $_G[uid]}-->
+        	<a href="javascript:;" onclick="showWindow('rchakan', 'plugin.php?id=dz55625_activity:huodong_bm&option=rchakan&sid={$baoming[id]}', 'get', 0)" class="xi3" style="color:#06F">{lang dz55625_activity:xiangqings}</a>
+        <!--{else}-->
+        	<a onclick="showDialog('{lang dz55625_activity:tishinrong}', 'alert', '{lang dz55625_activity:titlexinxi}'); return false;" href="javascript:;" style="color:#06F">{lang dz55625_activity:xiangqings}</a>
+        <!--{/if}--></td>
+      </tr>
+      {/loop}
+	</table>
+    </div>
+    
+    
+	<div id="viewTright">
+    	{$mythread[summary]}
+    </div>
+   
+    <script type="text/javascript">
+	var jq = jQuery.noConflict(); 
+var serverTime = <?php echo time();?> * 1000;
+jq(function(){
+    var dateTime = new Date();
+    var difference = dateTime.getTime() - serverTime;
+	
+    setInterval(function(){
+      jq(".endtime").each(function(){
+        var obj = jq(this);
+        var endTime = new Date(parseInt(obj.attr('value')) * 1000);
+        var nowTime = new Date();
+        var nMS=endTime.getTime() - nowTime.getTime() + difference;
+        var myD=Math.floor(nMS/(1000 * 60 * 60 * 24));
+        var myH=Math.floor(nMS/(1000*60*60)) % 24;
+        var myM=Math.floor(nMS/(1000*60)) % 60;
+        var myS=Math.floor(nMS/1000) % 60;
+        var myMS=Math.floor(nMS/100) % 10;
+        if(myD>= 0){
+			var str = myD+"{lang dz55625_activity:jstian}"+myH+"{lang dz55625_activity:jsxiaoshi}"+myM+"{lang dz55625_activity:jsfenz}"+myS+"."+myMS+"{lang dz55625_activity:jsmiao}";
+        }else{
+			var str = "{lang dz55625_activity:jsover}";	
+		}
+		obj.html(str);
+      });
+    }, 100);
+
+});
+</script>
+
+
+    
+
+ <!--{/loop}--> 
+ 
+
+      
+</div>
+
+<div class="view_bot">
+<!--{loop $mythreads $mythread}-->
+    <div id="viewBleft">
+         <h3><em><!--{if $mythread[cost]=='0'}-->{lang dz55625_activity:viewbmmian}<!--{else}-->гд{$mythread[cost]}<!--{/if}--></em><span><a href="javascript:;" onclick="showWindow('baoming', 'plugin.php?id=dz55625_activity:huodong_bm&option=baoming&vid={$mythread[id]}', 'get', 0)" class="xi3">{lang dz55625_activity:viewbmings}</a></span></h3>
+         
+         
+         <h2></h2>
+    <ul>
+    <!--{if {$mythread[nember]}!='0'}-->
+   		 <!--{eval $i = 0}-->
+        {loop $baomings $baoming}
+         		<!--{if $i >= 4}--> 
+                <!--{eval break;}-->
+                <!--{/if}-->
+            <li class="cl">
+            	<p class="userico"><img src="$uc/avatar.php?uid={$baoming[uid]}&size=small" /></p>
+            	<p class="username">
+                	<strong>{$baoming[author]}</strong>
+            		<span>{$baoming[dateline]}</span>
+                </p>
+            </li>
+             <!--{eval $i++;}-->
+        {/loop}
+       
+
+       <!--{else}--> 
+       		<li>{lang dz55625_activity:viewbmno}</li>
+       <!--{/if}-->
+    </ul>
+    </div>
+    <div id="viewBright">
+        <ul>
+        <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+       	<div id="mapCanvas">{lang dz55625_activity:ahuodonglading}</div>
+        </ul>
+    </div>
+    
+   
+        <script type="text/javascript"> 
+var geocoder = new google.maps.Geocoder();
+function initialize() {
+  var mapxy = '{$mythread[mapx]}';
+xyarr=mapxy.split(",");
+  var latLng = new google.maps.LatLng(xyarr[0], xyarr[1]);
+  var map = new google.maps.Map($('mapCanvas'), {
+    zoom: {$mythread[mapy]},
+    center: latLng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  });
+  var marker = new google.maps.Marker({
+    position: latLng,
+    title: '',
+    map: map,
+    draggable: false
+  });
+   google.maps.event.addListener(map, 'zoom_changed', function() {
+    zoomLevel = map.getZoom();
+    map.setCenter(latLng);
+    //infowindow.setContent("Zoom: " + zoomLevel);
+    if (zoomLevel == 0) {
+      map.setZoom({$mythread[mapy]});
+    }
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<!--{/loop}-->   
+</div>
+
+</div>
+

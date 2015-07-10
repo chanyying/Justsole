@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[it186_map.plugin]]></item>
+	<item id="RevisionID"><![CDATA[5446]]></item>
+	<item id="SN"><![CDATA[20130411188z558ftJ5m]]></item>
+	<item id="RevisionDateline"><![CDATA[1346229673]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_it186_map_SC_UTF8.xml"><![CDATA[41a37c152b37d449923579ae79d22b97]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/map.inc.php"><![CDATA[f7a76cea0d2b46581c40c6500ad13d54]]></item>
+		<item id="/template/it186map.htm"><![CDATA[dd520f44032dfcea3ffacd8aea739d8c]]></item>
+		<item id="/template/map.htm"><![CDATA[c8b6231e656c26a21bdeda18971e72f9]]></item>
+	</item>
+</root>

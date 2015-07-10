@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[duoduo_jiu.plugin]]></item>
+	<item id="RevisionID"><![CDATA[14827]]></item>
+	<item id="SN"><![CDATA[20130426130VV6YV0EGz]]></item>
+	<item id="RevisionDateline"><![CDATA[1366781671]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_duoduo_jiu_SC_GBK.xml"><![CDATA[e423cd313cebdc60db266c040f6811c8]]></item>
+		<item id="/discuz_plugin_duoduo_jiu_SC_UTF8.xml"><![CDATA[6c3dccc7344bfa2727b95987401bb283]]></item>
+		<item id="/discuz_plugin_duoduo_jiu_TC_BIG5.xml"><![CDATA[ede2dff7bd352c1327174180df657f2e]]></item>
+		<item id="/discuz_plugin_duoduo_jiu_TC_UTF8.xml"><![CDATA[815baac5ed969e1c4ce940aa8e725019]]></item>
+		<item id="/go.inc.php"><![CDATA[66a80a5d764414b047e3514bf1c59bf4]]></item>
+		<item id="/install.php"><![CDATA[9084cdcf30756594a9a82e018be460ea]]></item>
+		<item id="/jiu.inc.php"><![CDATA[d14670cd41ba68f29925af30e8a679ab]]></item>
+		<item id="/template/tpl/css.css"><![CDATA[2bcb6f4780df79509bb553ef57a58b94]]></item>
+		<item id="/template/tpl/go.htm"><![CDATA[63b64206daed33f15a71056f81f31c24]]></item>
+		<item id="/template/tpl/jiu.htm"><![CDATA[dc65b152d29d0b82a8e36b6405804404]]></item>
+		<item id="/uninstall.php"><![CDATA[99f79ed4b72eb65e32cbe9c3ad67e4f7]]></item>
+	</item>
+</root>

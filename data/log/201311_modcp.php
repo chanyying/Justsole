@@ -1,0 +1,10 @@
+<?PHP exit;?>	1383270168	owlcity	3	120.194.53.41	login		0	GET={mod=modcp; action=login; }; POST={};
+<?PHP exit;?>	1383651871	owlcity	3	120.194.53.41	login		0	GET={mod=modcp; action=login; }; POST={};
+<?PHP exit;?>	1383651877	owlcity	3	120.194.53.41	home		0	GET={mod=modcp; action=home; }; POST={};
+<?PHP exit;?>	1383651880	owlcity	3	120.194.53.41	home		1072	GET={mod=modcp; action=home; fid=1072; }; POST={};
+<?PHP exit;?>	1383651884	owlcity	3	120.194.53.41	moderate	threads	1072	GET={mod=modcp; action=moderate; op=threads; fid=1072; }; POST={};
+<?PHP exit;?>	1383651886	owlcity	3	120.194.53.41	member	ban	1072	GET={mod=modcp; action=member; op=ban; fid=1072; }; POST={};
+<?PHP exit;?>	1383651888	owlcity	3	120.194.53.41	forumaccess		1072	GET={mod=modcp; action=forumaccess; fid=1072; }; POST={};
+<?PHP exit;?>	1383651914	owlcity	3	120.194.53.41	thread	thread	1072	GET={mod=modcp; action=thread; op=thread; fid=1072; }; POST={};
+<?PHP exit;?>	1383651920	owlcity	3	120.194.53.41	forum	recommend	1072	GET={mod=modcp; action=forum; op=recommend; show=all; fid=1072; }; POST={};
+<?PHP exit;?>	1383651922	owlcity	3	120.194.53.41	forum	editforum	1072	GET={mod=modcp; action=forum; op=editforum; fid=1072; }; POST={};

@@ -1,0 +1,191 @@
+            <div class="article article_bg">
+                <div class="mod-status">
+                    <div class="hd">
+                        <h3>
+                            我的首页
+                        </h3>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            <li>
+                                $config['points_name'] ：
+                                <em>
+                                    $config['points_user']
+                                </em>
+                            </li>
+                            <li>
+                                经验值:
+                                <em>
+                                    $config['exp']
+                                </em>
+                            </li>
+                            <li>
+                                采纳率:
+                                <em>
+                                    $user_info['cnl'] %
+                                </em>
+                            </li>
+                            <li>
+                                被赞数:
+                                <em>
+                                    0
+                                </em>
+                            </li>
+                            <div class="clear">
+                            </div>
+                        </ul>
+                        <div class="clear">
+                        </div>
+                    </div>
+                    <div class="ft">
+                    </div>
+                </div>
+                <div class="mod-ql-list" style="margin-top:16px">
+                    <div class="hd">
+                        <h4>
+                            我的提问
+                        </h4>
+                        <span class="gray">
+                            (共
+                            <em>
+                                $user_info[num_ask]
+                            </em>
+                            条)
+                        </span>
+                    </div>
+                    <div class="bd">
+						<!--{if $user_info[num_ask] == 0}-->
+							<div class="mod-nolist">
+								<div class="smile">
+									<span>
+										您现在还没有进行过提问呢！
+									</span>
+									<a href="<!--{if $rewrite == '1'}-->wenda/ask.html<!--{else}--> plugin.php?id=evinm_wenda:ask<!--{/if}-->">
+										我要提问
+									</a>
+								</div>
+							</div>
+						<!--{/if}-->
+						<!--{if $user_info[num_ask] > 0}-->
+							<div class="cls-qa-list-2">
+								<table>
+									<thead>
+										<tr>
+											<th class="align-l">
+												标题
+											</th>
+											<th width="60">
+												回答数
+											</th>
+											<th width="130" class="align-r">
+												提问时间
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!--{if $list_mypage_ask}-->	
+										<!--{loop $list_mypage_ask $mypage_ask}-->
+										<tr>
+											<td class="align-l">
+												<a target="_blank" href="<!--{if $rewrite == '1'}-->wenda/{$mypage_ask['id']}<!--{else}-->plugin.php?id=evinm_wenda:list_article&qid={$mypage_ask['id']}<!--{/if}-->" title="{$mypage_ask['subject']}">
+													<!--{if $mypage_ask['coin'] > '0'}--><span class="wealth">$mypage_ask['coin']</span><!--{/if}-->{$mypage_ask['subject']}
+												</a>
+												<span class="cate">
+													[
+													<a target="_blank" href="<!--{if $rewrite == '1'}-->wenda/list-c{$mypage_ask['fenlei']}.html<!--{else}-->plugin.php?id=evinm_wenda:list&cid={$mypage_ask['fenlei']}<!--{/if}-->">
+														{$mypage_ask['fname']}
+													</a>
+													]
+												</span>
+											</td>
+											<td class="quick-num">
+												{$mypage_ask['nums_a']}
+											</td>
+											<td class="quick-time align-r">
+												{$mypage_ask['posttime']}
+											</td>
+										</tr>
+										<!--{/loop}-->
+										<!--{/if}-->
+									</tbody>
+								</table>
+							</div>
+						<!--{/if}-->
+                    </div>
+                    <div class="ft">
+                    </div>
+                </div>
+                <div class="mod-ql-list">
+                    <div class="hd">
+                        <h4>
+                            我的回答
+                        </h4>
+                        <span class="gray">
+                            (共
+                            <em>
+                                $user_info[num_a]
+                            </em>
+                            条)
+                        </span>
+                    </div>
+                    <div class="bd">
+						<!--{if $user_info[num_a] == 0}-->
+							<div class="mod-nolist">
+								<div class="smile">
+									<span>
+										您现在还没有进行过提问呢！
+									</span>
+									<a href="<!--{if $rewrite == '1'}-->wenda/list.html<!--{else}-->plugin.php?id=evinm_wenda:list<!--{/if}-->">
+										回答问题
+									</a>
+								</div>
+							</div>
+						<!--{/if}-->
+						<!--{if $user_info[num_a] > 0}-->
+							<div class="cls-qa-list-2">
+								<table>
+									<thead>
+										<tr>
+											<th class="align-l">
+												标题
+											</th>
+											<th width="60">
+												回答数
+											</th>
+											<th width="130" class="align-r">
+												提问时间
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!--{if $list_mypage_answer}-->	
+										<!--{loop $list_mypage_answer $mypage_answer}-->
+										<tr>
+											<td class="align-l">
+												<a target="_blank" href="<!--{if $rewrite == '1'}-->wenda/{$mypage_answer['id']}<!--{else}-->plugin.php?id=evinm_wenda:list_article&qid={$mypage_answer['id']}<!--{/if}-->" title="{$mypage_answer['subject']}">
+													<!--{if $mypage_answer['coin'] > '0'}--><span class="wealth">$mypage_answer['coin']</span><!--{/if}-->{$mypage_answer['subject']}
+												</a>
+												<span class="cate">
+													[
+													<a target="_blank" href="<!--{if $rewrite == '1'}-->wenda/list-c{$mypage_answer['fenlei']}.html<!--{else}-->plugin.php?id=evinm_wenda:list&cid={$mypage_answer['fenlei']}<!--{/if}-->">
+														{$mypage_answer['fname']}
+													</a>
+													]
+												</span>
+											</td>
+											<td class="quick-num">
+												$mypage_answer['nums_a']
+											</td>
+											<td class="quick-time align-r">
+												{$mypage_answer['posttime']}
+											</td>
+										</tr>
+										<!--{/loop}-->
+										<!--{/if}-->
+									</tbody>
+								</table>
+							</div>
+						<!--{/if}-->
+                    </div>
+                </div>
+            </div>

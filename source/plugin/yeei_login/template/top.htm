@@ -1,0 +1,158 @@
+<!--{block top}-->
+<script type="text/javascript" src="source/plugin/yeei_login/template/img/jquery-1.6.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="source/plugin/yeei_login/template/img/style.css" />
+<!-- 如jquery 同其他插件（模板）出现冲突 请修改此处 jq -->
+<script language="javascript" >	var jq = jQuery.noConflict();</script>
+<script type="text/javascript">
+        jq(function() {
+		    var topHead = jq('#yeei_logon_head').position().top;
+            jq(window).scroll(function() {
+                if (jq(window).scrollTop() > topHead) {
+				    jq('#yeei-login-Top').fadeIn(100);
+					jq('#yeei_login_ad').fadeIn(100);
+					var topHr = jq('#yeei-login-Top').height()+'px';
+					<!--{if $this->location == '2'}-->
+					jq('#yeei_login_ad').css("bottom",topHr);
+					<!--{else}-->
+                    jq('#yeei_login_ad').css("top",topHr);
+                    <!--{/if}-->
+                } else {
+					jq('#yeei-login-Top').fadeOut(100);
+					jq('#yeei_login_ad').fadeOut(100);
+                };
+            });
+        });
+	   jq(function() {
+
+             jq("#ls_cookietimes").click(function() {
+			       
+                  if (jq("#ls_cookietimes").attr("checked")) {
+                      jq("#ls_cookietimes2").attr("checked",true);
+                  }else{
+				      jq("#ls_cookietimes2").attr("checked",false);
+				  }
+             });
+        });
+function lsSubmits(op) {
+	var op = !op ? 0 : op;
+	if($('ls_usernames').value == '' || $('ls_passwords').value == '') {
+		showWindow('login', 'member.php?mod=logging&action=login' + (op ? '&cookietime=1' : ''));
+	} else {
+		ajaxpost('lsforms', 'return_ls', 'return_ls');
+	}
+	return false;
+}
+
+function closeYeei(){
+    jq("#yeei-login-Top").remove();
+	jq("#yeei_login_ad").remove();
+}
+
+
+</script>
+<style type="text/css">
+<!--{if $this->location == '2'}-->
+body{ padding-bottom:{$this->ftheight}px}
+<!--{/if}-->
+#yeei-login-Top .con{ background:{$this->bgcolor}; }
+#yeei-login-Top .remi{ color:{$this->color}}
+#yeei-login-Top .bot a{color:{$this->acolor}}
+</style>
+
+<!--{if $this->adswi}-->
+<div class="wp cl"><div id="yeei_login_ad" class="wp "><!--{$this->adcode}--></div></div>
+<!--{/if}-->
+<div id="yeei-login-Top" {if $this->location == '2' } style="bottom:0px!important;top:auto"{/if} >
+
+<div class="con">
+<div class="wp cl">	
+<!--{if $this->closeyeei}-->
+<style type="text/css">
+#yeei-login-Top .y { margin-right:50px;}
+</style>
+<a id="closes" href="javascript:;" onclick="closeYeei();" title="关闭"></a>
+<!--{/if}-->
+<div class="z yah">
+<div class="remi yah">
+$this->explan 
+</div>
+</div>
+<div class="y">
+<form method="post" autocomplete="off" id="lsforms" action="member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes" onsubmit="{if $_G['setting']['pwdsafety']}pwmd5('ls_passwords');{/if}return lsSubmits();">
+<span id="return_ls" style="display:none"></span>
+<table cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<!--{if !$_G['setting']['autoidselect']}-->
+<td><input type="text" tabindex="1001" onblur="if(this.value == ''){this.value = '{lang username}';this.className = 'ipo ipoS';}" onfocus="if(this.value == '{lang username}'){this.value = '';this.className = 'ipo';}" value="{lang username}" class="ipo ipoS" id="ls_usernames" name="username"></td>
+<!--{else}-->
+<td><input type="text" tabindex="1001" onblur="if(this.value == ''){this.value = '{if getglobal('setting/uidlogin')}UID/{/if}{lang username}/Email';this.className = 'ipo ipoS';}" onfocus="if(this.value == '{if getglobal('setting/uidlogin')}UID/{/if}{lang username}/Email'){this.value = '';this.className = 'ipo';}" value="{if getglobal('setting/uidlogin')}UID/{/if}{lang username}/Email" class="ipo ipoS" id="ls_usernames" name="username"></td>
+<!--{/if}-->
+<td><input type="password" tabindex="1002" onblur="if(this.value == ''){this.value = '******';this.className = 'ipo ipoS';}" onfocus="if(this.value == '******'){this.value = '';this.className = 'ipo';}" value="******" autocomplete="off" class="ipo ipoS" id="ls_passwords" name="password"></td>
+<td><button tabindex="904" class="push" type="submit" id="sqgn" onMouseOver="showMenu({'ctrlid':'sqgn','ctrlclass':'a','duration':2});"><em>{lang login}</em></button></td>
+<td>
+&nbsp;<a class="reg" href="member.php?mod=register"><em>$_G['setting']['reglinkname']</em></a>
+<input style="display:none" type="checkbox" id="ls_cookietimes2" value="2592000" name="cookietime">
+</td>
+</tr>
+<!--{if $this->location == '2'}-->
+<tr>
+<td><div class="bot">
+<label class="ls" for="ls_cookietimes"><input type="checkbox" tabindex="1003" value="2592000" class="pc" id="ls_cookietimes" name="cookietime">{lang login_permanent}</label>
+<a style="margin-left:30px" checked onclick="showWindow('login', 'member.php?mod=logging&amp;action=login&amp;viewlostpw=1')" href="javascript:;">{lang forgotpw}</a>
+</div></td>
+<td>
+
+</td>
+<td></td>
+<td></td>
+</tr>
+<!--{/if}-->
+</tbody>
+</table>
+			<input type="hidden" name="quickforward" value="yes" />
+			<input type="hidden" name="handlekey" value="ls" />
+</form>
+	<!--{if $_G['setting']['pwdsafety']}-->
+		<script type="text/javascript" src="{$_G['setting']['jspath']}md5.js?{VERHASH}" reload="1"></script>
+	<!--{/if}-->
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="sqgn_menu" class="yeei_login_menu" style="display: none;">
+<!--{if $this->location != '2'}-->
+<div class="yeei_login_top">
+<a class="y" onclick="showWindow('login', 'member.php?mod=logging&amp;action=login&amp;viewlostpw=1')" href="javascript:;">{lang forgotpw}</a>
+<label class="ls" for="ls_cookietimes"><input type="checkbox" tabindex="1003" value="2592000" class="pc" id="ls_cookietimes" name="cookietime">{lang login_permanent}</label>
+</div>
+<!--{/if}-->
+<!--{if $this->qqurl || $this->sinaurl || $this->baiduurl || $this->taobaourl || $this->sllurl}-->
+<div class="fast" {if $this->location == '2' } style="border:none;padding-top:3px;}"{/if}>
+<!--{if $this->qqurl}-->
+<a href="$this->qqurl" class="qqurl"></a>
+<!--{/if}-->
+<!--{if $this->sinaurl}-->
+<a href="$this->sinaurl" class="sinaurl"></a>
+<!--{/if}-->
+<!--{if $this->baiduurl}-->
+<a href="$this->baiduurl" class="baiduurl"></a>
+<!--{/if}-->
+<!--{if $this->taobaourl}-->
+<a href="$this->taobaourl" class="taobaourl"></a>
+<!--{/if}-->
+<!--{if $this->sllurl}-->
+<a href="$this->sllurl" class="sllurl"></a>
+<!--{/if}-->
+</div>
+<!--{/if}-->
+</div>
+
+
+
+
+<!--{/block}-->

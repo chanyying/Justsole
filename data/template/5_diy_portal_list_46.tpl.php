@@ -1,0 +1,6 @@
+<?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('list_46');
+block_get('1744,1761,1762');?><?php include template('common/header'); ?><style id="diy_style" type="text/css">#portal_block_1744 {  border:#cccccc 1px solid !important;}#portal_block_1744 .dxb_bc {  margin:0px 10px 10px !important;}</style>
+
+<div id="ct" class="ct2 wp cl">
+<!--[diy=diy1]--><div id="diy1" class="area"><div id="frame3Vv6Yd" class="frame move-span cl frame-1"><div id="frame3Vv6Yd_left" class="column frame-1-c"><div id="frame3Vv6Yd_left_temp" class="move-span temp"></div></div></div><div id="frameOZbuPW" class="frame move-span cl frame-1"><div id="frameOZbuPW_left" class="column frame-1-c"><div id="frameOZbuPW_left_temp" class="move-span temp"></div><?php block_display('1744');?><div id="framewQvC6j" class="frame move-span cl frame-1-1"><div id="framewQvC6j_left" class="column frame-1-1-l"><div id="framewQvC6j_left_temp" class="move-span temp"></div><?php block_display('1761');?></div><div id="framewQvC6j_center" class="column frame-1-1-r"><div id="framewQvC6j_center_temp" class="move-span temp"></div><?php block_display('1762');?></div></div></div></div></div><!--[/diy]-->
+</div><?php include template('common/footer'); ?>

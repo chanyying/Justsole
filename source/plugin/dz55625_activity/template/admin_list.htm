@@ -1,0 +1,45 @@
+<table class="tb tb2 ">
+<tr><th colspan="15" class="partition">{lang dz55625_activity:alistxinxi}</th></tr>
+</table>
+<table class="tb tb2 " style="border-bottom:1px dotted #DEEFFA">
+<tr>
+<td>
+ <form method="post" autocomplete="off" action="$appurl&p=index" name="applyform">
+ <input type="hidden" name="formhash" value="{FORMHASH}" />
+ <input class="keyword" type="text" name="title" value="{lang dz55625_activity:shurujiansuo}" onfocus="if(value=='{lang dz55625_activity:shurujiansuo}') {value='';}this.style.color='#000';" onblur="if (value=='') {value='{lang dz55625_activity:shurujiansuo}';this.style.color='#999';}"  style="height:25px; line-height:25px; margin:0 8px 0 0; padding:0 5px; width:230px; float:left" />
+ <button type="submit" class="btn" style="border:1px #D4D4D4 solid; height:27px; float:left; width:70px; margin:0">{lang dz55625_activity:searchic}</button>
+ </form>
+</td></tr></table> 
+
+<table class="tb tb2 ">
+<tr class="header">
+<th>{lang dz55625_activity:alistbianh}</th><th>{lang dz55625_activity:ahuodongname}</th><th>{lang dz55625_activity:alistfbshi}</th><th>{lang dz55625_activity:alistczuo}</th>
+</tr>
+<div>
+<ul class="tab1">
+		<li class="current"><a href="$appurl"><span>{lang dz55625_activity:alistquanb}</span></a></li>
+        {loop $listclass $k $v}
+        	<li><a href="$appurl&c=$k"><span>$v</span></a></li>
+        {/loop}
+ </ul>
+ </div>
+        
+  {loop $manylist $key $o}
+  <tr class="hover">
+    <td>{echo $key+1+$begin}</td>
+    <td>$o[title]</td>
+    <td>{echo date('y-m-d',$o[dateline])}</td>
+    <td>
+<a href="$appurl&amp;p=edit&amp;id=$o[id]">{lang dz55625_activity:alistbianji}</a> <a href="$appurl&amp;p=del&amp;id=$o[id]" onclick="return confirm('{lang dz55625_activity:alistshanchuok}')">{lang dz55625_activity:alistshanchu}</a><!--{if empty($o[display])}-->
+    <a href="$appurl&p=check&operation=yes&id=$o[id]" style="color:#F00">{lang dz55625_activity:adminshenhe}</a>
+    <!--{else}-->
+    <a href="$appurl&p=check&operation=no&id=$o[id]" style="color:#090">{lang dz55625_activity:adminshenhek}</a>
+    <!--{/if}-->
+    </td>
+
+  </tr>
+  {/loop}
+  
+</table>
+<p>&nbsp;</p>
+<div class="cuspages right"><div class="pg">$pagenav</div></div>

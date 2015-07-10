@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2013-01-06 21:28]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/gbkdz25/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[【好團隊】問答中心]]></item>
+			<item id="identifier"><![CDATA[evinm_wenda]]></item>
+			<item id="description"><![CDATA[目前最專業的問答插件，功能齊全，界面美觀實用。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[evinm_wenda/]]></item>
+			<item id="copyright"><![CDATA[EVIN QQ414285898]]></item>
+			<item id="version"><![CDATA[V2.7.1標準版]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[admin_fenlei]]></item>
+					<item id="menu"><![CDATA[分類設置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[index]]></item>
+					<item id="menu"><![CDATA[問答]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[1]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[xml]]></item>
+					<item id="menu"><![CDATA[數據調用]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[admin_gl]]></item>
+					<item id="menu"><![CDATA[問題管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="4">
+					<item id="name"><![CDATA[haoteam_tips]]></item>
+					<item id="menu"><![CDATA[官方動態]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[10]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[開啟]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isopen]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[啟用系統通知]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isopen_notic]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[選擇懸賞積分]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[points]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[問題logo]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[slogo]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[source/plugin/evinm_wenda/template/images/slogo.png]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[經驗規則]]></item>
+				<item id="description"><![CDATA[提問|回答|最佳]]></item>
+				<item id="variable"><![CDATA[rule]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[1|2|5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[選擇操作獎勵積分]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[czjl]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[積分規則]]></item>
+				<item id="description"><![CDATA[問答中心加積分的規則︰
+提問|回答|最佳答案|提問者的獎勵
+注︰提問者的獎勵 - 即系統對提問者執行選定答案操作的獎勵]]></item>
+				<item id="variable"><![CDATA[rule_jifen]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[2|3|5|3]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[等級]]></item>
+				<item id="description"><![CDATA[等級所需的經驗值，中間以|分隔]]></item>
+				<item id="variable"><![CDATA[lvls]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[5|10|30|50|90|150|250|500|1000|2000|5000|10000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[首頁側邊欄顯示全部二級分類 ...]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[openall]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[首頁推薦-標簽1]]></item>
+				<item id="description"><![CDATA[標簽1要展示的問題ID，格式︰1|2.. 共6個ID，中間以豎線分隔]]></item>
+				<item id="variable"><![CDATA[tab_one]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[56|64|8|9]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[首頁推薦-標簽2]]></item>
+				<item id="description"><![CDATA[標簽2要展示的問題ID，格式︰1|2.. 共6個ID，中間以豎線分隔]]></item>
+				<item id="variable"><![CDATA[tab_two]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[64|8|9]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[首頁推薦-標簽3]]></item>
+				<item id="description"><![CDATA[標簽3要展示的問題ID，格式︰1|2.. 共6個ID，中間以豎線分隔]]></item>
+				<item id="variable"><![CDATA[tab_three]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[7|8|9]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[首頁推薦-配圖]]></item>
+				<item id="description"><![CDATA[三張圖片地址，中間以堅線（|）分隔，建議尺寸︰270*190]]></item>
+				<item id="variable"><![CDATA[tab_img]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[source/plugin/evinm_wenda/template/images/t0136db78aa60b8b04f.jpg|source/plugin/evinm_wenda/template/images/t0199bdba08039ed76c.jpg|source/plugin/evinm_wenda/template/images/t01dd141a401c075a60.jpg]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[懸賞有效期]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[xdays]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[60]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[18]]></item>
+				<item id="title"><![CDATA[專家分類logo]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[fenlei_vip]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[source/plugin/evinm_wenda/template/images/vip_logo.png]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[19]]></item>
+				<item id="title"><![CDATA[專家分類僅限專家回答]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[is_onlyvip]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[20]]></item>
+				<item id="title"><![CDATA[免積分提問用戶組]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mjf_group]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[1]]></item>
+				</item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[21]]></item>
+				<item id="title"><![CDATA[啟用答案出售]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[issale]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[22]]></item>
+				<item id="title"><![CDATA[出售的提問的最低懸賞金額]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[sale_low]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="19">
+				<item id="displayorder"><![CDATA[23]]></item>
+				<item id="title"><![CDATA[售價與賞金的比例]]></item>
+				<item id="description"><![CDATA[20%請填寫20]]></item>
+				<item id="variable"><![CDATA[sbilv]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[20]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="20">
+				<item id="displayorder"><![CDATA[24]]></item>
+				<item id="title"><![CDATA[SEO設置-問答首頁標題]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[seo_index_t]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[問答中心]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="21">
+				<item id="displayorder"><![CDATA[25]]></item>
+				<item id="title"><![CDATA[標題長度]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[slenth]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[40]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="22">
+				<item id="displayorder"><![CDATA[26]]></item>
+				<item id="title"><![CDATA[啟用特定用戶組才能查看答案 ...]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isopentdgroup]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="23">
+				<item id="displayorder"><![CDATA[27]]></item>
+				<item id="title"><![CDATA[選擇權限用戶組]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[tdgroups]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="24">
+				<item id="displayorder"><![CDATA[28]]></item>
+				<item id="title"><![CDATA[開啟分享按鈕]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isopenshare]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="25">
+				<item id="displayorder"><![CDATA[29]]></item>
+				<item id="title"><![CDATA[開啟自定義偽靜態]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[rewrite]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="26">
+				<item id="displayorder"><![CDATA[30]]></item>
+				<item id="title"><![CDATA[開啟提問同步貼子]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[wtttz]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="27">
+				<item id="displayorder"><![CDATA[31]]></item>
+				<item id="title"><![CDATA[同步的版塊]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[tbfid]]></item>
+				<item id="type"><![CDATA[forum]]></item>
+				<item id="value"><![CDATA[36]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="28">
+				<item id="displayorder"><![CDATA[32]]></item>
+				<item id="title"><![CDATA[開啟免登錄提問]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[openmdeltw]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="29">
+				<item id="displayorder"><![CDATA[33]]></item>
+				<item id="title"><![CDATA[提問與回答需審核的用戶組]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[xshup]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[10]]></item>
+				</item>
+			</item>
+			<item id="30">
+				<item id="displayorder"><![CDATA[34]]></item>
+				<item id="title"><![CDATA[匿名提問的顯示名稱]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[nick_nm]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[匿名會員]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="31">
+				<item id="displayorder"><![CDATA[35]]></item>
+				<item id="title"><![CDATA[是否允許會員批量刪除自己題]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isplsc]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="32">
+				<item id="displayorder"><![CDATA[127]]></item>
+				<item id="title"><![CDATA[首頁右側邊欄廣告位]]></item>
+				<item id="description"><![CDATA[width:200px]]></item>
+				<item id="variable"><![CDATA[index_ad1]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<a target="_blank" href="">
+     <img alt="" height="200" width="200" title="" src="source/plugin/evinm_wenda/template/images/t0130b779bc9cef6953.jpg">
+</a>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="33">
+				<item id="displayorder"><![CDATA[127]]></item>
+				<item id="title"><![CDATA[列表頁及內頁側邊廣告位]]></item>
+				<item id="description"><![CDATA[width:200px]]></item>
+				<item id="variable"><![CDATA[list_ad1]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<a target="_blank" href="">
+     <img alt="" height="200" width="200" title="" src="source/plugin/evinm_wenda/template/images/t0130b779bc9cef6953.jpg">
+</a>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="34">
+				<item id="displayorder"><![CDATA[127]]></item>
+				<item id="title"><![CDATA[首頁分類下方廣告位]]></item>
+				<item id="description"><![CDATA[建議在分類較少的情況下在此添加引導圖片或是廣告以填充空白]]></item>
+				<item id="variable"><![CDATA[index_list_bad]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="35">
+				<item id="displayorder"><![CDATA[127]]></item>
+				<item id="title"><![CDATA[問答之星下方廣告位]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[index_ad2]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="36">
+				<item id="displayorder"><![CDATA[127]]></item>
+				<item id="title"><![CDATA[首頁導航下方通欄廣告位]]></item>
+				<item id="description"><![CDATA[寬960px]]></item>
+				<item id="variable"><![CDATA[index_ad3]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="37">
+				<item id="displayorder"><![CDATA[127]]></item>
+				<item id="title"><![CDATA[首頁最下方通欄廣告位]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[index_ad4]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

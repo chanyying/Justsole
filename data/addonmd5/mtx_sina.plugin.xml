@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[mtx_sina.plugin]]></item>
+	<item id="RevisionID"><![CDATA[15134]]></item>
+	<item id="SN"><![CDATA[2013042413Blbf3J0EZ0]]></item>
+	<item id="RevisionDateline"><![CDATA[1366268987]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_mtx_sina_SC_GBK.xml"><![CDATA[7dd224b9658944a691d2c8cdcb93f031]]></item>
+		<item id="/discuz_plugin_mtx_sina_SC_UTF8.xml"><![CDATA[a07d1ec3855e61ca80db23ecec496dd0]]></item>
+		<item id="/img/icon_off.gif"><![CDATA[bc1697b7973c91ef69c2307342a35881]]></item>
+		<item id="/img/sina_logo_1.png"><![CDATA[e44dacc0eb0d312b26e60a7e6d4b4ba6]]></item>
+		<item id="/img/Thumbs.db"><![CDATA[4a4e13da00bce99b2d1a06a1c2b270f6]]></item>
+		<item id="/img/weibo_bind.png"><![CDATA[3f4ba4594ee3415d06e26aacd51e4c84]]></item>
+		<item id="/img/weibo_login.png"><![CDATA[5dec338db9be1284e45d294e7be55413]]></item>
+		<item id="/install.php"><![CDATA[dfb4b51e9412d6b62ff5dd02ec62e459]]></item>
+		<item id="/sinaapi/saetv2.ex.class.php"><![CDATA[0817affe527ff1a3064c0f5741289e30]]></item>
+		<item id="/sinabind.inc.php"><![CDATA[49d4449a006ee8b2f69c8e2254677a58]]></item>
+		<item id="/sinalogin.class.php"><![CDATA[834366b1d58de49433aca976e274a2b5]]></item>
+		<item id="/table/table_mtx_sina_bind.php"><![CDATA[5ef1ae75f2be0fca5f6a986fbc73a505]]></item>
+		<item id="/table/table_mtx_sina_bind_thread.php"><![CDATA[8b5cc07e00c8b5d446e894b953d59d5d]]></item>
+		<item id="/template/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+		<item id="/template/sinabind.htm"><![CDATA[4992644d62de196a434c18e523c53206]]></item>
+		<item id="/unstall.php"><![CDATA[e8d9f2838d1219e51aad7a1a92b80a1c]]></item>
+	</item>
+</root>

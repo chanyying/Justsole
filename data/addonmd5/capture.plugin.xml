@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[capture.plugin]]></item>
+	<item id="RevisionID"><![CDATA[15824]]></item>
+	<item id="SN"><![CDATA[2013050618nIgaNIb3iI]]></item>
+	<item id="RevisionDateline"><![CDATA[1367819290]]></item>
+	<item id="Data">
+		<item id="/capture.class.php"><![CDATA[9f26c0afa2a31b4531649f074eebec21]]></item>
+		<item id="/capture.inc.php"><![CDATA[e15545286fb04bcce3b82b6dc4c4fbcc]]></item>
+		<item id="/discuz_plugin_capture_SC_GBK.xml"><![CDATA[331a4b4eef87f2e3fcaa46b8cd11dfc3]]></item>
+		<item id="/discuz_plugin_capture_SC_UTF8.xml"><![CDATA[f5eaccb1a3072290c151a4cedd12533d]]></item>
+		<item id="/discuz_plugin_capture_TC_BIG5.xml"><![CDATA[1ea7dd38a1bbcaf05925cb93fd27200e]]></item>
+		<item id="/discuz_plugin_capture_TC_UTF8.xml"><![CDATA[f3423578ebf02ab20e9516a71d56260a]]></item>
+		<item id="/images/addcc_03.gif"><![CDATA[3dbfd9c715bf993414617c3314b487c4]]></item>
+		<item id="/images/addcc_ok0.gif"><![CDATA[a9dea946b440bf8c52be80fe00a1377e]]></item>
+		<item id="/images/addcc_ok01.gif"><![CDATA[a9dea946b440bf8c52be80fe00a1377e]]></item>
+		<item id="/images/addcc_ok1.gif"><![CDATA[8182878b544d1ba0de552877cd12bb56]]></item>
+		<item id="/images/getpic_ico.png"><![CDATA[e579c106e5a9117ac602b3da07316f62]]></item>
+		<item id="/images/logo_pin.gif"><![CDATA[4fef088ccb74829bc45b53fa19056d6a]]></item>
+		<item id="/images/pin.png"><![CDATA[c9ab41cf87e92e8703f2ce46e9269e16]]></item>
+		<item id="/images/pinCheck.gif"><![CDATA[55ee346a79eac50093ff5f23936bb58e]]></item>
+		<item id="/images/pintopbar.gif"><![CDATA[990ea36fd362110df057cd3aa09371aa]]></item>
+		<item id="/images/pin_220x250.png"><![CDATA[8ab30f9b1f9c22edfa51c3e498e5d226]]></item>
+		<item id="/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/indtall.php"><![CDATA[8a737f3a721ef5f80a855c7b46489bf0]]></item>
+		<item id="/js/im.ping.js"><![CDATA[db778e4dc8b21956b26076903795eb4a]]></item>
+		<item id="/template/capture.htm"><![CDATA[9cf7c1f1015353372977d3a0a6f4ecef]]></item>
+		<item id="/uninstall.php"><![CDATA[33e71e73e5f79341a81ecfb7d707c147]]></item>
+	</item>
+</root>

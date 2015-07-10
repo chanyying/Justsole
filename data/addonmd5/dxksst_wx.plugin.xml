@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[dxksst_wx.plugin]]></item>
+	<item id="RevisionID"><![CDATA[19153]]></item>
+	<item id="SN"><![CDATA[20130719191w87Q139hS]]></item>
+	<item id="RevisionDateline"><![CDATA[1372412082]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_dxksst_wx_SC_GBK.xml"><![CDATA[39734c093532083ae71181b8e0f45451]]></item>
+		<item id="/discuz_plugin_dxksst_wx_SC_UTF8.xml"><![CDATA[8ef7e31f446cd987a44dad5ea7a578b4]]></item>
+		<item id="/discuz_plugin_dxksst_wx_TC_BIG5.xml"><![CDATA[4df161fb95ddb9ef82ebd2ca5b279b0d]]></item>
+		<item id="/discuz_plugin_dxksst_wx_TC_UTF8.xml"><![CDATA[10a720bb4158588b647cf36285e8d019]]></item>
+		<item id="/do.inc.php"><![CDATA[436f8968437440d4ee36aee658680613]]></item>
+		<item id="/dxksst.inc.php"><![CDATA[79b139d14b3b69be39e44217d5b07cfa]]></item>
+		<item id="/help.inc.php"><![CDATA[6ac462ad321f6e8a0fe410b605eb6079]]></item>
+		<item id="/images/close.png"><![CDATA[304772ce66b3503beb584b2c0d8e2cfa]]></item>
+		<item id="/images/erweima.jpg"><![CDATA[41f4048c9615c469e3ca9a7e89942f95]]></item>
+		<item id="/images/main.png"><![CDATA[a0822fe6c2a1b80609ac5602923fadd7]]></item>
+		<item id="/images/submit.png"><![CDATA[6097193bb81c8e09afaa067f14437e4c]]></item>
+		<item id="/images/wx_login.png"><![CDATA[dcfedaf3ab90cea9b49c0561b102bb6a]]></item>
+		<item id="/install.php"><![CDATA[c726fb209005760dc9efc2a3a4a4a0aa]]></item>
+		<item id="/login.inc.php"><![CDATA[c58d370dcf9e15f7ad556bc6001066f8]]></item>
+		<item id="/login_in.inc.php"><![CDATA[39ebcc91dbc0a407babdf2cc0d4343c7]]></item>
+		<item id="/response.php"><![CDATA[b2e51eb40b67a40a016a3b373d5a4689]]></item>
+		<item id="/template/login.htm"><![CDATA[0f467f5595014c45c0d3a01153307c1e]]></item>
+		<item id="/template/to_login.htm"><![CDATA[2fbedf211b013df9e6cc6130b0f43da1]]></item>
+		<item id="/template/weixin.htm"><![CDATA[4bc41766d912e296ba86c861e08f9a05]]></item>
+		<item id="/uninstall.php"><![CDATA[ef2efded4e5992110906aab9781cdc41]]></item>
+		<item id="/upload.inc.php"><![CDATA[44d665fd1d23a09de5fe4256bdb0f3f0]]></item>
+		<item id="/weixin.class.php"><![CDATA[79d985eae4973c98480a3e9a81653033]]></item>
+		<item id="/weixin.inc.php"><![CDATA[0b73010da6e82d85ada1b6ca9321379b]]></item>
+	</item>
+</root>

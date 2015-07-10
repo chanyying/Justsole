@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[php_source_lrbaidu.plugin]]></item>
+	<item id="RevisionID"><![CDATA[4963]]></item>
+	<item id="SN"><![CDATA[2013041400U67DPZvd2U]]></item>
+	<item id="RevisionDateline"><![CDATA[1346652175]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_php_source_lrbaidu_SC_GBK.xml"><![CDATA[d4cb035a66fa49e594dca57cd3f28cdf]]></item>
+		<item id="/discuz_plugin_php_source_lrbaidu_SC_UTF8.xml"><![CDATA[a0d9ce63d15da06200c0b67bf04a6ce1]]></item>
+		<item id="/discuz_plugin_php_source_lrbaidu_TC_BIG5.xml"><![CDATA[469304afd9c2a474563bafe691c9d293]]></item>
+		<item id="/discuz_plugin_php_source_lrbaidu_TC_UTF8.xml"><![CDATA[273392cf5917e6427b6cd14dde286eb7]]></item>
+		<item id="/lrbaidu.class.php"><![CDATA[e0add7956317fd6aba294f83ecb42926]]></item>
+		<item id="/template/bshare.htm"><![CDATA[9c4ad2b9958eb444333309c76d59d2e6]]></item>
+	</item>
+</root>

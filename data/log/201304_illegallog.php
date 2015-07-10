@@ -1,0 +1,13 @@
+<?PHP exit;?>	1365691157	admin	12***6	Ques #0	127.0.0.1
+<?PHP exit;?>	1365742999	涵镛少年	12***6	Ques #0	127.0.0.1
+<?PHP exit;?>	1366041351	chanyying	12***6	Ques #0	125.46.141.240
+<?PHP exit;?>	1366086503	justsole	940***14	Ques #0	125.46.141.240
+<?PHP exit;?>	1366086520	justsole	940***14	Ques #0	125.46.141.240
+<?PHP exit;?>	1366086533	justsole	CY19***2HY	Ques #0	125.46.141.240
+<?PHP exit;?>	1366209543	chanyy5g	14***69	Ques #0	123.14.54.243
+<?PHP exit;?>	1366542522	chanyying	147****9	Ques #0	218.28.138.250
+<?PHP exit;?>	1366784312	用户名	******	Ques #0	123.6.233.40
+<?PHP exit;?>	1366797253	chanyying	dad***da	Ques #0	218.28.138.250
+<?PHP exit;?>	1366983495	用户名	******	Ques #0	221.7.133.100
+<?PHP exit;?>	1366983514	ccccc	12***6	Ques #0	221.7.133.100
+<?PHP exit;?>	1367241157	chanyying	******	Ques #0	222.137.150.62

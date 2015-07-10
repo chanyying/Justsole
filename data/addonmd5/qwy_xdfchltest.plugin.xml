@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[qwy_xdfchltest.plugin]]></item>
+	<item id="RevisionID"><![CDATA[14163]]></item>
+	<item id="SN"><![CDATA[2013041612CAbSVchhaH]]></item>
+	<item id="RevisionDateline"><![CDATA[1364881578]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_qwy_xdfchltest_SC_GBK.xml"><![CDATA[86a047f5e07443a743d9ba8adf57c321]]></item>
+		<item id="/discuz_plugin_qwy_xdfchltest_SC_UTF8.xml"><![CDATA[6bc4bf58861b45ee5485b9dd2cd3e472]]></item>
+		<item id="/install.php"><![CDATA[ddc1e792d6aab0cc9913762edc613344]]></item>
+		<item id="/qwy_xdfchltest.inc.php"><![CDATA[7504354b59d88e3d6a6fef52df0933af]]></item>
+		<item id="/template/index.htm"><![CDATA[605bf9e2ae45687de116cbd7fe75913c]]></item>
+		<item id="/template/submit.htm"><![CDATA[b86ab09dc3440f4499c49d793d2666cc]]></item>
+	</item>
+</root>

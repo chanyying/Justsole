@@ -1,0 +1,18 @@
+<!--{subtemplate common/header}-->
+<link id="style_css" rel="stylesheet" type="text/css" href="static/topic/t1/style.css">
+<style id="diy_style" type="text/css">#frame1 { border:#ffffff 0px !important;}#frame3IZYUJ { border:#ffffff 0px none !important;}#frame7t874N { background-color:transparent !important;background-image:none !important;border:transparent !important;}</style>
+<div id="widgets">
+</div>
+<div class="wp">
+<!--[diy=diypage]--><div id="diypage" class="area"><div id="frame1" class=" frame move-span frame-1 cl"><div id="frame1_left" class="column frame-1-c"><div id="frame1_left_temp" class="move-span temp"></div><!--{block/714}--></div></div><div id="frame3IZYUJ" class=" frame move-span cl frame-3-1"><div id="frame3IZYUJ_left" class="column frame-3-1-l"><div id="frame3IZYUJ_left_temp" class="move-span temp"></div><!--{block/715}--><!--{block/716}--><!--{block/717}--></div><div id="frame3IZYUJ_center" class="column frame-3-1-r"><div id="frame3IZYUJ_center_temp" class="move-span temp"></div><div id="frame7t874N" class=" frame move-span cl frame-1"><div id="frame7t874N_left" class="column frame-1-c"><div id="frame7t874N_left_temp" class="move-span temp"></div></div></div><!--{block/835}--><!--{block/837}--></div></div></div><!--[/diy]-->
+<!--{if $topic['allowcomment']==1}-->
+	{eval
+		$data = &$topic;
+		$common_url = "portal.php?mod=comment&id=$topicid&idtype=topicid";
+		$form_url = "portal.php?mod=portalcp&ac=comment";
+		$commentlist = portaltopicgetcomment($topicid);	}
+	<!--{template portal/portal_comment}-->
+<!--{/if}-->
+</div>
+
+<!--{subtemplate common/footer}-->

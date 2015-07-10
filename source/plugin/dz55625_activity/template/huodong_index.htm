@@ -1,0 +1,116 @@
+{template common/header}
+<link rel="stylesheet" type="text/css" href="source/plugin/dz55625_activity/images/body.css" />
+<!--{if !$_G[gp_mod]}-->
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<div class="dzactivity cl">
+
+    <div id="pt" class="bm cl" style="width:960px; float:left;">
+        <div class="z">
+            <a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em><a href="forum.php"{if $_G['setting']['forumjump']} id="fjump" onmouseover="delayShow(this, 'showForummenu($_G[fid])');" class="showmenu" {/if}>{$_G[setting][navs][2][navname]}</a><em>&raquo;</em>{lang dz55625_activity:addhuodong}
+        </div>
+    </div>
+    
+    <div class="wp cl">
+        <div class="dzclass z">
+            <ul class="cl">
+                <li><strong><a href="$appurl">{lang dz55625_activity:indexleixing}</a></strong></li>
+                {loop $listclass $k $v}
+                <li><a href="$appurl&c=$k"{$av_ds[$k]}>$v<em>({echo classnum($k)})</em></a></li>
+                {/loop} 
+            </ul>
+            <ul class="cl">
+           	  	<li><strong><a href="$appurl">{lang dz55625_activity:indextime}</a></strong></li>
+                {loop $montharray $i $d}
+                <li><a href="$appurl&s=$i">{echo date('m{lang dz55625_activity:indexyues}',$d)}<em>({echo monthnum($i)})</em></a></li>
+                {/loop}
+            </ul> 
+            
+            <ul class="cl">
+           	  	<li><strong><a href="$appurl">{lang dz55625_activity:alistquanb}</a></strong></li>
+                <li><a href="$appurl&types=1">{lang dz55625_activity:indexmianf}</a></li>
+                <li><a href="$appurl&types=2">{lang dz55625_activity:indexsfeis}</a></li>
+				<li><a href="$appurl&px=d">{lang dz55625_activity:indexsjdxx}</a></li>
+                <li><a href="$appurl&types=3">{lang dz55625_activity:indexcyrens}</a></li>
+            </ul>                
+        </div>
+        <div class="dzadd y">
+            <ul>
+                <li><a href="plugin.php?id=dz55625_activity:huodong&mod=add" id="addhd">{lang dz55625_activity:addhuodongf}</a></li>
+                <li><a href="plugin.php?id=dz55625_activity:huodong_user" id="adminhd">{lang dz55625_activity:indexhadmin}</a></li>		
+            </ul>
+        </div>
+    </div>
+    
+    <div class="dzlists cl">
+       <ul>
+       <!--{if $mythreads}-->           
+    	  {loop $mythreads $key $mythread}
+          	<dl>
+            	<dt><a href="$curl{$mythread[id]}"><img src="{$mythread[img]}" width="290" height="180" /><p class="endtime showtime" value="{$mythread[jtime]}"></p></a></dt>
+                <dd>
+                    <p class="H_title"><a href="$curl{$mythread[id]}">{$mythread[title]}</a></p>
+                    <p class="H_sumber">
+                    	<strong>{lang dz55625_activity:indexhleixing}{$listclass[$mythread[did]]}</strong>
+                    	<span><a>{$mythread[nember]}</a> {lang dz55625_activity:indexbaoming}</span>
+                        <!--{if ($mythread[jtime]-time())>=0}--><img src="source/plugin/dz55625_activity/images/jxIco.png" /><!--{else}--><img src="source/plugin/dz55625_activity/images/jsIco.png" /><!--{/if}-->
+                    </p>
+                </dd>
+            </dl>
+          {/loop} 
+          <!--{else}-->
+          	<ol>{lang dz55625_activity:indexzwhd}</ol> 
+          <!--{/if}--> 
+       </ul>
+    </div>
+    {$multis}
+<script type="text/javascript">
+	var jq = jQuery.noConflict(); 
+var serverTime = <?php echo time();?> * 1000;
+jq(function(){
+    var dateTime = new Date();
+    var difference = dateTime.getTime() - serverTime;
+	
+    setInterval(function(){
+      jq(".endtime").each(function(){
+        var obj = jq(this);
+        var endTime = new Date(parseInt(obj.attr('value')) * 1000);
+        var nowTime = new Date();
+        var nMS=endTime.getTime() - nowTime.getTime() + difference;
+        var myD=Math.floor(nMS/(1000 * 60 * 60 * 24));
+        var myH=Math.floor(nMS/(1000*60*60)) % 24;
+        var myM=Math.floor(nMS/(1000*60)) % 60;
+        var myS=Math.floor(nMS/1000) % 60;
+        var myMS=Math.floor(nMS/100) % 10;
+        if(myD>= 0){
+			var str = "{lang dz55625_activity:jssytime}"+myD+"{lang dz55625_activity:jstian}"+myH+"{lang dz55625_activity:jsxiaoshi}"+myM+"{lang dz55625_activity:jsfenz}"+myS+"."+myMS+"{lang dz55625_activity:jsmiao}";
+        }else{
+			var str = "{lang dz55625_activity:jsover}";	
+		}
+		obj.html(str);
+      });
+    }, 100);
+
+jq(".dzlists dt a img").each(function(){
+		var img = jq(this);
+		img.hover(function(){
+			img.next().show();
+		},function(){
+			img.next().hide();
+		});
+	});
+});
+</script>
+
+</div>
+
+
+<!--{elseif $_G[gp_mod] == 'add'}-->
+		<!--{template dz55625_activity:huodong_add}-->
+<!--{elseif $_G[gp_mod] == 'view'}-->
+	<!--{template dz55625_activity:huodong_view}-->
+<!--{/if}-->
+
+{template common/footer}

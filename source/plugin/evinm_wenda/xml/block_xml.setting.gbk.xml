@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Block]]></item>
+	<item id="Data">
+		<item id="version"><![CDATA[X2.5]]></item>
+		<item id="name"><![CDATA[问答中心]]></item>
+		<item id="fields">
+			<item id="url">
+				<item id="name"><![CDATA[链接地址]]></item>
+				<item id="formtype"><![CDATA[text]]></item>
+				<item id="datatype"><![CDATA[string]]></item>
+			</item>
+			<item id="title">
+				<item id="name"><![CDATA[标题]]></item>
+				<item id="formtype"><![CDATA[title]]></item>
+				<item id="datatype"><![CDATA[title]]></item>
+			</item>
+			<item id="pic">
+				<item id="name"><![CDATA[图片]]></item>
+				<item id="formtype"><![CDATA[pic]]></item>
+				<item id="datatype"><![CDATA[pic]]></item>
+			</item>
+			<item id="author">
+				<item id="name"><![CDATA[作者]]></item>
+				<item id="formtype"><![CDATA[text]]></item>
+				<item id="datatype"><![CDATA[string]]></item>
+			</item>
+			<item id="authorid">
+				<item id="name"><![CDATA[作者ID]]></item>
+				<item id="formtype"><![CDATA[text]]></item>
+				<item id="datatype"><![CDATA[int]]></item>
+			</item>
+			<item id="stat">
+				<item id="name"><![CDATA[状态]]></item>
+				<item id="formtype"><![CDATA[text]]></item>
+				<item id="datatype"><![CDATA[string]]></item>
+			</item>
+			<item id="hot">
+				<item id="name"><![CDATA[回答数]]></item>
+				<item id="formtype"><![CDATA[text]]></item>
+				<item id="datatype"><![CDATA[int]]></item>
+			</item>
+			<item id="coin">
+				<item id="name"><![CDATA[悬赏金额]]></item>
+				<item id="formtype"><![CDATA[text]]></item>
+				<item id="datatype"><![CDATA[int]]></item>
+			</item>
+			<item id="summary">
+				<item id="name"><![CDATA[问题内容]]></item>
+				<item id="formtype"><![CDATA[text]]></item>
+				<item id="datatype"><![CDATA[string]]></item>
+			</item>
+		</item>
+		<item id="getsetting">
+			<item id="qids">
+				<item id="title"><![CDATA[指定问题]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="default"><![CDATA[]]></item>
+			</item>
+			<item id="stat">
+				<item id="title"><![CDATA[问题状态]]></item>
+				<item id="type"><![CDATA[mcheckbox]]></item>
+				<item id="value">
+					<item id="0">
+						<item id="0"><![CDATA[0]]></item>
+						<item id="1"><![CDATA[全部]]></item>
+					</item>
+					<item id="1">
+						<item id="0"><![CDATA[1]]></item>
+						<item id="1"><![CDATA[已解决]]></item>
+					</item>
+					<item id="2">
+						<item id="0"><![CDATA[2]]></item>
+						<item id="1"><![CDATA[未解决]]></item>
+					</item>
+				</item>
+				<item id="default"><![CDATA[]]></item>
+			</item>
+			<item id="order">
+				<item id="title"><![CDATA[排序方式]]></item>
+				<item id="type"><![CDATA[mradio]]></item>
+				<item id="value">
+					<item id="0">
+						<item id="0"><![CDATA[0]]></item>
+						<item id="1"><![CDATA[按回答数倒叙]]></item>
+					</item>
+					<item id="1">
+						<item id="0"><![CDATA[1]]></item>
+						<item id="1"><![CDATA[按发布时间倒序]]></item>
+					</item>
+					<item id="2">
+						<item id="0"><![CDATA[2]]></item>
+						<item id="1"><![CDATA[按悬赏金额倒序]]></item>
+					</item>
+				</item>
+				<item id="default"><![CDATA[0]]></item>
+			</item>
+			<item id="start">
+				<item id="title"><![CDATA[起始数据行数]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="default"><![CDATA[0]]></item>
+			</item>
+			<item id="width">
+				<item id="title"><![CDATA[图片宽度]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="default"><![CDATA[140]]></item>
+			</item>
+			<item id="height">
+				<item id="title"><![CDATA[图片高度]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="default"><![CDATA[140]]></item>
+			</item>
+		</item>
+		<item id="style">
+			<item id="0">
+				<item id="name"><![CDATA[问答模版-标题]]></item>
+				<item id="template"><![CDATA[<div class="module cl xl xl1">
+<ul>
+[loop]
+<li><a href="{url}" title="{title}"{target}>{title}</a></li>
+[/loop]
+</ul>
+</div>]]></item>
+			</item>
+		</item>
+	</item>
+</root>

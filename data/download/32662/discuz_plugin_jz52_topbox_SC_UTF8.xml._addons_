@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3,X3.1]]></item>
+	<item id="Time"><![CDATA[2014-03-26 13:10]]></item>
+	<item id="From"><![CDATA[极致站长资源模版插件测试 (http://127.0.0.1/1/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[极致 边栏魔方]]></item>
+			<item id="identifier"><![CDATA[jz52_topbox]]></item>
+			<item id="description"><![CDATA[超级强大的边栏工具条（返回顶部）多种配色
+功能齐全 可任意设置某个功能是否显示 更多功能持续加入中 注意：IE6下不支持个人中心 手机访问二维码 分享 三个选项卡 ...]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[jz52_topbox/]]></item>
+			<item id="copyright"><![CDATA[极致站长资源论坛（www.jz52.com）]]></item>
+			<item id="version"><![CDATA[1.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[addon]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[更多插件]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[jz52_topbox]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[方块风格选择]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_temp]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[6]]></item>
+				<item id="extra"><![CDATA[1 = 典雅白
+2 = Metro 青灰
+3 = 典雅灰
+4 = 万花筒
+5 = 类360风格
+6 = Metro 淡蓝
+7 = 类贴吧风格]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[是否显示上下页]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_ln]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[是否显示发布主题]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_fbztkg]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[是否显示收藏帖子]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_sctz]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[是否显示收藏板块]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_scbk]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[是否显示联系我们]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_kf]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[联系我们地址]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_kfurl]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[forum.php?mod=forumdisplay&fid=42]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[是否显示分享]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_fenxiang]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[分享代码]]></item>
+				<item id="description"><![CDATA[百度分享的代码
+不建议乱搞 很蛋疼]]></item>
+				<item id="variable"><![CDATA[jz52_fenxidm]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<h3>分享到：</h3>
+<div class="bdsharebuttonbox" data-tag="share_2">
+<a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone">QQ空间</a>
+<a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina">新浪微博</a>
+<a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq">腾讯微博</a>
+<a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren">人人网</a>
+<a title="分享到腾讯朋友" href="#" class="bds_tqf" data-cmd="tqf">腾讯朋友</a>
+<a title="分享到百度贴吧" href="#" class="bds_tieba" data-cmd="tieba">百度贴吧</a>
+<a title="分享到QQ好友" href="#" class="bds_sqq" data-cmd="sqq">QQ好友</a>
+<a title="分享到百度空间" href="#" class="bds_hi" data-cmd="hi">百度空间</a>
+<a title="分享到我的搜狐" href="#" class="bds_isohu" data-cmd="isohu">我的搜狐</a>
+<a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin">微信</a>
+<a title="分享到网易微博" href="#" class="bds_t163" data-cmd="t163">网易微博</a>
+<a title="分享到搜狐微博" href="#" class="bds_tsohu" data-cmd="tsohu">搜狐微博</a>
+<a title="分享到百度搜藏" href="#" class="bds_baidu" data-cmd="baidu">百度搜藏</a>
+<a title="分享到QQ收藏" href="#" class="bds_qq" data-cmd="qq">QQ收藏</a>
+</div>
+<script>
+with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[是否显示手机二维码]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_qr]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[手机访问代码]]></item>
+				<item id="description"><![CDATA[手机访问左拉框内代码]]></item>
+				<item id="variable"><![CDATA[jz52_qrimg]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<img src="source/plugin/jz52_topbox/template/qr.png" width="228" height="228" />
+<p>打开手机扫描上面的二维码</p>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[是否宽屏模版]]></item>
+				<item id="description"><![CDATA[用来计算工具条位置 自由切换宽窄的模版选择是]]></item>
+				<item id="variable"><![CDATA[jz52_thew]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[模版宽度]]></item>
+				<item id="description"><![CDATA[针对窄版 discuz默认的宽度是960]]></item>
+				<item id="variable"><![CDATA[jz52_mw]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[960]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[是否显示个人中心]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_grzx]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[是否显示QQ群]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_qqqan]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[15]]></item>
+				<item id="title"><![CDATA[QQ群列表游客是否可看]]></item>
+				<item id="description"><![CDATA[这里指的是点击qq群方块后出来的浮窗]]></item>
+				<item id="variable"><![CDATA[jz52_openlist]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[16]]></item>
+				<item id="title"><![CDATA[QQ群列表]]></item>
+				<item id="description"><![CDATA[输入规则：
+分类:群名:群号:idkey
+一个群一行
+idkey获取地址：http://shang.qq.com/widget/group.php
+如果不输入idkey 会显示复制加群反之会显示点击加群]]></item>
+				<item id="variable"><![CDATA[jz52_qqgrouplist]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[极致站长资源群:极致站长资源:248143612:e1cd4ba757643831d6d4acf9366d54b0fbdc58b20f70ce937f2620623a314854
+极致站长资源群:极致站长资源:238148290:bb54bee7239e061cb2d9c7d28fe8230a030e4adb5b2db82b4764a5517df1df6a
+极致站长资源群:这样显示复制:123456:
+极致站长资源群:这样显示点击:108135321:1ae7b1b55a9788e6913bc2ef84dddfdf942383b107521d003d35d43a5c6531ee]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[QQ群说明]]></item>
+				<item id="description"><![CDATA[显示在浮窗下方的文字]]></item>
+				<item id="variable"><![CDATA[jz52_qqgroupsm]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[一群已满 请加二群 广告秒T 进群口令：已加入肯德基豪华午餐]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[18]]></item>
+				<item id="title"><![CDATA[是否显示加群二维码]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_qqqqrkg]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="19">
+				<item id="displayorder"><![CDATA[19]]></item>
+				<item id="title"><![CDATA[是否显示自定义按钮]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_zdy]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="20">
+				<item id="displayorder"><![CDATA[20]]></item>
+				<item id="title"><![CDATA[自定义按钮代码]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_zdybt]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<a href="http://www.jz52.com/" title="这是一个自定义按钮" class="jzzdy" target="_blank" ><b>这是一个自定义按钮</b></a>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="21">
+				<item id="displayorder"><![CDATA[21]]></item>
+				<item id="title"><![CDATA[个人中心背景颜色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_grzxbjs]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#0079b8]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="22">
+				<item id="displayorder"><![CDATA[22]]></item>
+				<item id="title"><![CDATA[个人中心背景风格]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jz52_grzxbjthe]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[1 = 无
+2 = 星空
+3 = 铁轨
+4 = 女孩
+5 = 站台]]></item>
+			</item>
+			<item id="23">
+				<item id="displayorder"><![CDATA[23]]></item>
+				<item id="title"><![CDATA[uc_server目录]]></item>
+				<item id="description"><![CDATA[uc_server安装目录默认为uc_server
+本设置适用于uc未在默认目录情况]]></item>
+				<item id="variable"><![CDATA[jz52_uc]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[uc_server]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="jz_qqqnoyk"><![CDATA[您还没有登录，无法查看本站QQ群]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="jz_sgzt"><![CDATA[上个主题]]></item>
+				<item id="jz_xgzt"><![CDATA[下个主题]]></item>
+				<item id="jz_rysc"><![CDATA[人已收藏]]></item>
+				<item id="jz_sctz"><![CDATA[收藏帖子]]></item>
+				<item id="jz_scbk"><![CDATA[收藏板块]]></item>
+				<item id="jz_fhsy"><![CDATA[返回首页]]></item>
+				<item id="jz_lxwm"><![CDATA[联系我们]]></item>
+				<item id="jz_gfqqq"><![CDATA[官方QQ群]]></item>
+				<item id="jz_fenx"><![CDATA[分享]]></item>
+				<item id="jz_grzx"><![CDATA[个人中心]]></item>
+				<item id="jz_dlzc"><![CDATA[登录或注册]]></item>
+				<item id="jz_djjr"><![CDATA[点击加入群]]></item>
+				<item id="jz_djfz"><![CDATA[点击复制号码]]></item>
+				<item id="jz_fzcg"><![CDATA[复制成功]]></item>
+				<item id="jz_noqqq"><![CDATA[还没有任何QQ群展示]]></item>
+				<item id="jz_qqqqr"><![CDATA[手机扫描二维码 快速加群]]></item>
+				<item id="jz_fbzt"><![CDATA[发布主题]]></item>
+			</item>
+		</item>
+	</item>
+</root>

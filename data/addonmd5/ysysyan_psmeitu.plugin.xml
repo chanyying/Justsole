@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[ysysyan_psmeitu.plugin]]></item>
+	<item id="RevisionID"><![CDATA[211]]></item>
+	<item id="SN"><![CDATA[2013042516scbUsHNZFM]]></item>
+	<item id="RevisionDateline"><![CDATA[1363596832]]></item>
+	<item id="Data">
+		<item id="/addon.inc.php"><![CDATA[731265a5a9707bd638c00b95cc6cfbaa]]></item>
+		<item id="/agreement.inc.php"><![CDATA[e1684e58252be9bd2e52c26fc3382f75]]></item>
+		<item id="/bbs.inc.php"><![CDATA[09f88968ccac6e5423a81f29c41c59ee]]></item>
+		<item id="/discuz_plugin_ysysyan_psmeitu_SC_GBK.xml"><![CDATA[48b8c7e2cf9aac7f9bc3b4c980bfb308]]></item>
+		<item id="/discuz_plugin_ysysyan_psmeitu_SC_UTF8.xml"><![CDATA[a7204835b2cc791d449c22d15ff28bbd]]></item>
+		<item id="/discuz_plugin_ysysyan_psmeitu_TC_BIG5.xml"><![CDATA[e17150112fccf2d969f360efb2d386c3]]></item>
+		<item id="/discuz_plugin_ysysyan_psmeitu_TC_UTF8.xml"><![CDATA[27a06ecd17cf9b0ae2cd97b77be2b3c8]]></item>
+		<item id="/install.php"><![CDATA[2cb5586fda89b69d8b06e10392540b60]]></item>
+		<item id="/template/1.htm"><![CDATA[5e01fdc5f4f48c6253bf275b3352fb4d]]></item>
+		<item id="/template/2.htm"><![CDATA[11377070e80b91ddfdeeea71d9136f06]]></item>
+		<item id="/template/addon.htm"><![CDATA[c7ef39890a1c8e01cf79ec6a0788cddc]]></item>
+		<item id="/template/agreement.htm"><![CDATA[bcdc6b8977795a9f2702ce4d7a440d84]]></item>
+		<item id="/template/bbs.htm"><![CDATA[5e15f122906070b1cde8afecb1952493]]></item>
+		<item id="/template/css.css"><![CDATA[9e995a64c3b29f06794ae51201a5caae]]></item>
+		<item id="/template/index.htm"><![CDATA[f3fab6bc5a6b17e3afa37e8765f5916e]]></item>
+		<item id="/template/logo.gif"><![CDATA[ed24a0be1ac0efc3521afb3020e89552]]></item>
+		<item id="/template/qvod.htm"><![CDATA[7035371d6b9709bdd9b4314c4b2c6f85]]></item>
+		<item id="/template/ysysyan_psmeitu.htm"><![CDATA[f931084f52873130e1b921b179343be8]]></item>
+		<item id="/validator.xml"><![CDATA[943764924182be7094e52fc48a495ce1]]></item>
+		<item id="/ysysyan_psmeitu.inc.php"><![CDATA[4ceea11e700eaf9f4a122dc316ac681d]]></item>
+	</item>
+</root>

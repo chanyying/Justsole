@@ -1,0 +1,101 @@
+ <!--{if  empty($_G['disabledwidthauto']) && $_G['setting']['switchwidthauto']}-->
+ <style type="text/css">
+	#hd {width:960px; margin:0 auto;}	
+ </style>
+ <!--{/if}-->
+ <style type="text/css">
+	.grid-3 {width:100% !important;}
+	<!--{if $config['openall'] == 1}-->
+	.mod-cate .item li {width:45%;}
+	<!--{/if}-->
+ </style>
+ <div id="header">
+            <div class="search clearfix" style="float:none;padding-left:0;">
+                <div class="logo" style="background:url($config[slogo]) no-repeat;">
+                    <a href="<!--{if $rewrite == '1'}-->wenda/ <!--{else}--> plugin.php?id=evinm_wenda:index  <!--{/if}-->">
+						问答中心
+                    </a>
+                </div>
+                <form class="sh-form" action="<!--{if $rewrite == '1'}-->wenda/search.html<!--{else}--> plugin.php?id=evinm_wenda:search<!--{/if}-->" method="post">
+                    <div class="ipt-sh">
+                        <input maxlength="100" id="search_kw" type="text" name="s" autocomplete="off" value = "{$sk}"x-webkit-speech="" value="&nbsp;&nbsp;&nbsp;&nbsp;请输入内容......" style="color:gray;"          onfocus="javascript:if(this.value == '&nbsp;&nbsp;&nbsp;&nbsp;请输入内容......')          this.value = ''; this.style.color='black';"         onblur="if(this.value == '') {this.value = '&nbsp;&nbsp;&nbsp;&nbsp;请输入内容......';         this.style.color = 'gray';}">
+                    </div>
+                    <div class="bt-sh">
+                        <button id="btn_search_ask" type="submit">
+                            搜索答案
+                        </button>
+                    </div>
+                </form>
+                <div class="bt-ask">
+                    <a href="<!--{if $rewrite == '1'}-->wenda/ask.html<!--{else}--> plugin.php?id=evinm_wenda:ask<!--{/if}-->">
+                        提问
+                    </a>
+                </div>
+				
+                <div class="bt-answer">
+                    <a href="plugin.php?id=evinm_wenda:list">
+                        回答
+                    </a>
+                </div>
+            </div>
+            <div class="main-nav clearfix">
+                <ul class="list">
+                    <li <!--{if $_GET[id] == 'evinm_wenda:index'}--> class="on" <!--{/if}-->>
+                        <a class="home" href="<!--{if $rewrite == '1'}-->wenda/ <!--{else}--> plugin.php?id=evinm_wenda:index  <!--{/if}-->">
+                            <span class="s0">
+                                问答首页
+                            </span>
+                        </a>
+                    </li>
+                    <li id="navStore">
+                        <a class="store" href="<!--{if $rewrite == '1'}-->wenda/list.html <!--{else}-->plugin.php?id=evinm_wenda:list<!--{/if}-->">
+                            <span class="s1">
+                                问题库
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forum.php?mod=forumdisplay&fid=595">
+                            <span class="s3">
+                                问答活动
+                            </span>
+                        </a>
+                    </li>
+                    <li class=" <!--{if $_GET[id] == 'evinm_wenda:my'}-->on<!--{/if}-->" >
+                        <a href="<!--{if $rewrite == '1'}-->wenda/home_mypage.html <!--{else}-->plugin.php?id=evinm_wenda:my&ac=mypage<!--{/if}-->">
+                            <span class="s4">
+                                我的首页
+                            </span>
+                        </a>
+                    </li>
+                    <li class="last <!--{if $_GET[id] == 'evinm_wenda:ask'}-->on<!--{/if}-->" >
+                        <a href="<!--{if $rewrite == '1'}-->wenda/ask.html <!--{else}-->plugin.php?id=evinm_wenda:ask<!--{/if}-->">
+                            <span class="s5">
+                                提问
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="total">
+                    累计提问：$config['ask_nums']<span class="pipe"> | </span>
+					悬赏总额：$config['ask_nums_o']<span class="pipe"> | </span>
+                    待解决：$config['ask_nums_d']
+                </p>
+            </div>
+        </div>
+
+		
+        <div id="panelStore" class="panel-q-store" style="display:none;">
+            <div class="list">
+                <ul class="clearfix">
+					<!--{loop $list $mood}-->
+						<li>
+							<a href="<!--{if $rewrite == '1'}-->wenda/list-f{$mood[id]}.html<!--{else}-->plugin.php?id=evinm_wenda:list&fcid=$mood[id]<!--{/if}-->">
+								$mood[name]
+							</a>
+						</li>
+					<!--{/loop}-->
+
+                </ul>
+            </div>
+        </div>

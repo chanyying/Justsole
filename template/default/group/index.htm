@@ -1,0 +1,130 @@
+<!--{template common/header}-->
+	<!--{ad/text/wp a_t}-->
+	<style id="diy_style" type="text/css"></style>
+    <style>
+.xzss{background-color:#E0E0E0; width:400px; height:30px; border: none; border-bottom:#BBB 2px solid; border-radius:4px;}
+.yxss{color:#CACACA; width:130px; height:20px; border: 2px solid  #DDD;}
+</style>
+    <table width="960px;">
+<tr>
+   <TD align="left"><font face="微软雅黑" color="#347889" size="+2"><b>学习图谱.小组</b></font></TD>
+   <td align="center"><form method="get" action="http://www.justsole.cn/search.php">
+        <table><tr><td>
+        <input type="hidden" name="mod" value="group" />
+         <input type="text" name="srchtxt" id="srchtxt" class="xzss" value="&nbsp;&nbsp;&nbsp;&nbsp;小组、资源、校园、兴趣" style="color:gray;"          onfocus="javascript:if(this.value == '&nbsp;&nbsp;&nbsp;&nbsp;小组、资源、校园、兴趣')          this.value = ''; this.style.color='black';"         onblur="if(this.value == '') {this.value = '&nbsp;&nbsp;&nbsp;&nbsp;小组、资源、校园、兴趣';         this.style.color = 'gray';}">
+        </td>
+        <td><input type="submit" name="submit" value="Search" style="background-color:#347889;
+	height:35px; width:60px;
+	border: 1px solid  #DDD; color:#EEE; cursor:pointer; border-radius:4px;"></td></tr></table>
+</form></td>
+   <td align="right">
+    <a href="forum.php?mod=group&action=create&fupid=$fup&groupid=$sgid" id="create_group_btn"><div class="pengyoutopan" id="btn">创建小组</div></a>
+    <a href="group.php?mod=my"><div class="pengyoutopan" id="btn">我的小组</div></a>
+   </td>
+</tr>
+</table>
+<div class="wp">
+		<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+	</div>
+	<div id="ct" class="ct2 wp cl">
+		<div class="mn">
+			<!--[diy=diycommendtop]--><div id="diycommendtop" class="area"></div><!--[/diy]-->
+			<!--[diy=diycategorytop]--><div id="diycategorytop" class="area"></div><!--[/diy]-->
+			<!--[diy=diycontentbottom]--><div id="diycontentbottom" class="area"></div><!--[/diy]-->
+		</div>
+
+		<div class="sd">
+			<div class="drag">
+				<!--[diy=diysidetop]--><div id="diysidetop" class="area"></div><!--[/diy]-->
+			</div>
+			<!--{hook/index_side_top}-->
+			<!--{if helper_access::check_module('group')}-->
+				<!--{if empty($gid) && empty($sgid)}-->
+					
+				<!--{else}-->
+					<div class="bm bw0">
+						<div class="bm_c">
+							<a href="forum.php?mod=group&action=create&fupid=$fup&groupid=$sgid" id="create_group_btn"><img src="{IMGDIR}/create_group.png" alt="{lang group_create}" /></a>
+						</div>
+					</div>
+				<!--{/if}-->
+			<!--{/if}-->
+			<div class="drag">
+				<!--[diy=diysidemiddle]--><div id="diysidemiddle" class="area"></div><!--[/diy]-->
+			</div>
+			<!--{if $topgrouplist}-->
+				<div id="g_top" class="bm" style="margin-top:40px;">
+					<div class="bm_h cl">
+						<h2>{lang group_hot}</h2>
+					</div>
+					<div class="bm_c">
+						<ol class="xl">
+							<!--{loop $topgrouplist $fid $group}-->
+							<li class="top1"><span class="y xi2 xg1"> $group[commoncredits]</span><a href="forum.php?mod=group&fid=$group[fid]" title="$group[name]">$group[name]</a></li>
+							<!--{/loop}-->
+						</ol>
+					</div>
+				</div>
+			<!--{/if}-->
+            <div class="bm">
+				<div class="bm_c" id="xzfl">
+                <form method="get" action="http://www.justsole.cn/search.php">
+        <table style="margin-right:30px;">
+        <tr>
+        <td><input type="hidden" name="mod" value="group" />
+        <input type="text" name="srchtxt" id="srchtxt" class="yxss" value="小组、资源、校园、兴趣" style="color:gray;"          onfocus="javascript:if(this.value == '小组、资源、校园、兴趣')          this.value = ''; this.style.color='black';"         onblur="if(this.value == '') {this.value = '小组、资源、校园、兴趣';         this.style.color = 'gray';}" /></td>
+        <td><input type="submit" name="submit" value="搜索" style="background-color:#5575AA;
+	height:26px; width:60px;
+	border: 1px solid  #DDD; color:#EEE; cursor:pointer; border-radius:3px;">
+    </td></tr></table>
+</form>
+					<!--{loop $first $groupid $group}-->
+							<dl >
+								<dt>
+                                &nbsp;<strong ><a href="group.php?gid=$groupid">$group[name]</a></strong><!--{if $group[groupnum]}--><span class="xg1">($group[groupnum])</span><!--{/if}--><br />
+                                
+									<span >
+                                    <!--{loop $group['secondlist'] $fid}-->
+                                    &nbsp;<a href="group.php?sgid=$fid">$second[$fid][name]</a> 
+                                    <!--{/loop}-->
+                                    <a href="group.php?gid=$groupid">{lang more}</a>
+                                    </span>								
+								</dt>
+								<dd>
+									<!--{loop $lastupdategroup[$groupid] $val}-->
+										<a href="forum.php?mod=group&fid=$val[fid]">$val[name]</a> &nbsp;&nbsp;
+									<!--{/loop}-->
+								</dd>
+							</dl>
+					<!--{/loop}-->
+				</div>
+			</div>
+			<div class="drag">
+				<!--[diy=diysidebottom]--><div id="diysidebottom" class="area"></div><!--[/diy]-->
+			</div>
+			<!--{hook/index_side_bottom}-->
+		</div>
+	</div>
+<script>
+var xztop = jQuery.noConflict();
+xztop(function(){
+//获取要定位元素距离浏览器顶部的距离
+var navH = xztop("#xzfl").offset().top;
+//滚动条事件
+xztop(window).scroll(function(){
+//获取滚动条的滑动距离
+var scroH = xztop(this).scrollTop();
+//滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，就固定，反之就不固定
+if(scroH>=navH){
+xztop("#xzfl").css({"position":"fixed","top":0});
+}else if(scroH<navH){
+xztop("#xzfl").css({"position":"static"});
+}
+})
+})
+</script>
+<div class="wp mtn">
+	<!--[diy=diy4]--><div id="diy4" class="area"></div><!--[/diy]-->
+</div>
+
+<!--{template common/footer}-->

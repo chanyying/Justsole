@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[jz52_top.plugin]]></item>
+	<item id="RevisionID"><![CDATA[33773]]></item>
+	<item id="SN"><![CDATA[20140409189knwJwnXX8]]></item>
+	<item id="RevisionDateline"><![CDATA[1397966401]]></item>
+	<item id="Data">
+		<item id="/addon.inc.php"><![CDATA[9920d14cbbcb8682e3e289e3f820179d]]></item>
+		<item id="/discuz_plugin_jz52_top_SC_GBK.xml"><![CDATA[542cd73155f877184737e5b45a2544fb]]></item>
+		<item id="/discuz_plugin_jz52_top_SC_UTF8.xml"><![CDATA[39c11b790d0bf382fb007ba4ea4e11d0]]></item>
+		<item id="/discuz_plugin_jz52_top_TC_BIG5.xml"><![CDATA[207e470acf7174e3a26ccb2909546b44]]></item>
+		<item id="/discuz_plugin_jz52_top_TC_UTF8.xml"><![CDATA[f94def84b68956176b60d91fe07752ec]]></item>
+		<item id="/fankui.inc.php"><![CDATA[54f9a75bee95c7ba8abe2a818dd9ad0b]]></item>
+		<item id="/jz52_top.class.php"><![CDATA[5a5903aecef224d353d3d7517de70a7d]]></item>
+		<item id="/qqgroup.inc.php"><![CDATA[0d59dd66f18c6e02ca4456f032585b57]]></item>
+		<item id="/template/1.jpg"><![CDATA[95dc2c1475c7294c861ad6bcd3782096]]></item>
+		<item id="/template/2.jpg"><![CDATA[18767a74bcf4ab98cd0895621da7dbba]]></item>
+		<item id="/template/3.jpg"><![CDATA[3b74d3268e2d97d661ffbececf2f37e1]]></item>
+		<item id="/template/4.jpg"><![CDATA[c62d0f51ff6f34a2c3c85f7f174dae84]]></item>
+		<item id="/template/extend_common.css"><![CDATA[dd2023e44b614baf6c356a152819cbb1]]></item>
+		<item id="/template/gr.png"><![CDATA[21a6498801d01c12ce1abfc9500c056e]]></item>
+		<item id="/template/group.png"><![CDATA[0a037f8f4aa857005ff9b785562969b9]]></item>
+		<item id="/template/jz52top.png"><![CDATA[d2ddd28c9570b2f7f599b3167a8e6475]]></item>
+		<item id="/template/jz52top1.png"><![CDATA[b380cc291a2d9f5abfa12179424d6a8a]]></item>
+		<item id="/template/jz52top2.png"><![CDATA[7cc35b6be40f74fdbf22b32f2f3ec255]]></item>
+		<item id="/template/jz52top3.png"><![CDATA[9ef6a6ee2c89634790572622295cd997]]></item>
+		<item id="/template/jz52top4.png"><![CDATA[aa063385458aca80c811d35a5c63c908]]></item>
+		<item id="/template/jz52top5.png"><![CDATA[3d304487048752c25b669b4dd5696e37]]></item>
+		<item id="/template/jz52top6.png"><![CDATA[8f2e5320184ab657b93984bf5753908d]]></item>
+		<item id="/template/jz52top7.png"><![CDATA[895e2a6696b31bc727ecb97f9216e512]]></item>
+		<item id="/template/jz_qqq.htm"><![CDATA[d32970127d1163425f247989b86e78bd]]></item>
+		<item id="/template/jz_topbox.htm"><![CDATA[8687c4aecc3ea69bc28cabd9d7214bc8]]></item>
+		<item id="/template/jz_topboxie6.htm"><![CDATA[61ddd4088114c590014b1f9c46ddbd48]]></item>
+		<item id="/template/qr.gif"><![CDATA[b150900af81c1e94ea90af2cd2d15fc9]]></item>
+		<item id="/template/qr.png"><![CDATA[cd2a5fcc9e0de3ddb044deefb18b4339]]></item>
+		<item id="/template/two_dimension_code_icons.png"><![CDATA[e659c9cc1dc996b4a0bcb93d58a43ebc]]></item>
+		<item id="/template/wxqr.jpg"><![CDATA[fea118f63a34c01119a557d996ea8a09]]></item>
+	</item>
+</root>

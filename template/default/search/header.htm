@@ -1,0 +1,65 @@
+<!--{subtemplate common/header_common}-->
+<style>
+#toptb a{ color:#EEE;}
+#toptb a:hover{ color:#EEE;}
+</style>
+</head>
+
+<body id="nv_search" onkeydown="if(event.keyCode==27) return false;">
+	<div id="append_parent"></div><div id="ajaxwaitid"></div>
+	<div  class="cl" style="border-bottom:1px #C6C6C6 solid; background-color:#000000; height:30px; color:#EEE;">
+		 <!--{eval $mnid = getcurrentnav();}-->
+					
+		<div class="y" style="margin-top:6px;">
+			<!--{if $_G['uid']}-->
+				<a href="home.php?mod=space&do=home">{$_G[member][username]}</a>
+				<!--{hook/global_usernav_extra1}-->
+				<a href="home.php?mod=spacecp">{lang setup}</a>
+				<a href="home.php?mod=space&do=pm" id="pm_ntc" target="_blank"{if $_G[member][newpm]} class="new"{/if}>{lang pm_center}<!--{if $_G[member][newpm]}-->($_G[member][newpm])<!--{/if}--></a>
+				<a href="home.php?mod=space&do=notice" id="myprompt" target="_blank"{if $_G[member][newprompt]} class="new"{/if}>{lang remind}<!--{if $_G[member][newprompt]}-->($_G[member][newprompt])<!--{/if}--></a><span id="myprompt_check"></span>
+				<!--{if $_G['group']['allowmanagearticle'] || $_G['group']['allowdiy']|| getstatus($_G['member']['allowadmincp'], 4) || getstatus($_G['member']['allowadmincp'], 2) || getstatus($_G['member']['allowadmincp'], 3) || in_array($_G['uid'], $_G['setting']['ext_portalmanager'])}--><a href="portal.php?mod=portalcp">{lang portal_manage}</a><!--{/if}-->
+				<!--{if $_G['uid'] && $_G['group']['radminid'] > 1}--><a href="forum.php?mod=modcp&fid=$_G[fid]" target="_blank">{lang forum_manager}</a><!--{/if}-->
+				<!--{if $_G['uid'] && ($_G['group']['radminid'] == 1 || getstatus($_G['member']['allowadmincp'], 1))}--><a href="admin.php" target="_blank">{lang admincp}</a><!--{/if}-->
+				<!--{hook/global_usernav_extra2}-->
+				<a href="member.php?mod=logging&action=logout&formhash={FORMHASH}">{lang logout}</a>
+			<!--{elseif !empty($_G['cookie']['loginuser'])}-->
+				<strong><a id="loginuser">$_G['cookie']['loginuser']</a></strong>
+				<a href="member.php?mod=logging&action=login" onClick="showWindow('login', this.href)">{lang activation}</a>
+				<a href="member.php?mod=logging&action=logout&formhash={FORMHASH}">{lang logout}</a>
+			<!--{else}-->
+				<a href="member.php?mod={$_G[setting][regname]}">$_G['setting']['reglinkname']</a>
+				<a href="member.php?mod=logging&action=login" onClick="showWindow('login', this.href)">{lang login}</a>
+			<!--{/if}-->
+		</div>
+	</div>
+	<!--{if !empty($_G['setting']['plugins']['jsmenu'])}-->
+		<ul class="p_pop h_pop" id="plugin_menu" style="display: none">
+		<!--{loop $_G['setting']['plugins']['jsmenu'] $module}-->
+		     <!--{if !$module['adminid'] || ($module['adminid'] && $_G['adminid'] > 0 && $module['adminid'] >= $_G['adminid'])}-->
+		     <li>$module[url]</li>
+		     <!--{/if}-->
+		<!--{/loop}-->
+		</ul>
+	<!--{/if}-->
+	$_G[setting][menunavs]
+
+	<!--{if $_G['setting']['navs']}-->
+		<ul class="p_pop h_pop" id="navs_menu" style="display: none">
+		<!--{loop $_G['setting']['navs'] $nav}-->
+			<!--{eval $nav_showmenu = strpos($nav['nav'], 'onmouseover="showMenu(');}-->
+		    <!--{eval $nav_navshow = strpos($nav['nav'], 'onmouseover="navShow(')}-->
+		    <!--{if $nav_hidden !== false || $nav_navshow !== false}-->
+			<!--{eval $nav['nav'] = preg_replace("/onmouseover\=\"(.*?)\"/i", '',$nav['nav'])}-->
+		    <!--{/if}-->
+			<!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}--><li $nav[nav]></li><!--{/if}-->
+		<!--{/loop}-->
+		</ul>
+	<!--{/if}-->
+
+	<ul id="myspace_menu" class="p_pop" style="display:none;">
+		<!--{loop $_G['setting']['mynavs'] $nav}-->
+			<!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->
+				<li>$nav[code]</li>
+			<!--{/if}-->
+		<!--{/loop}-->
+	</ul>

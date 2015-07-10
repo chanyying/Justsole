@@ -1,0 +1,169 @@
+<div class="article article_bg">
+    <div class="mod-status">
+        <div class="hd">
+            <h3>
+                我的提问
+            </h3>
+        </div>
+    </div>
+    <div class="cls-tab-card">
+        <li class="first <!--{if $as == 'unresolved' || empty($as)}-->on<!--{/if}-->">
+            <a href="plugin.php?id=evinm_wenda:my&ac=myq&as=unresolved">
+                待解决的问题
+            </a>
+        </li>
+        <li class=" <!--{if $as == 'resolved'}-->on<!--{/if}-->">
+            <span>
+				<a href="plugin.php?id=evinm_wenda:my&ac=myq&as=resolved">
+                已解决的问题
+				</a>
+            </span>
+        </li>
+    </div>
+    <div class="clear">
+    </div>
+	
+	<!--{if $as == 'unresolved' || empty($as)}-->
+		<!--{if $q_nums == 0}-->
+			<div class="mod-nolist">
+				<div class="smile">
+					<span>
+						您现在还没有进行过提问呢！
+					</span>
+					<a href="<!--{if $rewrite == '1'}-->wenda/ask.html<!--{else}-->plugin.php?id=evinm_wenda:ask<!--{/if}-->">
+						我要提问
+					</a>
+				</div>
+			</div>
+		<!--{/if}-->
+		<!--{if $q_nums > 0}-->
+			<div class="cls-qa-list-2">
+				<table>
+					<thead>
+						<tr>
+							<!--{if $config['isplsc'] == 1}-->
+							<th width="30">
+								删?
+							</th>
+							<!--{/if}-->
+							<th class="align-l">
+								标题
+							</th>
+							<th width="60">
+								回答数
+							</th>
+							<th width="130" class="align-r">
+								提问时间
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!--{if $ask_list}-->	
+						<!--{loop $ask_list $ask}-->
+						<tr>
+							<!--{if $config['isplsc'] == 1}-->
+							<td>
+								<input class="checkbox" type="checkbox" name="delete[]" value="{$ask['id']}" style="margin-top:8px;">
+							</td>
+							<!--{/if}-->
+							<td class="align-l">
+								<a target="_blank" href="<!--{if $rewrite == '1'}-->wenda/{$ask['id']}<!--{else}-->plugin.php?id=evinm_wenda:list_article&qid={$ask['id']}<!--{/if}-->" title="{$ask['subject']}">
+									<!--{if $ask['coin'] > '0'}--><span class="wealth">$ask['coin']</span><!--{/if}-->{$ask['subject']}
+								</a>
+								<span class="cate">
+									[
+									<a target="_blank" href="<!--{if $rewrite == '1'}-->wenda/list-c{$ask['fenlei']}.html<!--{else}-->plugin.php?id=evinm_wenda:list&cid={$ask['fenlei']}<!--{/if}-->">
+										{$ask['fname']}
+									</a>
+									]
+								</span>
+							</td>
+							<td class="quick-num">
+								$ask['nums_a']
+							</td>
+							<td class="quick-time align-r">
+								{$ask['posttime']}
+							</td>
+						</tr>
+						<!--{/loop}-->
+						<!--{/if}-->
+						<!--{if $config['isplsc'] == 1}-->
+						<tr>
+						<td></td>
+						<td>
+							<p class="o pns z">
+							<input type="submit" name="del_button_wt" class="pn" value="提交" style="width:60px;">
+							</p>
+						</td>						
+						<td></td>
+						<td></td>
+						<td></td>
+						</tr>
+						<!--{/if}-->
+					</tbody>
+				</table>
+			</div>
+		<!--{/if}-->
+	<!--{/if}-->
+	<!--{if $as == 'resolved'}-->
+		<!--{if $q_nums == 0}-->
+			<div class="mod-nolist">
+				<div class="smile">
+					<span>
+						您现在还没有已解决的问题！
+					</span>
+					<a href="<!--{if $rewrite == '1'}-->wenda/ask.html<!--{else}-->plugin.php?id=evinm_wenda:ask<!--{/if}-->">
+						我要提问
+					</a>
+				</div>
+			</div>
+		<!--{/if}-->
+		<!--{if $q_nums > 0}-->
+			<div class="cls-qa-list-2">
+				<table>
+					<thead>
+						<tr>
+							<th class="align-l">
+								标题
+							</th>
+							<th width="60">
+								回答数
+							</th>
+							<th width="130" class="align-r">
+								提问时间
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!--{if $ask_list}-->	
+						<!--{loop $ask_list $ask}-->
+						<tr>
+							<td class="align-l">
+								<a target="_blank" href="<!--{if $rewrite == '1'}-->wenda/{$ask['id']}<!--{else}-->plugin.php?id=evinm_wenda:list_article&qid={$ask['id']}<!--{/if}-->" title="{$ask['subject']}">
+									<!--{if $ask['coin'] > '0'}--><span class="wealth">$ask['coin']</span><!--{/if}-->{$ask['subject']}
+								</a>
+								<span class="cate">
+									[
+									<a target="_blank" href="<!--{if $rewrite == '1'}-->wenda/list-f{$ask['fenlei']}.html<!--{else}-->plugin.php?id=evinm_wenda:list&fcid={$ask['fenlei']}<!--{/if}-->">
+										{$ask['fname']}
+									</a>
+									]
+								</span>
+							</td>
+							<td class="quick-num">
+								{$ask['nums_a']}
+							</td>
+							<td class="quick-time align-r">
+								{$ask['posttime']}
+							</td>
+						</tr>
+						<!--{/loop}-->
+						<!--{/if}-->
+					</tbody>
+				</table>
+			</div>
+		<!--{/if}-->
+	<!--{/if}-->
+	<div class="clear">  </div>
+	<div class="cl mtm">{$multi}</div>
+</div>

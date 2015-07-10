@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[yeei_login.plugin]]></item>
+	<item id="RevisionID"><![CDATA[15248]]></item>
+	<item id="SN"><![CDATA[20130424121mx2dLK3D3]]></item>
+	<item id="RevisionDateline"><![CDATA[1381744801]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_yeei_login_SC_GBK.xml"><![CDATA[817d683df50027221c31648e87dee6d0]]></item>
+		<item id="/discuz_plugin_yeei_login_SC_UTF8.xml"><![CDATA[7fb5594873729436e909681db3e268cf]]></item>
+		<item id="/discuz_plugin_yeei_login_TC_BIG5.xml"><![CDATA[2aa3daa22058a5ed172402bdbf5b7e1d]]></item>
+		<item id="/discuz_plugin_yeei_login_TC_UTF8.xml"><![CDATA[f56d266aec58374a85b445342e583d97]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/img/jquery-1.6.4.min.js"><![CDATA[219073097031d9c1a95a1291d66f3a10]]></item>
+		<item id="/template/img/login-ico.png"><![CDATA[4fb7ded33a1d7ee1e89da7a1ad4d8f2b]]></item>
+		<item id="/template/img/login_z.png"><![CDATA[7452dd8c077e8a8ab0c0851588b8c57b]]></item>
+		<item id="/template/img/push.png"><![CDATA[6771ca5ebc7ffc8d4a7882ea9e3fe55f]]></item>
+		<item id="/template/img/style.css"><![CDATA[62d64cdfbd9ed60c7763a9bee9e8e7ff]]></item>
+		<item id="/template/more.htm"><![CDATA[e629f0003e0ad6f8db90ffaf7068c54f]]></item>
+		<item id="/template/top.htm"><![CDATA[85315e2aa8cdd375aedd69b82a32c4a8]]></item>
+		<item id="/yeei_login.class.php"><![CDATA[f5b24a77be6ea1c2ede3f2e1f9e8aca3]]></item>
+		<item id="/yeei_more.inc.php"><![CDATA[98f08032390a8554ff88c72cf3f19a3f]]></item>
+		<item id="/template/help.htm"><![CDATA[8c9fdb8df448f7248542cc980354708a]]></item>
+		<item id="/template/img/ad.jpg"><![CDATA[fefdda5e431c2c8505c67cb2fdb4e654]]></item>
+		<item id="/yeei_help.inc.php"><![CDATA[507e0e875af62e066630e7d5620e77d8]]></item>
+		<item id="/template/img/close.png"><![CDATA[1c451798cc5097bff498a0065ea3cec3]]></item>
+	</item>
+</root>

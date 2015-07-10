@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[liyou_weibo.plugin]]></item>
+	<item id="RevisionID"><![CDATA[21050]]></item>
+	<item id="SN"><![CDATA[20130726139WTssLX1IT]]></item>
+	<item id="RevisionDateline"><![CDATA[1374746401]]></item>
+	<item id="Data">
+		<item id="/callback.inc.php"><![CDATA[92bf012ab8b241d51f501c3a1be8950e]]></item>
+		<item id="/config/config.php"><![CDATA[308ed46984077c7fcb2a8c4e3cf175b3]]></item>
+		<item id="/discuz_plugin_liyou_weibo_SC_GBK.xml"><![CDATA[a73c9ad029da98bc45b021ae52518cb6]]></item>
+		<item id="/discuz_plugin_liyou_weibo_SC_UTF8.xml"><![CDATA[0b86c610e07f87e615584927a01d044e]]></item>
+		<item id="/image/bind_btn.png"><![CDATA[3f4ba4594ee3415d06e26aacd51e4c84]]></item>
+		<item id="/image/login_btn.png"><![CDATA[17c901059d4ec6007cb610ef71919923]]></item>
+		<item id="/image/logo.png"><![CDATA[cdda74a8bffa7c2c2616f1187f09e529]]></item>
+		<item id="/install.php"><![CDATA[fdef6c188d6cd652f96543247e0a1868]]></item>
+		<item id="/liyou_weibo.class.php"><![CDATA[db7ac5eab93d18dba456f94a4cacd021]]></item>
+		<item id="/login.inc.php"><![CDATA[e696779cc4916a991c7c729164c567e4]]></item>
+		<item id="/ly_weibobind.inc.php"><![CDATA[75adfd732be65c35ed7190e784e74038]]></item>
+		<item id="/ly_weibo_unbind.inc.php"><![CDATA[d569b71191de5bbe0a14d58ea89b3109]]></item>
+		<item id="/sina_api/saetv2.ex.class.php"><![CDATA[d973bc653699aa98134eaf51cef36321]]></item>
+		<item id="/table/table_ly_weibo_bind.php"><![CDATA[03b714ada6eb50d1fa0de837aed2b8b1]]></item>
+		<item id="/template/extend_common.css"><![CDATA[6aa4e808e607b3283bb69c6dfe95d6bc]]></item>
+		<item id="/template/global_login_extra.htm"><![CDATA[90b7bbea5453c621cb7c1bf7943f069f]]></item>
+		<item id="/template/global_usernav_extra1.htm"><![CDATA[8ec5d0a5253f174c1e6dbe9fb0bcd3bf]]></item>
+		<item id="/template/logging_top.htm"><![CDATA[e202bc09a3ac233eff76cf42ae4df0be]]></item>
+		<item id="/template/ly_weibobind.htm"><![CDATA[b72cd41225c48268bbb51dc1d6366c68]]></item>
+		<item id="/template/register_top.htm"><![CDATA[0dde198ce25637b25193bf9894619628]]></item>
+		<item id="/uninstall.php"><![CDATA[c4fa8e601667efec44037519a65bccd4]]></item>
+	</item>
+</root>

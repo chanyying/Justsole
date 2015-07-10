@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3,X3.1]]></item>
+	<item id="Time"><![CDATA[2013-10-14 11:12]]></item>
+	<item id="From"><![CDATA[Yeei!Design (http://127.0.0.1/dx22/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[【YEEI】游客通欄]]></item>
+			<item id="identifier"><![CDATA[yeei_login]]></item>
+			<item id="description"><![CDATA[游客未登錄時，頂部出現登錄提示欄，提醒用戶登錄,支持自定義背景顏色，廣告。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[yeei_login/]]></item>
+			<item id="copyright"><![CDATA[Yeei!Design]]></item>
+			<item id="version"><![CDATA[1.5]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[yeei_login]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[yeei_help]]></item>
+					<item id="menu"><![CDATA[求助及建議]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[yeei_more]]></item>
+					<item id="menu"><![CDATA[更多作品]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[開關]]></item>
+				<item id="description"><![CDATA[是否開啟本插件！]]></item>
+				<item id="variable"><![CDATA[switchs]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[顯示位置]]></item>
+				<item id="description"><![CDATA[提醒框的漂浮位置。]]></item>
+				<item id="variable"><![CDATA[location]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[1 = 頂部（隨頂部滾動）
+2 = 底部（隨底部滾動）]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[底部預留高度]]></item>
+				<item id="description"><![CDATA[開啟底部顯示後 請設置此處間距，數值自行調試一下，讓底部信息不被滾動條遮擋。]]></item>
+				<item id="variable"><![CDATA[ftheight]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[50]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[允許關閉]]></item>
+				<item id="description"><![CDATA[是否允許游客關閉提醒？]]></item>
+				<item id="variable"><![CDATA[closeyeei]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[說明文字]]></item>
+				<item id="description"><![CDATA[左側說明文字。]]></item>
+				<item id="variable"><![CDATA[explan]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[您尚未登錄，請登陸後瀏覽更精彩內容！]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[背景顏色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[bgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#2267B5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[文字顏色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[color]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FFFFFF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[連接顏色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[acolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#fcff00]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[QQ號登錄地址]]></item>
+				<item id="description"><![CDATA[填寫QQ登錄地址，留空為關閉QQ登錄。]]></item>
+				<item id="variable"><![CDATA[qqurl]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[connect.php?mod=login&op=init&referer=forum.php&statfrom=login_simple]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[新浪微博登錄]]></item>
+				<item id="description"><![CDATA[填寫新浪微博登錄地址，留空為關閉新浪微博登錄。]]></item>
+				<item id="variable"><![CDATA[sinaurl]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[百度賬號登陸]]></item>
+				<item id="description"><![CDATA[百度賬號登錄地址，留空為關閉百度賬號登錄。]]></item>
+				<item id="variable"><![CDATA[baiduurl]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[淘寶賬號登陸]]></item>
+				<item id="description"><![CDATA[淘寶賬號登錄地址，留空為關閉淘寶賬號登錄。]]></item>
+				<item id="variable"><![CDATA[taobaourl]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[360賬號登陸]]></item>
+				<item id="description"><![CDATA[360賬號登錄地址，留空為關閉360賬號登錄。]]></item>
+				<item id="variable"><![CDATA[sllurl]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[是否開啟廣告]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[adswi]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[廣告代碼]]></item>
+				<item id="description"><![CDATA[輸入廣告鏈接HTML代碼，支持JS代碼。]]></item>
+				<item id="variable"><![CDATA[adcode]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<a href="http://addon.discuz.com/?@yeei" target="_blank"><img src="source/plugin/yeei_login/template/img/ad.jpg" /></a>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>

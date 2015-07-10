@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[chs_photosearch.plugin]]></item>
+	<item id="RevisionID"><![CDATA[4815]]></item>
+	<item id="SN"><![CDATA[2013041116l6z5X1p8X5]]></item>
+	<item id="RevisionDateline"><![CDATA[1346049826]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_chs_photosearch_SC_GBK.xml"><![CDATA[869c930008d2be930b57c7f00bd9d235]]></item>
+		<item id="/discuz_plugin_chs_photosearch_SC_UTF8.xml"><![CDATA[55dc11202d2a2a987717097348376452]]></item>
+		<item id="/discuz_plugin_chs_photosearch_TC_BIG5.xml"><![CDATA[a7361eb43b4b97e2558802641d829ef0]]></item>
+		<item id="/discuz_plugin_chs_photosearch_TC_UTF8.xml"><![CDATA[afca6122c6bd318f3de0ab64cca4e36e]]></item>
+		<item id="/include/js/autobox/ajax-loading.gif"><![CDATA[b6f30f316d3c10432a336a9450a2308d]]></item>
+		<item id="/include/js/autobox/autoit.css"><![CDATA[b144867d00c885d8fde02bc17b444f87]]></item>
+		<item id="/include/js/autobox/autoit.js"><![CDATA[9d00e12ab879b190868fc71fcc44037b]]></item>
+		<item id="/include/js/autobox/blank.gif"><![CDATA[fc94fb0c3ed8a8f909dbc7630a0987ff]]></item>
+		<item id="/include/js/autobox/bus.png"><![CDATA[b3194fb59e3bab5871d3e211213deb4c]]></item>
+		<item id="/include/js/autobox/closelabel.gif"><![CDATA[7313bb7fbfc3a91cb031759b6c48be4e]]></item>
+		<item id="/include/js/autobox/loading.gif"><![CDATA[7e99e1159a3686f6aa4f90043c554483]]></item>
+		<item id="/include/js/autobox/nextlabel.gif"><![CDATA[811f98a3b6b3da1a5623b1f5be3cb826]]></item>
+		<item id="/include/js/autobox/pause.gif"><![CDATA[6552c53d5e5fdfde73d3ee3a830f9471]]></item>
+		<item id="/include/js/autobox/play.gif"><![CDATA[e158935f2e8e2f1c19faef5bb90ee2ce]]></item>
+		<item id="/include/js/autobox/prevlabel.gif"><![CDATA[a8d01cda551b39fa404e16ec756d9c4d]]></item>
+		<item id="/search.inc.php"><![CDATA[1c80c8c9e799adc71fe6a59f98aa16b7]]></item>
+		<item id="/template/photos.htm"><![CDATA[62952f4ec84b3092304dcf87d3455503]]></item>
+		<item id="/xthumb.class.php"><![CDATA[965515a0da7db66b3f5f5a826801b01a]]></item>
+	</item>
+</root>

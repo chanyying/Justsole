@@ -1,0 +1,58 @@
+	<div class="container" id="cpcontainer">
+		<div class="itemtitle">
+			<h3>
+				问题管理
+			</h3>
+			<ul class="tab1">
+				<li <!--{if $_GET['ec'] == 'wenti' || empty($_GET['ec'])}--> class="current" <!--{/if}-->>
+					<a href="{$acurl}&ec=wenti">
+						<span>
+							最新问题
+						</span>
+					</a>
+				</li>
+				<li <!--{if $_GET['ec'] == 'huida'}--> class="current" <!--{/if}-->>
+					<a href="{$acurl}&ec=huida">
+						<span>
+							最新回答
+						</span>
+					</a>
+				</li>
+				<li <!--{if $_GET['ec'] == 'shenhe_wt'}--> class="current" <!--{/if}-->>
+					<a href="{$acurl}&ec=shenhe_wt">
+						<span>
+							待审核问题
+						</span>
+					</a>
+				</li>
+				<li <!--{if $_GET['ec'] == 'shenhe_hd'}--> class="current" <!--{/if}-->>
+					<a href="{$acurl}&ec=shenhe_hd">
+						<span>
+							待审核回答
+						</span>
+					</a>
+				</li>
+				<li <!--{if $_GET['ec'] == 'search'}--> class="current" <!--{/if}-->>
+					<a href="{$acurl}&ec=search">
+						<span>
+							搜索
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<!--{if $_GET['ec'] == 'wenti' || empty($_GET['ec'])}-->		
+			<!--{subtemplate evinm_wenda:admincp_gl_wenti}-->
+		<!--{elseif $_GET['ec'] == 'huida'}-->
+			<!--{subtemplate evinm_wenda:admincp_gl_huida}-->
+		<!--{elseif $_GET['ec'] == 'shenhe_wt'}-->
+			<!--{subtemplate evinm_wenda:admincp_gl_shenhe_wt}-->
+		<!--{elseif $_GET['ec'] == 'shenhe_hd'}-->
+			<!--{subtemplate evinm_wenda:admincp_gl_shenhe_hd}-->
+		<!--{elseif $_GET['ec'] == 'search' && $_GET['slist'] == 1}-->
+			<!--{subtemplate evinm_wenda:admincp_gl_search_list}-->
+		<!--{elseif $_GET['ec'] == 'search'}-->
+			<!--{subtemplate evinm_wenda:admincp_gl_search}-->		
+		<!--{/if}-->
+	</div>

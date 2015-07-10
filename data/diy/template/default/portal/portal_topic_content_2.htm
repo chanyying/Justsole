@@ -1,0 +1,29 @@
+<!--{template common/header}-->
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a> <em>&rsaquo;</em> $topic[title]
+	</div>
+</div>
+<link id="style_css" rel="stylesheet" type="text/css" href="static/topic/t1/style.css">
+<style id="diy_style" type="text/css">#portal_block_518 {  border:#ffffff 0px none !important;}#portal_block_519 {  border:#ffffff 0px !important;}#portal_block_520 {  border:#ffffff 0px solid !important;}#portal_block_521 {  border:#ffffff 0px solid !important;}#portal_block_522 {  border:#ffffff 0px solid !important;}#frame8jrmQM {  border:#ffffff 0px !important;}#portal_block_537 {  border:#ffffff 0px solid !important;}#frameWcBmxm {  border:#ffffff 0px !important;}body {  background-repeat:repeat !important;}#frameQ98m7H {  border:#ffffff !important;}</style>
+<style>
+.wp{ width:100%; height:100%;}
+
+
+
+</style>
+<div id="widgets">
+</div>
+<div class="wp">
+<!--[diy=diypage]--><div id="diypage" class="area"><div id="frameQ98m7H" class=" frame move-span cl frame-1"><div id="frameQ98m7H_left" class="column frame-1-c"><div id="frameQ98m7H_left_temp" class="move-span temp"></div><!--{block/732}--></div></div><div id="frame8jrmQM" class=" frame move-span cl frame-1-1-1"><div id="frame8jrmQM_left" class="column frame-1-1-1-l"><div id="frame8jrmQM_left_temp" class="move-span temp"></div><!--{block/522}--><!--{block/537}--><!--{block/520}--><!--{block/546}--><!--{block/551}--><!--{block/552}--></div><div id="frame8jrmQM_center" class="column frame-1-1-1-c"><div id="frame8jrmQM_center_temp" class="move-span temp"></div><!--{block/519}--><!--{block/521}--><!--{block/518}--><!--{block/549}--><!--{block/550}--><!--{block/556}--></div><div id="frame8jrmQM_right" class="column frame-1-1-1-r"><div id="frame8jrmQM_right_temp" class="move-span temp"></div><!--{block/544}--><!--{block/545}--><div id="frameWcBmxm" class=" frame move-span cl frame-1"><div id="frameWcBmxm_left" class="column frame-1-c"><div id="frameWcBmxm_left_temp" class="move-span temp"></div><!--{block/554}--></div></div></div></div></div><!--[/diy]-->
+<!--{if $topic['allowcomment']==1}-->
+	{eval
+		$data = &$topic;
+		$common_url = "portal.php?mod=comment&id=$topicid&idtype=topicid";
+		$form_url = "portal.php?mod=portalcp&ac=comment";
+		$commentlist = portaltopicgetcomment($topicid);	}
+	<!--{template portal/portal_comment}-->
+<!--{/if}-->
+</div>
+
+<!--{template common/footer}-->

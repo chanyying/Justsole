@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[taobaoconnect.plugin]]></item>
+	<item id="RevisionID"><![CDATA[11180]]></item>
+	<item id="SN"><![CDATA[201305032037bYWWMktP]]></item>
+	<item id="RevisionDateline"><![CDATA[1359353049]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_taobaoconnect_SC_UTF8.xml"><![CDATA[2d21a7e58094a02bdd2fb001fa1e86f4]]></item>
+		<item id="/discuz_plugin_taobaoconnect_TC_UTF8.xml"><![CDATA[c2e3a7ec5eb9b44ff6319868c681bae7]]></item>
+		<item id="/images/taobao.png"><![CDATA[06bf14cf55b83e306cc3fdae8c663d1e]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/main.class.php"><![CDATA[76e923cebb86c2e7f26c56c0814668e0]]></item>
+		<item id="/main.inc.php"><![CDATA[864898db65ff7b7740bb0295b9c4c31d]]></item>
+		<item id="/template/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/taobao.htm"><![CDATA[906c783be6625562b4d896006ca6b286]]></item>
+	</item>
+</root>
