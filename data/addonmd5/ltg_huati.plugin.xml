@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[ltg_huati.plugin]]></item>
+	<item id="RevisionID"><![CDATA[7505]]></item>
+	<item id="SN"><![CDATA[2013041423u1yR7Y27T3]]></item>
+	<item id="RevisionDateline"><![CDATA[1353912703]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_ltg_huati_SC_GBK.xml"><![CDATA[1241e256c186e122daa17ddb349f4c00]]></item>
+		<item id="/discuz_plugin_ltg_huati_SC_UTF8.xml"><![CDATA[39c97f0003c143cf83ed1d9270a937ef]]></item>
+		<item id="/discuz_plugin_ltg_huati_TC_BIG5.xml"><![CDATA[0d98f188b831c9ac99bab80b98f0ef1b]]></item>
+		<item id="/discuz_plugin_ltg_huati_TC_UTF8.xml"><![CDATA[5307a15e57698180d3f646cc171f82a2]]></item>
+		<item id="/ltg_huati.inc.php"><![CDATA[a202b38022013041f84aacb9b15efb69]]></item>
+		<item id="/template/huati.htm"><![CDATA[60c87facb8ca19e24cdc4d5ea48e75aa]]></item>
+		<item id="/template/huaticss.css"><![CDATA[8f919e08ef988b9608e2d27a3ca5e842]]></item>
+		<item id="/template/nav.png"><![CDATA[78abf645e9e247e67a632491b6b1c1e3]]></item>
+		<item id="/template/navtel.png"><![CDATA[15230ae870f30da3b4d1421e0924e6d6]]></item>
+		<item id="/template/ren.png"><![CDATA[b7aad06452861cd992b235e0a35cd31f]]></item>
+		<item id="/template/sina.png"><![CDATA[cdda74a8bffa7c2c2616f1187f09e529]]></item>
+		<item id="/template/ten.png"><![CDATA[9e35eb8dbad40bb3f1510b070c621b38]]></item>
+		<item id="/template/weixin.jpg"><![CDATA[8e69e0e94654a4c79e5cfc6ac0ab2ebd]]></item>
+	</item>
+</root>

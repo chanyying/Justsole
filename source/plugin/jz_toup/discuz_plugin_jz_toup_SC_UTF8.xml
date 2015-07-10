@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2013-02-04 11:57]]></item>
+	<item id="From"><![CDATA[Mx Team (http://www.mxbang.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[回到顶部]]></item>
+			<item id="identifier"><![CDATA[jz_toup]]></item>
+			<item id="description"><![CDATA[新手练习,提供多样式,简单实用,回到页面顶部]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[jz_toup/]]></item>
+			<item id="copyright"><![CDATA[Mx Team]]></item>
+			<item id="version"><![CDATA[0.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[style]]></item>
+					<item id="menu"><![CDATA[样式展览]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[jz_toup]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[开关]]></item>
+				<item id="description"><![CDATA[插件开关,关闭恢复到Discuz官方样式]]></item>
+				<item id="variable"><![CDATA[status]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[回到顶部样式]]></item>
+				<item id="description"><![CDATA[请点击导航栏的样式演示来查看对应的演示]]></item>
+				<item id="variable"><![CDATA[style]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[11]]></item>
+				<item id="extra"><![CDATA[1 = 天猫样式-黑
+2 = 天猫样式-白
+3 = 火箭样式
+4 = QQ音乐样式
+5 = 糗事百科样式-白
+6 = 糗事百科样式-黑
+7 = 百度贴吧样式
+8 = 中文墨迹样式
+9 = 百度图库样式
+10 = 标签样式
+11 = 木板样式
+12 = 小黑条样式
+13 = QQ空间样式
+14 = 简约英文样式
+15 = 小灰球样式
+16 = 简约中文样式
+17 = 英文墨迹样式
+18 = 蓝色经典样式
+19 = 热气球样式
+20 = CSDN样式]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[回顶部幻灯]]></item>
+				<item id="description"><![CDATA[回顶部上的幻灯图片地址和图片链接,
+格式:图片地址|图片链接
+http://xxx.gif|http://www.qq.com]]></item>
+				<item id="variable"><![CDATA[silde]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[http://www.baidu.com/img/shouye_b5486898c692066bd2cbaeda86d74448.gif|http://www.baidu.com]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[离底部距离]]></item>
+				<item id="description"><![CDATA[格式:15%]]></item>
+				<item id="variable"><![CDATA[bottom]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[15%]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[意见建议]]></item>
+				<item id="description"><![CDATA[仍支持糗事百科和QQ音乐回顶部样式。输入格式：类型|账号,支持类型EMail,QQ,URL
+例如:EMail:email|10000@qq.com,QQ:qq|10000,URL:url|http://www.baidu.com]]></item>
+				<item id="variable"><![CDATA[kf]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[url|http://www.baidu.com]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>

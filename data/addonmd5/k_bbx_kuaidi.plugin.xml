@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[k_bbx_kuaidi.plugin]]></item>
+	<item id="RevisionID"><![CDATA[8111]]></item>
+	<item id="SN"><![CDATA[2013041613vm40f63z6w]]></item>
+	<item id="RevisionDateline"><![CDATA[1352714098]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_k_bbx_kuaidi_SC_GBK.xml"><![CDATA[9f5cf0cb850e7801a76f806b565b94d6]]></item>
+		<item id="/discuz_plugin_k_bbx_kuaidi_SC_UTF8.xml"><![CDATA[4d65f8924a2e7e82bcc24475b2c52cb2]]></item>
+		<item id="/discuz_plugin_k_bbx_kuaidi_TC_BIG5.xml"><![CDATA[526ac92366f29690135c056a53eb205d]]></item>
+		<item id="/discuz_plugin_k_bbx_kuaidi_TC_UTF8.xml"><![CDATA[3036f1a1dfd4796fca5ca1fa15d40ee5]]></item>
+		<item id="/kuaidi.inc.php"><![CDATA[7f311cd035e2994941045112de95b22b]]></item>
+		<item id="/template/kuaidi.htm"><![CDATA[5c8341ae2e7d19c849acbbb447e0befd]]></item>
+	</item>
+</root>

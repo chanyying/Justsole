@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[tujoin_chaojitupian.plugin]]></item>
+	<item id="RevisionID"><![CDATA[12780]]></item>
+	<item id="SN"><![CDATA[2013041118p06PP39as3]]></item>
+	<item id="RevisionDateline"><![CDATA[1367028656]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_tujoin_chaojitupian_SC_GBK.xml"><![CDATA[b9cb8f81dd5ccd664586c197ee36adf9]]></item>
+		<item id="/discuz_plugin_tujoin_chaojitupian_SC_UTF8.xml"><![CDATA[5d27d5a4cc71b98b66381ae42abc7980]]></item>
+		<item id="/discuz_plugin_tujoin_chaojitupian_TC_BIG5.xml"><![CDATA[8dc7c0c6cd5026ce1d43423684909acf]]></item>
+		<item id="/discuz_plugin_tujoin_chaojitupian_TC_UTF8.xml"><![CDATA[8566805cef916324d83d00ef0d1f72b4]]></item>
+		<item id="/exifs.php"><![CDATA[03c509cd3bc6b642532de2fbd17045d9]]></item>
+		<item id="/function.php"><![CDATA[a25abfdfade75a824763ee0e097e3938]]></item>
+		<item id="/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+		<item id="/install.php"><![CDATA[58e22f93bccc5bb055b210147bb2d8c4]]></item>
+		<item id="/template/editor.htm"><![CDATA[21f7f4b14e1e2e23d885033f62ca7169]]></item>
+		<item id="/template/editorx2.htm"><![CDATA[2225354697b4a604977bc0e293e69545]]></item>
+		<item id="/template/navigation.htm"><![CDATA[3ebe71bbbe32be05d543a6e89c0d5388]]></item>
+		<item id="/template/navigationx2.htm"><![CDATA[22a86659317761b06cfb0a316d8bd817]]></item>
+		<item id="/template/page.htm"><![CDATA[b0db1f0d21b83833ac73b20d7aa3b3f5]]></item>
+		<item id="/template/post.htm"><![CDATA[8bcea38e5b8947aaa6f14058e4a56ee4]]></item>
+		<item id="/template/profile.htm"><![CDATA[12c2bcc97f8e716f7f7fa3f2a1fc9f17]]></item>
+		<item id="/template/viewthread.htm"><![CDATA[b58aa7d56d275c029803e1d2b2bbca3e]]></item>
+		<item id="/tujoin_chaojitupian.class.php"><![CDATA[733b1095aafe0d84627bc50aa6ffbd38]]></item>
+		<item id="/tujoin_chaojitupian.inc.php"><![CDATA[15f9b82bcaa172f34bbc7c9ea6226626]]></item>
+		<item id="/uninstall.php"><![CDATA[2e54e3aaf87074817fb79194247f79fd]]></item>
+		<item id="/HttpDown.class.php"><![CDATA[2e9960a3ba8cc6b2b20c3d6483a38109]]></item>
+	</item>
+</root>

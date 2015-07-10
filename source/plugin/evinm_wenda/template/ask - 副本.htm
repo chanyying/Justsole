@@ -1,0 +1,400 @@
+<!--{subtemplate common/header}-->
+<link rel="stylesheet" href="source/plugin/evinm_wenda/template/style/global.css">
+<link rel="stylesheet" href="source/plugin/evinm_wenda/template/style/style.css">
+<link rel="stylesheet" href="source/plugin/evinm_wenda/template/style/ask.css">
+<style type="text/css">.btn, .btn span, .btn button, .btn a, .btn input{background:none ;}
+.blockcode {margin: 10px 0;	padding: 10px 10px 10px 65px;border: 1px solid #CCC;background: #F7F7F7 url(../../static/image/commoncodebg.gif) repeat-y 0 0;}</style>
+    <div id="doc4">
+		<!--{subtemplate evinm_wenda:head}-->
+        <div id="bd" class="clearfix">
+			<div class="crumb"><a href="plugin.php?id=evinm_wenda:index">问答</a> &gt; 提问</div>
+			<div style="margin:auto; width:700px; " class="article cl">
+				<div class="mod-ask-form cl">
+					<div class="hd"><h3>我想问一下</h3></div>
+				</div>
+				<div class="bd">				
+					<form class="mod-ask-form" method="post" id="hdform" action="plugin.php?id=evinm_wenda:ask" autocomplete="off" onsubmit="$('{$editorid}_textarea').value = wysiwyg ? html2bbcode(getEditorContents()) : $('{$editorid}_textarea').value" enctype="multipart/form-data">
+					<input type="hidden" name="formhash" value="{FORMHASH}" />
+					<input type="hidden" name="handlekey" value="$_G[gp_handlekey]" />
+						<div class="pbt cl mtm">
+							<div class="z">
+								<span>									
+									<!--{if $ac == 'edit' && !empty($qid)}-->	
+										分类: $edit_ask[sup_name] > $edit_ask[f_name]    
+									<!--{else}-->	
+										<!--{if $list_f}-->	
+										<select name="class">
+										<option value="">&nbsp;&nbsp;&gt; 请选择分类</option>
+										<option value="">&nbsp;</option>		
+											<!--{loop $list_f $mood}-->
+												<!--{if $mood['type']=='group'}-->						
+												<optgroup label="-- {$mood['name']}">
+													<!--{loop $list_f_t $moodt}-->
+													<!--{if $moodt['type']=='sup' && $moodt['fid'] == $mood['id']}-->
+													&nbsp;&nbsp;&nbsp;&nbsp;<option value="{$moodt['id']}">{$moodt['name']}</option>
+													<!--{/if}-->
+													<!--{/loop}-->
+													<option></option>
+												</optgroup>
+												<!--{/if}-->
+											<!--{/loop}-->
+										</select>
+										<!--{/if}-->
+									<!--{/if}-->
+								</span>
+								
+								<span>
+									<input type="text" name="subject" id="subject" class="px" value="<!--{if $ac == 'edit' && !empty($qid)}--> $edit_ask[subject] <!--{/if}-->" onblur="if($('tags')){relatekw('-1','-1',function(){extraCheck(4)});doane();}"
+									onkeyup="strLenCalc(this, 'checklen', 80);" style="width: 30em" tabindex="1">
+								</span>
+								<span id="subjectchk">
+									填写标题，还可输入
+									<strong id="checklen">
+										80
+									</strong>
+									个字符
+								</span>
+							</div>
+						</div>
+						<div class="q-main">
+							<!--{subtemplate evinm_wenda:module}-->
+						</div>
+							<div class="cl" style="position: relative;">
+							<div class="add-img">
+								<div style="top: -300px; left: 713px; line-height: 18px; width: 160px; "
+								class="tooltips">
+									<div class="content">
+										上传图片以详细说明；<br>
+										悬赏越高，<br>
+										会吸引更多人的回答；
+									</div>
+									<div class="cur-1">
+									</div>
+								</div>
+							</div>
+							<div>
+						<div class="q-toolbar">
+							<div class="add-extra">
+								<span id="addmorebtn" class="">
+									添加图片
+								</span>
+								<input name="user_upload_file[]" type="file" id="subjectimage" size="20">
+								<input name="subjectimage_value" type="hidden" id="subjectimage_value" value="">
+							</div>
+							<!--{if $_G['uid']}-->	
+							<div class="add-pay y">
+								<label for="coin">
+									我的$config['points_name'] ：$config['points_user'] ， 
+									悬赏
+								</label>
+								<select name="coin" id="coin">
+									<!--{if $mjf == 1}-->	
+										<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 0}--> 
+										<option value="0">
+											0
+										</option>
+										<!--{/if}-->
+										<!--{if $ac == ''}--> 
+										<option value="0">
+											0
+										</option>
+										<!--{/if}-->
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 5}--> 
+									<option value="5">
+										5
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="5">
+										5
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 10}--> 
+									<option value="10">
+										10
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="10">
+										10
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 15}--> 
+									<option value="15">
+										15
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="15">
+										15
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 20}--> 
+									<option value="20">
+										20
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="20">
+										20
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 30}--> 
+									<option value="30">
+										30
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="30">
+										30
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 50}--> 
+									<option value="50">
+										50
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="50">
+										50
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 80}--> 
+									<option value="80">
+										80
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="80">
+										80
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 100}--> 
+									<option value="100">
+										100
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="100">
+										100
+									</option>
+									<!--{/if}-->
+									
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 200}--> 
+									<option value="200">
+										200
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="200">
+										200
+									</option>
+									<!--{/if}-->
+									
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 500}--> 
+									<option value="500">
+										500
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="500">
+										500
+									</option>
+									<!--{/if}-->
+									
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 800}--> 
+									<option value="800">
+										800
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="800">
+										800
+									</option>
+									<!--{/if}-->
+									
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 1000}--> 
+									<option value="1000">
+										1000
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="1000">
+										1000
+									</option>
+									<!--{/if}-->
+								</select>
+								$config['points_name']
+							</div>
+							<!--{/if}-->
+						</div>						
+						<div class="q-btn">
+						<input type="hidden" name="wysiwyg" id="{$editorid}_mode" value="$editormode" />
+						<button type="submit" name="hdsubmit" class="pn pnc efb" value="yes"><strong>提交问题</strong></button></div>
+						
+						<!--{if $ac == 'edit' && !empty($qid)}--> 
+							<input name="amod" type="hidden" value="$ac">
+							<input name="qid" type="hidden" value="$_GET[qid]">
+						<!--{/if}-->
+						
+					</form>
+				</div>
+			</div>
+        </div>
+    </div>
+<script type="text/javascript">
+    var editorform = $('hdform');
+    var editorsubmit = $('hdsubmit');
+    if(wysiwyg) {
+        newEditor(1, bbcode2html(textobj.value));
+    } else {
+        newEditor(0, textobj.value);
+    }
+</script>
+<script type="text/javascript">
+	function saveData(ignoreempty) {
+	var ignoreempty = isUndefined(ignoreempty) ? 0 : ignoreempty;
+	var obj = $('hdform');
+	if(!obj) return;
+	var data = subject = message = '';
+	for(var i = 0; i < obj.elements.length; i++) {
+	  var el = obj.elements[i];
+	  if(el.name != '' && (el.tagName == 'SELECT' || el.tagName == 'TEXTAREA' || el.tagName == 'INPUT' && (el.type == 'text' || el.type == 'checkbox' || el.type == 'radio' || el.type == 'hidden' || el.type == 'select')) && el.name.substr(0, 6) != 'attach') {
+	   var elvalue = el.value;
+	   if(el.name == 'subject') {
+		subject = trim(elvalue);
+	   } else if(el.name == 'message') {
+		if(typeof wysiwyg != 'undefined' && wysiwyg == 1) {
+		 elvalue = html2bbcode(editdoc.body.innerHTML);
+		}
+		message = trim(elvalue);
+	   }
+	   if((el.type == 'checkbox' || el.type == 'radio') && !el.checked) {
+		continue;
+	   } else if(el.tagName == 'SELECT') {
+		elvalue = el.value;
+	   } else if(el.type == 'hidden') {
+		if(el.id) {
+		 eval('var check = typeof ' + el.id + '_upload == \'function\'');
+		 if(check) {
+		  elvalue = elvalue;
+		  if($(el.id + '_url')) {
+		   elvalue += String.fromCharCode(1) + $(el.id + '_url').value;
+		  }
+		 } else {
+		  continue;
+		 }
+		} else {
+		 continue;
+		}
+	   }
+	   if(trim(elvalue)) {
+		data += el.name + String.fromCharCode(9) + el.tagName + String.fromCharCode(9) + el.type + String.fromCharCode(9) + elvalue + String.fromCharCode(9, 9);
+	   }
+	  }
+	}
+	if(!subject && !message && !ignoreempty) {
+	  return;
+	}
+	saveUserdata('weida_'+discuz_uid, data);
+	}
+	function loadData(quiet, formobj) {
+
+	var evalevent = function (obj) {
+	  var script = obj.parentNode.innerHTML;
+	  var re = /onclick="(.+?)["|>]/ig;
+	  var matches = re.exec(script);
+	  if(matches != null) {
+	   matches[1] = matches[1].replace(/this\./ig, 'obj.');
+	   eval(matches[1]);
+	  }
+	};
+	var data = '';
+	data = loadUserdata('weida_'+discuz_uid);
+	alert(data);
+	var formobj = !formobj ? $('hdform') : formobj;
+	if(in_array((data = trim(data)), ['', 'null', 'false', null, false])) {
+	  if(!quiet) {
+	   showDialog('没有可以恢复的数据！', 'info');
+	  }
+	  return;
+	}
+	if(!quiet && !confirm('此操作将覆盖当前帖子内容，确定要恢复数据吗？')) {
+	  return;
+	}
+	var data = data.split(/\x09\x09/);
+	for(var i = 0; i < formobj.elements.length; i++) {
+	  var el = formobj.elements[i];
+	  if(el.name != '' && (el.tagName == 'SELECT' || el.tagName == 'TEXTAREA' || el.tagName == 'INPUT' && (el.type == 'text' || el.type == 'checkbox' || el.type == 'radio' || el.type == 'hidden'))) {
+	   for(var j = 0; j < data.length; j++) {
+		var ele = data[j].split(/\x09/);
+		if(ele[0] == el.name) {
+		 elvalue = !isUndefined(ele[3]) ? ele[3] : '';
+		 if(ele[1] == 'INPUT') {
+		  if(ele[2] == 'text') {
+		   el.value = elvalue;
+		  } else if((ele[2] == 'checkbox' || ele[2] == 'radio') && ele[3] == el.value) {
+		   el.checked = true;
+		   evalevent(el);
+		  } else if(ele[2] == 'hidden') {
+		   eval('var check = typeof ' + el.id + '_upload == \'function\'');
+		   if(check) {
+			var v = elvalue.split(/\x01/);
+			el.value = v[0];
+			if(el.value) {
+			 if($(el.id + '_url') && v[1]) {
+			  $(el.id + '_url').value = v[1];
+			 }
+			 eval(el.id + '_upload(\'' + v[0] + '\', \'' + v[1] + '\')');
+			 if($('unused' + v[0])) {
+			  var attachtype = $('unused' + v[0]).parentNode.parentNode.parentNode.parentNode.id.substr(11);
+			  $('unused' + v[0]).parentNode.parentNode.outerHTML = '';
+			  $('unusednum_' + attachtype).innerHTML = parseInt($('unusednum_' + attachtype).innerHTML) - 1;
+			  if($('unusednum_' + attachtype).innerHTML == 0 && $('attachnotice_' + attachtype)) {
+			   $('attachnotice_' + attachtype).style.display = 'none';
+			  }
+			 }
+			}
+		   }
+		  }
+		 } else if(ele[1] == 'TEXTAREA') {
+		  if(ele[0] == 'message') {
+		   if(!wysiwyg) {
+			textobj.value = elvalue;
+		   } else {
+			editdoc.body.innerHTML = bbcode2html(elvalue);
+		   }
+		  } else {
+		   el.value = elvalue;
+		  }
+		 } else if(ele[1] == 'SELECT') {
+		  if($(el.id + '_ctrl_menu')) {
+		   var lis = $(el.id + '_ctrl_menu').getElementsByTagName('li');
+		   for(var k = 0; k < lis.length; k++) {
+			if(ele[3] == lis[k].k_value) {
+			 lis[k].onclick();
+			 break;
+			}
+		   }
+		  } else {
+		   for(var k = 0; k < el.options.length; k++) {
+			if(ele[3] == el.options[k].value) {
+			 el.options[k].selected = true;
+			 break;
+			}
+		   }
+		  }
+		 }
+		 break;
+		}
+	   }
+	  }
+	}
+	if($('rstnotice')) {
+	  $('rstnotice').style.display = 'none';
+	}
+	extraCheckall();
+	}
+</script>
+<!--{subtemplate common/footer}-->

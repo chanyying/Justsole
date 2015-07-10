@@ -1,0 +1,25 @@
+{template common/header}
+ <!--{loop $baomings $baoming}-->
+    <div class="baomingxx">
+        <h2><strong>{lang dz55625_activity:bmxingxi}</strong><a href="javascript:;" onClick="hideWindow('$_G[gp_handlekey]');" class="flbc" title="{lang close}">{lang close}</a></h2>
+        <ul>
+        
+            <div class="baoms">
+            <ol>
+                 <li><strong>{lang dz55625_activity:huiyuanss}</strong>{$baoming[author]}({$baoming[xingm]})</li>
+                <li><strong>{lang dz55625_activity:bmshouji}</strong>{$baoming[tels]}</li>
+                <li><strong>{lang dz55625_activity:bmqqhao}</strong>{$baoming[qicq]}</li>
+                <li><strong>{lang dz55625_activity:renshuss}</strong>{$baoming[renumber]}</li>
+             </ol> 
+            </div>
+            <div class="dlbaox cl">
+                <strong>{lang dz55625_activity:beizhuss}</strong> {$baoming[subject]}
+             </div>
+             
+        </ul>
+    </div>
+<!--{/loop}--> 
+
+{template common/footer}
+
+

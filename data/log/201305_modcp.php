@@ -1,0 +1,11 @@
+<?PHP exit;?>	1367570707	chanyying	1	123.14.50.47	login		225	GET={mod=modcp; fid=225; action=login; }; POST={};
+<?PHP exit;?>	1367570712	chanyying	1	123.14.50.47	login	base	225	GET={mod=modcp; action=login; op=base; id=hy_bqbg:hy_bqbg; fid=225; }; POST={};
+<?PHP exit;?>	1367570718	chanyying	1	123.14.50.47	thread		225	GET={mod=modcp; fid=225; action=thread; }; POST={};
+<?PHP exit;?>	1367570730	chanyying	1	123.14.50.47	plugin	base	225	GET={mod=modcp; action=plugin; op=base; id=hy_bqbg:hy_bqbg; fid=225; }; POST={};
+<?PHP exit;?>	1367570741	chanyying	1	123.14.50.47	plugin	base	225	GET={mod=modcp; action=plugin; op=base; id=hy_bqbg:hy_bqbg; fid=225; hy_bqbg=2; }; POST={};
+<?PHP exit;?>	1367570775	chanyying	1	123.14.50.47	home			GET={mod=modcp; action=home; }; POST={};
+<?PHP exit;?>	1367570778	chanyying	1	123.14.50.47	plugin	base		GET={mod=modcp; action=plugin; op=base; id=hy_bqbg:hy_bqbg; }; POST={};
+<?PHP exit;?>	1367570781	chanyying	1	123.14.50.47	home			GET={mod=modcp; action=home; }; POST={};
+<?PHP exit;?>	1367570786	chanyying	1	123.14.50.47	thread	thread		GET={mod=modcp; action=thread; op=thread; }; POST={};
+<?PHP exit;?>	1367570881	chanyying	1	123.14.50.47	thread	thread		GET={mod=modcp; action=thread; op=thread; }; POST={};
+<?PHP exit;?>	1367986755	chanyying	1	218.28.138.250	login		350	GET={mod=modcp; fid=350; action=login; }; POST={};

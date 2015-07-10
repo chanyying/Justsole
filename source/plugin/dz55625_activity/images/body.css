@@ -1,0 +1,180 @@
+/*
+	[55625.COM!] (C)2001-2009 55625 Inc.
+	BY QQ:114512039  Lovenr
+*/
+
+.dzactivity{ width:960px; margin:0 auto 10px; height:auto;}
+
+.dzclass{ width:755px; height:110px; background:#F9F9F9}
+.dzclass ul{ border-bottom:1px #e3e3e3 dashed; padding:10px 0 5px 0; width:98%; margin:0 auto}
+.dzclass ul li{ float:left; padding:0 8px; }
+.dzclass ul li em{ color:#989898}
+.dzclass ul li a{ text-decoration:none; color:#000}
+.dzclass ul li strong a{color:#000}
+.dzclass ul li a.haodians_hover{color:#fff; background:#2873C2; padding:1px 8px; text-decoration:none;}
+.dzclass ul li a.haodians_hover em{color:#fff;}
+
+.dzadd{ width:196px; height:110px}
+.dzadd ul{}
+.dzadd ul li{}
+.dzadd ul li a{ width:196px; float:left; height:50px;}
+.dzadd ul li a:hover{ text-decoration:none}
+.dzadd ul li a#addhd{ width:196px; height:50px; background:#F90; text-align:center; line-height:50px; color:#fff; font-size:16px; font-weight:bold}
+.dzadd ul li a#addhd:hover{background:#EA8C00;}
+.dzadd ul li a#adminhd{ width:196px; height:50px; background:#1A9ADB; margin-top:10px; text-align:center; line-height:50px; color:#fff; font-size:16px; font-weight:bold}
+.dzadd ul li a#adminhd:hover{background:#1894CF;}
+
+.dzlists{ width:960px; margin:10px auto 0; height:auto; overflow:hidden}
+.dzlists ul{ width:980px; padding:1px 0 0 1px}
+.dzlists dl{ width:308px; height:278px; background:#F8F8F8; float:left; margin-right:14px; margin-bottom:14px; border:1px #e3e3e3 solid; overflow:hidden}
+.dzlists dl dt{ width:308px; height:198px; border-bottom:1px #e3e3e3 solid; background:#fff; position:relative}
+.dzlists dl dt img{ width:290px; height:180px; padding:9px}
+.dzlists dl dd{}
+.dzlists dl dd p.H_title{ width:308px; height:48px; float:left; border-bottom:1px #e3e3e3 solid; line-height:48px; text-align:center}
+.dzlists dl dd p.H_title a{ font-size:16px; font-weight:bold}
+.dzlists dl dd p.H_title a:hover{ color:#C00; text-decoration:none}
+.dzactivity .pages{width:948px; border:1px #e3e3e3 solid; padding:5px; background:#F8F8F8}
+
+.showtime{position:absolute; top:166px; left:9px; width:290px; text-align:center; height:24px; line-height:24px; background:#333; color:#fff; opacity:.6; display:none}
+
+.dzlists dl dd p.H_sumber{ width:308px; height:30px; line-height:30px; overflow:hidden; float:left}
+.dzlists dl dd p.H_sumber strong{ font-weight:400; color:#989898; width:125px; float:left; padding-left:10px;}
+.dzlists dl dd p.H_sumber span{ float:left; width:100px; text-align:right; color:#989898;}
+.dzlists dl dd p.H_sumber span a{ color:#C00}
+.dzlists dl dd p.H_sumber img{ float:right; width:65px; height:22px; text-align:center; margin-top:4px; margin-right:4px}
+
+.dzlists ol{width:960px; text-align:center; padding-bottom:10px}
+
+.dzactivity .tablesx{margin:0 auto; border:1px #e3e3e3 solid; border-bottom:none}
+.dzactivity tr{ text-align:left; border-bottom:1px #e3e3e3 solid}
+.dzactivity .tb2s{width:80px; height:30px; line-height:30px; background:#F2F2F2; float:left; text-align:center}
+.dzactivity .tb2x{ text-align:left; float:left; padding-top:3px;}
+
+.dzactivity .tedt{ width:954px;}
+.dzactivity label{ margin-left:5px;}
+.dzactivity td span{ color: #999}
+.dzactivity .area textarea{ height:150px}
+
+#tradeattach_image{ display:none}
+
+.tedt {
+	BORDER-BOTTOM:#ccc 1px solid;
+	BORDER-LEFT:#999 1px solid;
+	WIDTH:99%;
+	BORDER-TOP:#999 1px solid;
+	BORDER-RIGHT:#ccc 1px solid
+}
+.tedt .bar {
+	BORDER-BOTTOM:#cdcdcd 1px solid;
+	PADDING-BOTTOM:0px;
+	LINE-HEIGHT:25px;
+	PADDING-LEFT:0px;
+	PADDING-RIGHT:10px;
+	BACKGROUND:#f2f2f2;
+	HEIGHT:25px;
+	PADDING-TOP:0px
+}
+.tedt .bar .hook {
+	padding-left:10px;
+}
+.tedt .area {
+	PADDING-BOTTOM:4px;
+	PADDING-LEFT:4px;
+	PADDING-RIGHT:4px;
+	ZOOM:1;
+	BACKGROUND:#fff;
+	PADDING-TOP:4px
+}
+.tedt .pt {
+	BORDER-BOTTOM:medium none;
+	BORDER-LEFT:medium none;
+	PADDING-BOTTOM:0px !important;
+	PADDING-LEFT:0px !important;
+	WIDTH:100%;
+	PADDING-RIGHT:0px !important;
+	BACKGROUND:#fff;
+	BORDER-TOP:1px dotted #ccc;
+	MARGIN-RIGHT:0px;
+	BORDER-RIGHT:medium none;
+	PADDING-TOP:0px !important
+}
+.tedt .pt:focus {
+	OUTLINE-STYLE:none;
+	OUTLINE-COLOR:invert;
+	OUTLINE-WIDTH:medium;
+	-moz-box-shadow:none
+}
+
+/*******************************************/
+.view_top{ width:716px; margin:0 auto; height:auto; float:left}
+
+#viewTleft{ width:716px; float:left; height:232px; background:#fff; border:1px #e3e3e3 solid; overflow:hidden}
+#viewTleft #viewls{ width:716px; height:200px; border-bottom:1px #e3e3e3 solid; float:left; background:#F8F8F8; overflow:hidden; position: relative;}
+#viewTleft #viewls h2{position: absolute; top:152px; left:10px; width:290px; height:38px; line-height:38px; font-size:18px; text-align:center; color:#fff; background:#000; opacity: 0.50;-moz-opacity: 0.50;filter:alpha(opacity=50); font-weight:400 }
+#viewTleft #viewls h3{ width:310px; height:200px; float:left; border-right:1px #e3e3e3 solid}
+#viewTleft #viewls h3 img{ width:290px; height:180px; padding:10px;}
+
+
+#viewTleft #viewls dl{ width:395px; height:185px; float:left; padding-top:15px; padding-left:10px}
+#viewTleft #viewls dt{ font-size:18px; font-family:"Î¢ÈíÑÅºÚ","ËÎÌå"; font-weight:bold}
+#viewTleft #viewls dd{}
+#viewTleft #viewls dd p{ color: #999; padding:3px 0}
+#viewTleft #viewls dd p strong{ color: #666}
+#viewTleft #viewls .endtime{font-size:12px; font-family:"Microsoft Yahei"; color: #F60; font-weight:bold } 
+
+#viewTleft #viewlx{ width:709px; height:24px; float:left; padding:7px 0 0 7px; overflow:hidden;}
+#viewTleft #viewlx ul{ width:344px; float:left}
+#viewTleft #viewlx dl{ width:150px; float:right}
+#viewTleft #viewlx dl a#xianhua{ background: url(flower.gif) no-repeat; padding-left:20px}
+#viewTleft #viewlx dl a#jidan{ background: url(egg.gif) no-repeat; padding-left:20px}
+#viewTleft #viewlx dl a{ cursor: pointer}
+
+#viewTright{ width:696px; height:auto; border:1px #e3e3e3 solid; float:left; background:#F8F8F8 url(xiangqingIco.jpg) no-repeat; overflow:hidden; padding:55px 10px 10px 10px; font-size:14px; margin:10px auto 0} 
+
+
+/*------------------------------*/
+.view_bot{ width:230px; margin:0 auto; height:auto; float:right}
+
+#viewBleft{ width:230px; float:right; height:auto; background:#F8F8F8; border:1px #e3e3e3 solid; float:left; padding-bottom:10px; position: relative;} 
+#viewBleft h3{ width:230px; height:54px; text-align:center; font-size:16px; position: absolute; top:0px; left:-1px; z-index:9}
+#viewBleft h3 em{ font-size:26px; color:#fff; float:left; padding-left:30px; padding-top:9px; font-family:Geneva}
+#viewBleft h3 span a{ width:80px; height:30px; background:#89CCED; float:right; margin-top:11px; line-height:30px; cursor:pointer; text-decoration:none; color:#FCFDFE}
+#viewBleft h3 span a:hover{ background:#1B7CAB}
+#viewBleft ul{ padding-top:80px}
+.ie6 #viewBleft ul{ padding-top:90px}
+#viewBleft ul li{ width:210px; height:48px; padding:0 10px; margin-top:10px; overflow:hidden; }
+
+#viewBleft ul li p.userico{ width:48px; height:48px; float:left;}
+#viewBleft ul li p.userico img{ width:44px; height:44px; padding:1px; border:1px #e3e3e3 solid; background:#fff}
+#viewBleft ul li p.username{ width:140px; height:48px; float:left; padding-left:10px;}
+#viewBleft ul li p.username strong{ width:140px; float:left; padding-top:5px}
+#viewBleft ul li p.username span{ width:140px; float:left; color:#999}
+
+#viewBleft h2{ background: url(baomingIco.png) no-repeat; position: absolute; top:-1px; left:-1px; width:247px; height:87px; z-index:8}
+
+#viewBright{ width:230px; height:232px; border:1px #e3e3e3 solid; background:#F8F8F8; float:left; margin-top:10px }
+#viewBright #mapCanvas{ width:216px; height:218px; border:1px #e3e3e3 solid; margin:6px auto 0}
+
+/*-------------------------*/
+.baomingxx{ width:350px; height:auto; padding-bottom:10px;}
+.baomingxx h2{ height:22px; margin-bottom:8px; border-bottom:1px #e3e3e3 solid; padding:5px 0; background:#EFEFEF }
+.baomingxx h2 strong{float:left; padding-left:5px; font-size:14px}
+.baomingxx h2 .flbc{ float:right; padding-right:8px}
+.baomingxx ul{ padding:0 5px;}
+
+.baomingxx .baoms{ width:100%; height:auto; float:left}
+.baomingxx .baoms ol{}
+.baomingxx .baoms ol li{ width:100%; float:left; border-bottom:1px #e3e3e3 solid; padding:5px 0}
+.baomingxx .baoms ol li strong{ width:50px; float:left;}
+.baomingxx .dlbaos{ width:100%; height:80px; float:left; padding-bottom:5px;}
+.baomingxx .dlbaos textarea{ border:1px #e3e3e3 solid; width:336px; height:80px; margin-top:5px;}
+.baomingxx .dlbaox{ width:100%; float:left; padding-top:5px; line-height:2em; padding-bottom:10px}
+
+#mingdan{ width:718px; height:auto; float:left; overflow:hidden;margin:10px auto 0;} 
+#mingdan table{}
+#mingdan table tr.headers{ background:#F8F8F8}
+#mingdan table tr.headers td{ font-weight:bold; color: #666}
+#mingdan table tr{ height:30px; text-align:center; color:#999}
+#mingdan table tr td{ border:1px #e3e3e3 solid}
+
+.addkk{ margin:10px auto; border:1px solid #F90; background:#FFFFE8; color:#F60; text-align:center; height:25px; line-height:25px; font-weight:bold}

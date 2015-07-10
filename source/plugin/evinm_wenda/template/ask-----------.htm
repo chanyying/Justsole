@@ -1,0 +1,256 @@
+<!--{subtemplate common/header}-->
+<link rel="stylesheet" href="source/plugin/evinm_wenda/template/style/global.css">
+<link rel="stylesheet" href="source/plugin/evinm_wenda/template/style/style.css">
+<link rel="stylesheet" href="source/plugin/evinm_wenda/template/style/ask.css">
+<script src="source/plugin/evinm_wenda/template/js/5.js"></script>
+ 
+    <div id="doc4">
+		<!--{subtemplate evinm_wenda:head}-->
+        <div id="bd" class="egrid-4 clearfix">
+			<div class="crumb"><a href="<!--{if $rewrite == '1'}-->wenda/ <!--{else}--> plugin.php?id=evinm_wenda:index  <!--{/if}-->">问答</a> &gt; 提问</div>
+			<div style="position: relative; min-height:350px; " class="article cl">
+				<div class="mod-ask-form cl">
+					<div class="hd"><h3>我想问一下</h3></div>
+				</div>
+				
+				<div class="bd">				
+					<form class="mod-ask-form" method="post" action="" enctype="multipart/form-data">
+						<div class="pbt cl mtm">
+							<div class="z">
+								<span>									
+									<!--{if $ac == 'edit' && !empty($qid)}-->	
+										分类: $edit_ask[sup_name] > $edit_ask[f_name]    
+									<!--{else}-->	
+										<!--{if $list_f}-->	
+										<select name="class">
+										<option value="">&nbsp;&nbsp;&gt; 请选择分类</option>
+										<option value="">&nbsp;</option>		
+											<!--{loop $list_f $mood}-->
+												<!--{if $mood['type']=='group'}-->						
+												<optgroup label="-- {$mood['name']}">
+													<!--{loop $list_f_t $moodt}-->
+													<!--{if $moodt['type']=='sup' && $moodt['fid'] == $mood['id']}-->
+													&nbsp;&nbsp;&nbsp;&nbsp;<option value="{$moodt['id']}">{$moodt['name']}</option>
+													<!--{/if}-->
+													<!--{/loop}-->
+													<option></option>
+												</optgroup>
+												<!--{/if}-->
+											<!--{/loop}-->
+										</select>
+										<!--{/if}-->
+									<!--{/if}-->
+								</span>
+								
+								<span>
+									<input type="text" name="subject" id="subject" class="px" value="<!--{if $ac == 'edit' && !empty($qid)}--> $edit_ask[subject] <!--{/if}-->" onblur="if($('tags')){relatekw('-1','-1',function(){extraCheck(4)});doane();}"
+									onkeyup="strLenCalc(this, 'checklen', 80);" style="width: 22em" tabindex="1">
+								</span>
+								<span id="subjectchk">
+									填写标题，还可输入
+									<strong id="checklen">
+										80
+									</strong>
+									个字符
+								</span>
+							</div>
+						</div>
+						<div class="q-main">
+							<div class="tedt">
+								<div class="bar">
+									<!--{eval $seditor = array('fastpost', array('bold', 'color', 'img', 'link', 'smilies'), $guestpost ? 1 : 0);}-->
+									<!--{subtemplate common/seditor}-->
+								</div>
+								<div class="area">
+										<textarea rows="10" cols="80" name="message" id="fastpostmessage" tabindex="12" class="pt" ><!--{if $ac == 'edit' && !empty($qid)}--> $edit_ask[message] <!--{/if}--></textarea>
+								</div>
+							</div>
+						</div>
+						
+						<div class="q-toolbar">
+							<div class="add-extra">
+								<span id="addmorebtn" class="">
+									添加图片
+								</span>
+								<input name="user_upload_file[]" type="file" id="subjectimage" size="20">
+								<input name="subjectimage_value" type="hidden" id="subjectimage_value" value="">
+							</div>
+							<div class="add-img">
+								<div style="top: 128px; left: 613px; line-height: 18px; width: 160px; "
+								class="tooltips">
+									<div class="content">
+										上传图片以详细说明；<br>
+										悬赏越高，<br>
+										会吸引更多人的回答；
+									</div>
+									<div class="cur-1">
+									</div>
+								</div>
+							</div>
+							<div class="add-pay">
+								<label for="coin">
+									我的$config['points_name'] ：$config['points_user'] ， 
+									悬赏
+								</label>
+								<select name="coin" id="coin">
+									<!--{if $mjf == 1}-->	
+										<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 0}--> 
+										<option value="0">
+											0
+										</option>
+										<!--{/if}-->
+										<!--{if $ac == ''}--> 
+										<option value="0">
+											0
+										</option>
+										<!--{/if}-->
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 5}--> 
+									<option value="5">
+										5
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="5">
+										5
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 10}--> 
+									<option value="10">
+										10
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="10">
+										10
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 15}--> 
+									<option value="15">
+										15
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="15">
+										15
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 20}--> 
+									<option value="20">
+										20
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="20">
+										20
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 30}--> 
+									<option value="30">
+										30
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="30">
+										30
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 50}--> 
+									<option value="50">
+										50
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="50">
+										50
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 80}--> 
+									<option value="80">
+										80
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="80">
+										80
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 100}--> 
+									<option value="100">
+										100
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="100">
+										100
+									</option>
+									<!--{/if}-->
+									
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 200}--> 
+									<option value="200">
+										200
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="200">
+										200
+									</option>
+									<!--{/if}-->
+									
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 500}--> 
+									<option value="500">
+										500
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="500">
+										500
+									</option>
+									<!--{/if}-->
+									
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 800}--> 
+									<option value="800">
+										800
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="800">
+										800
+									</option>
+									<!--{/if}-->
+									
+									<!--{if $ac == 'edit' && !empty($qid) && $edit_ask[coin] <= 1000}--> 
+									<option value="1000">
+										1000
+									</option>
+									<!--{/if}-->
+									<!--{if $ac == ''}--> 
+									<option value="1000">
+										1000
+									</option>
+									<!--{/if}-->
+								</select>
+								$config['points_name']
+							</div>
+						</div>						
+						<div class="q-btn"><input type="submit" class="bt-dis"  name="btn_ask"  value="提交问题"></div>
+						
+						<!--{if $ac == 'edit' && !empty($qid)}--> 
+							<input name="amod" type="hidden" value="$ac">
+							<input name="qid" type="hidden" value="$_GET[qid]">
+						<!--{/if}-->
+						
+					</form>
+				</div>
+			</div>
+        </div>
+    </div>
+    <script src="source/plugin/evinm_wenda/template/js/1.js">    </script>
+    <script src="source/plugin/evinm_wenda/template/js/2.js">    </script>    
+	<!--{if $rewrite == '1' }-->
+	<script src="source/plugin/evinm_wenda/template/js/7.js">    </script>
+	<!--{else}-->
+	<script src="source/plugin/evinm_wenda/template/js/3.js">    </script>
+	<!--{/if}-->
+    <script src="source/plugin/evinm_wenda/template/js/4.js">    </script>
+<!--{subtemplate common/footer}-->

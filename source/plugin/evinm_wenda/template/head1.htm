@@ -1,0 +1,131 @@
+ <!--{if  empty($_G['disabledwidthauto']) && $_G['setting']['switchwidthauto']}-->
+ <style type="text/css">
+	#hd {width:960px; margin:0 auto;}	
+ </style>
+ <!--{/if}-->
+ <style type="text/css">
+	.grid-3 {width:100% !important;}
+	<!--{if $config['openall'] == 1}-->
+	.mod-cate .item li {width:45%;}
+	<!--{/if}-->
+ </style>
+
+<div class="square_nav_box cl wp">
+<ul class="square_nav">
+	<li <!--{if $_GET[id] == 'evinm_wenda:index'}--> class="cur" <!--{/if}-->>
+		<a href="<!--{if $rewrite == '1'}-->wenda/ <!--{else}--> plugin.php?id=evinm_wenda:index  <!--{/if}-->">
+			<i class="square_nav_ico square_nav_ico_index"></i>
+			<span class="f">首页</span>
+		</a>
+	</li>
+	<li <!--{if $_GET[id] == 'evinm_wenda:list'}--> class="cur" <!--{/if}-->>
+		<a href="<!--{if $rewrite == '1'}-->wenda/list.html <!--{else}-->plugin.php?id=evinm_wenda:list<!--{/if}-->">
+			<i menuname="问题库" class="square_nav_ico square_nav_ico_study"></i>			
+			<span class="f">问题</span>
+		</a>
+	</li>
+	<li <!--{if $_GET[id] == 'evinm_wenda:search'}--> class="cur" <!--{/if}-->>
+		<a href="<!--{if $rewrite == '1'}-->wenda/search.html<!--{else}--> plugin.php?id=evinm_wenda:search<!--{/if}-->">
+			<i menuname="搜索" class="square_nav_ico square_nav_ico_so"></i>			
+			<span class="f">搜索</span>
+		</a>
+	</li>
+	<li <!--{if $_GET[id] == 'evinm_wenda:ask'}--> class="cur" <!--{/if}-->>
+		<a href="<!--{if $rewrite == '1'}-->wenda/ask.html<!--{else}--> plugin.php?id=evinm_wenda:ask<!--{/if}-->">
+			<i menuname="提问" class="square_nav_ico square_nav_ico_ask"></i>			
+			<span class="f">提问</span>
+		</a>
+	</li>
+	<li <!--{if $_GET[id] == 'evinm_wenda:my'}--> class="cur" <!--{/if}-->>
+		<a href="<!--{if $rewrite == '1'}-->wenda/home_mypage.html <!--{else}-->plugin.php?id=evinm_wenda:my&ac=mypage<!--{/if}-->">
+			<i menuname="主页" class="square_nav_ico square_nav_ico_home"></i>			
+			<span class="f">主页</span>
+		</a>
+	</li>
+</ul>       
+</div>
+
+<style type="text/css">
+.square_nav_box {
+	z-index: 10;
+	position: relative;
+	border: 1px solid #9DCF9F;
+	background: #fefefe;
+	font-family: "Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
+}
+.square_nav_box a:hover {
+	text-decoration: none;
+	color: #6FA94B;
+}
+.square_nav, .square_nav a {
+	height: 119px;	
+}
+
+.square_nav {
+	font-size: 17px;
+	padding-left: 30px;
+}
+.square_nav li {
+	text-align: center;
+	float: left;
+	margin-left: -2px;
+	position: relative;
+	padding: 0 55px 0 0;
+	letter-spacing: 2px;
+}
+.square_nav_ico {
+	width: 55px;
+	height: 55px;
+	display: inline-block;
+	background: url(source/plugin/evinm_wenda/template/images/square_nav_spr.png) no-repeat;
+}
+
+.square_nav a {
+	width: 55px;
+	display: block;
+	color: #717171;
+}
+.square_nav .square_nav_ico {
+	margin: 18px 0 7px;
+	cursor: pointer;
+}
+.square_nav a {
+	color: #717171;
+}
+.square_nav li.cur a, .square_nav li a:active {
+	background-position: 0 -110px;
+	color: #4B941E;
+}
+
+
+.square_nav_ico_index {
+	background-position: 0 0;
+}
+.cur .square_nav_ico_index, .square_nav_ico_index:hover {
+	background-position: 0 -57px;
+}
+.square_nav_ico_so {
+	background-position: 0 -114px;
+}
+.cur .square_nav_ico_so , .square_nav_ico_so:hover {
+	background-position: 0 -171px;
+}
+.square_nav_ico_home {
+	background-position: 0 -228px;
+}
+.cur .square_nav_ico_home, .square_nav_ico_home:hover {
+	background-position: 0 -285px;
+}
+.square_nav_ico_study {
+	background-position: 0 -798px;
+}
+.cur .square_nav_ico_study, .square_nav_ico_study:hover{
+	background-position: 0 -855px;
+}
+.square_nav_ico_ask {
+	background-position: 0 -342px;
+}
+.cur .square_nav_ico_ask, .square_nav_ico_ask:hover {
+	background-position: 0 -399px;
+}
+</style>

@@ -1,0 +1,46 @@
+{template common/header}
+
+
+<div class="baomingxx">
+    <h2><strong>{lang dz55625_activity:bmziliao}</strong><a href="javascript:;" onClick="hideWindow('$_G[gp_handlekey]');" class="flbc" title="{lang close}">{lang close}</a></h2>
+    <ul>
+    <form method="post" enctype="multipart/form-data" action="plugin.php?id=dz55625_activity:huodong_bm&option=baoming&applysubdz=true" name="applyforms">
+        <input type="hidden" name="formhash" value="{FORMHASH}" />
+       	<input type="hidden" name="newid" value="{$_G['gp_vid']}" />
+        <div class="baoms">
+       	<ol>
+        	<li><strong>{lang dz55625_activity:xingmings}</strong><input type="text" name="xingm" id="xingm" size="43"/></li>
+            <li><strong>{lang dz55625_activity:bmshouji}</strong><input type="text" name="tels" id="tels" size="43"/></li>
+           	<li><strong>{lang dz55625_activity:bmqqhao}</strong><input type="text" name="qicq" id="qicq" size="43"/></li>
+            <li><strong>{lang dz55625_activity:renshuss}</strong>
+            <select name="renumber">
+<option>{lang dz55625_activity:renshubms}</option>
+<option value="1">{lang dz55625_activity:rena}</option>
+<option value="2">{lang dz55625_activity:renb}</option>
+<option value="3">{lang dz55625_activity:renc}</option>
+<option value="4">{lang dz55625_activity:rend}</option>
+<option value="5">{lang dz55625_activity:rene}</option>
+<option value="6">{lang dz55625_activity:renf}</option>
+<option value="7">{lang dz55625_activity:reng}</option>
+<option value="8">{lang dz55625_activity:renh}</option>
+<option value="9">{lang dz55625_activity:reni}</option>
+<option value="10">{lang dz55625_activity:renj}</option>
+</select>
+
+            </li>
+         </ol> 
+        </div>
+        <div class="dlbaos cl">
+         	<textarea name="subject" id="subject"></textarea>
+         </div>
+        <div style="text-align:center; margin:10px auto; width:100%; float:left">
+            <button type="submit" name="applysubdz" id="applysubdz" value="true" class="pn pnp" /><strong>{lang dz55625_activity:ahuodongtiji}</strong></button>
+        </div>
+    </form>
+    </ul>
+</div>
+
+
+{template common/footer}
+
+

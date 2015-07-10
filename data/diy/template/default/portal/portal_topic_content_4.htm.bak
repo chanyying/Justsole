@@ -1,0 +1,29 @@
+<!--{template common/header}-->
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a> <em>&rsaquo;</em> $topic[title]
+	</div>
+</div>
+<link id="style_css" rel="stylesheet" type="text/css" href="static/topic/t1/style.css">
+<style id="diy_style" type="text/css">#portal_block_609 {  border-top:#ffffff 0px none !important;border-right:#ffffff 0px none !important;border-bottom:#3399ff 1px solid !important;border-left:#ffffff 0px none !important;}#portal_block_609 .dxb_bc {  margin-top:0px !important;margin-right:10px !important;margin-bottom:10px !important;margin-left:10px !important;}#framevK1IIO {  border:#ffffff 0px none !important;}#portal_block_610 {  border:#ffffff 0px none !important;}#tabPhNhY9 {  border:#ffffff 0px none !important;}</style>
+<style>
+.wp{ width:100%; height:100%;}
+
+
+
+</style>
+<div id="widgets">
+</div>
+<div class="wp">
+<!--[diy=diypage]--><div id="diypage" class="area"><div id="framevK1IIO" class=" frame move-span cl frame-3-1"><div id="framevK1IIO_left" class="column frame-3-1-l"><div id="framevK1IIO_left_temp" class="move-span temp"></div><div id="tabPhNhY9" class=" frame-tab move-span cl"><div id="tabPhNhY9_title" class="tab-title title column cl" switchtype="click"><!--{block/626}--><!--{block/627}--><!--{block/628}--></div><div id="tabPhNhY9_content" class="tb-c"></div><script type="text/javascript">initTab("tabPhNhY9","click");</script></div></div><div id="framevK1IIO_center" class="column frame-3-1-r"><div id="framevK1IIO_center_temp" class="move-span temp"></div><!--{block/609}--><!--{block/610}--></div></div></div><!--[/diy]-->
+<!--{if $topic['allowcomment']==1}-->
+	{eval
+		$data = &$topic;
+		$common_url = "portal.php?mod=comment&id=$topicid&idtype=topicid";
+		$form_url = "portal.php?mod=portalcp&ac=comment";
+		$commentlist = portaltopicgetcomment($topicid);	}
+	<!--{template portal/portal_comment}-->
+<!--{/if}-->
+</div>
+
+<!--{template common/footer}-->

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2013-07-25 10:58]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://weiyongming.gnway.net/Discuz2.5/upload/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[厉优新浪微博登录绑定]]></item>
+			<item id="identifier"><![CDATA[liyou_weibo]]></item>
+			<item id="description"><![CDATA[1、用户直接使用新浪微博账号登录论坛，方便，快速，安全。
+2、对已有论坛账号的用户则可以绑定新浪账号，实现一号登录多站模式
+3、论坛可以指定官方微博账号，在指定位置显示官方微博的关注情况，且实现用户一键添加关注的功能。增加用户黏度，增大网站流量。
+4、(高级版本)绑定的用户发帖同步新浪微博。增大论坛用户量，加快增广论坛信息的传播速度及范围。
+5、ly_kevin的联系方式：394578420@qq.com]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[liyou_weibo/]]></item>
+			<item id="copyright"><![CDATA[ly_kevin]]></item>
+			<item id="version"><![CDATA[1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[ly_weibobind]]></item>
+					<item id="menu"><![CDATA[新浪微博绑定]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[7]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[liyou_weibo]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[app_key]]></item>
+				<item id="description"><![CDATA[填写在新浪微博开放平台获取的appkey]]></item>
+				<item id="variable"><![CDATA[app_key]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[137112959]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[app_secret]]></item>
+				<item id="description"><![CDATA[填写在新浪微博开放平台获取的secret]]></item>
+				<item id="variable"><![CDATA[app_secret]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[189b0ac5b8c358373d8a15540bae0c7c]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[启用关注按钮]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ly_notice]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[官方论坛微博uid]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ly_weibo_uid]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[2696141881]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[关注按钮显示位置]]></item>
+				<item id="description"><![CDATA[具体现在位置大家可以通过改变设置选项查看相应的效果，若需其他扩展（小扩展免费制作），请发邮件到：394578420@qq.com。]]></item>
+				<item id="variable"><![CDATA[ly_btn_position]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1 = “设置为首页”同级导航
+2 = 论坛状态栏
+3 = 网站顶部导航]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="login_success"><![CDATA[使用新浪微博登录成功]]></item>
+				<item id="bind_success"><![CDATA[绑定新浪微博账号成功]]></item>
+				<item id="unbind_success"><![CDATA[解除新浪微博绑定成功]]></item>
+				<item id="unbind_fail"><![CDATA[解除新浪微博绑定失败]]></item>
+				<item id="register_or_bind"><![CDATA[完善信息或绑定账号]]></item>
+				<item id="complete_profile"><![CDATA[完善账号信息]]></item>
+				<item id="auth_fail"><![CDATA[授权失败,你可以再次申请授权]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="header_login"><![CDATA[使用新浪微博登录]]></item>
+				<item id="header_bind"><![CDATA[绑定新浪微博账号]]></item>
+				<item id="header_login_tip"><![CDATA[一号多站,快速登录]]></item>
+				<item id="exists_discuz"><![CDATA[已经有论坛账号?]]></item>
+				<item id="bind_exists_discuz"><![CDATA[绑定我的账号]]></item>
+				<item id="not_exists_discuz"><![CDATA[还没有论坛账号?]]></item>
+				<item id="set_new_discuz"><![CDATA[设置一个账号]]></item>
+				<item id="complete_discuz"><![CDATA[完善账号信息]]></item>
+				<item id="bind_discuz"><![CDATA[绑定账号]]></item>
+				<item id="ly_weibo_head_tip"><![CDATA[厉优软件开发团队]]></item>
+				<item id="ly_weibo_description"><![CDATA[该插件由厉优团队成员liyou_kevin开发，主要实现功能：<br/>
+						 1、用户直接使用新浪微博账号登录论坛，方便，快速，安全。<br/>
+						 2、对已有论坛账号的用户则可以绑定新浪账号，实现一号登录多站模式<br/>
+						 3、论坛可以指定官方微博账号，在指定位置显示官方微博的关注情况，且实现用户一键添加关注的功能。增加用户黏度，增大网站流量。<br/>
+						 4、(高级版本)绑定的用户发帖同步新浪微博。增大论坛用户量，加快增广论坛信息的传播速度及范围。<br/>
+						 5、liyou_kevin的联系方式：394578420@qq.com]]></item>
+				<item id="ly_weibo_unbind"><![CDATA[解除新浪微博账号绑定]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

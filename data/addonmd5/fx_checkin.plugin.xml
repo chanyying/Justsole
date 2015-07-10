@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[fx_checkin.plugin]]></item>
+	<item id="RevisionID"><![CDATA[17370]]></item>
+	<item id="SN"><![CDATA[2014011518k52Te2nXdh]]></item>
+	<item id="RevisionDateline"><![CDATA[1374760801]]></item>
+	<item id="Data">
+		<item id="/ajax.inc.php"><![CDATA[4d91eba0b1c23a817475c541386bc43d]]></item>
+		<item id="/auto.inc.php"><![CDATA[0fc226ddd467575b0efdf5b17b2170c3]]></item>
+		<item id="/checkin.inc.php"><![CDATA[0fdfc3195427bb767b615d56702f9a95]]></item>
+		<item id="/data.inc.php"><![CDATA[e7f4a14995eadd5419552bbd598f55a0]]></item>
+		<item id="/discuz_plugin_fx_checkin_SC_GBK.xml"><![CDATA[18b21f9bb79aa18abc1ca65da87505f2]]></item>
+		<item id="/discuz_plugin_fx_checkin_SC_UTF8.xml"><![CDATA[57f07c834583683e79e88e2cbd95948e]]></item>
+		<item id="/discuz_plugin_fx_checkin_TC_BIG5.xml"><![CDATA[2a6a514b25543fd5ffa95e5c94bb8252]]></item>
+		<item id="/discuz_plugin_fx_checkin_TC_UTF8.xml"><![CDATA[e8bf582c2dff1790baa4a8286e2f5eff]]></item>
+		<item id="/images/css.css"><![CDATA[957267fcddd7df84a3ef407bad2128d0]]></item>
+		<item id="/images/ico.png"><![CDATA[2131d97cd82152c8fc760090d6772d4d]]></item>
+		<item id="/images/icons.png"><![CDATA[9b02be0494aa362732952ca72cf124b9]]></item>
+		<item id="/images/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/images/jane.png"><![CDATA[9795660d6ddbedc844bcf4b6e5e8d8c9]]></item>
+		<item id="/images/mini.gif"><![CDATA[ab13feb8cd62a3998b236ca6b3ce9888]]></item>
+		<item id="/images/mini2.gif"><![CDATA[1fa89e608b58df18949b75fbfd4baab5]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/install.php"><![CDATA[86d1be05d3b8e876bd039dfb76725778]]></item>
+		<item id="/list.inc.php"><![CDATA[3fdf16ddae2db63db46f592e095d3f7b]]></item>
+		<item id="/main.class.php"><![CDATA[db365b10a4431e3e855f28caf2407297]]></item>
+		<item id="/mobile.class.php"><![CDATA[0a733b9ca095a989c287bb5b7eb09806]]></item>
+		<item id="/recong.inc.php"><![CDATA[b96a202c35c49ff7e1f4881c6d597d98]]></item>
+		<item id="/table/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/table/table_rates_plugin.php"><![CDATA[62153bbebac97b017e57465f41756823]]></item>
+		<item id="/template/data.htm"><![CDATA[33546eb4e3a888910c89daa4f1f6ecb2]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/list.htm"><![CDATA[42ebb4fc801a83fa038ac3fe370f8c6d]]></item>
+		<item id="/uninstall.php"><![CDATA[ac294e89e862e8a9534c7f3470cc5dd0]]></item>
+	</item>
+</root>

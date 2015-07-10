@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[sanree_brand_maps.plugin]]></item>
+	<item id="RevisionID"><![CDATA[15441]]></item>
+	<item id="SN"><![CDATA[2013042412zjig5X57s0]]></item>
+	<item id="RevisionDateline"><![CDATA[1366772877]]></item>
+	<item id="Data">
+		<item id="/check.php"><![CDATA[8e4fb05ae1a2a468de3bd66f1d8fa7eb]]></item>
+		<item id="/class/class_sanree_brand_maps_category.php"><![CDATA[fb48ec692fe1a9e91deb15a04d9a35c3]]></item>
+		<item id="/class/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/discuz_plugin_sanree_brand_maps_SC_GBK.xml"><![CDATA[2637ede7bb25bcbd140cd04f329c9da7]]></item>
+		<item id="/discuz_plugin_sanree_brand_maps_SC_UTF8.xml"><![CDATA[c4b540dd3fe632b35deee83648b4f3cb]]></item>
+		<item id="/discuz_plugin_sanree_brand_maps_TC_BIG5.xml"><![CDATA[ed3e88df6e76e706189cf74f1028969c]]></item>
+		<item id="/discuz_plugin_sanree_brand_maps_TC_UTF8.xml"><![CDATA[535113b761c3e05f32d28f92b40c55b6]]></item>
+		<item id="/function/function_core.php"><![CDATA[60f368ecac38a0a1c520d8a07df4db14]]></item>
+		<item id="/function/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/install.php"><![CDATA[3a41b7654b53f7ed8c28886e1194d824]]></item>
+		<item id="/module/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/module/sanree_brand_maps/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/module/sanree_brand_maps/sanree_brand_maps_index.php"><![CDATA[54fce3d2b75fa964cb5510e50bf284f7]]></item>
+		<item id="/sanree_brand_maps.inc.php"><![CDATA[b7f8b7503cd4a07a5a1f800fbc870635]]></item>
+		<item id="/tpl/default/copyright.xml"><![CDATA[05639ecbfe7e440bb567bc4c78a198ed]]></item>
+		<item id="/tpl/default/images/copyright.jpg"><![CDATA[eafb8ee2734176766873d77e7f148f85]]></item>
+		<item id="/tpl/default/images/hiden.jpg"><![CDATA[27ea0dfda909f45541cd6cf867f7e7a8]]></item>
+		<item id="/tpl/default/images/icon3.gif"><![CDATA[30276a20decfb16963de398a215a0418]]></item>
+		<item id="/tpl/default/images/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/tpl/default/images/searbtn.jpg"><![CDATA[ae3eaa3644184d0799789808ffea84aa]]></item>
+		<item id="/tpl/default/images/show.jpg"><![CDATA[8a8f76dcdc76c56928b0f7c8a19d7ae6]]></item>
+		<item id="/tpl/default/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/tpl/default/index_baidu.tpl.php"><![CDATA[a30554133127d49bca65672f13880612]]></item>
+		<item id="/tpl/default/index_google.tpl.php"><![CDATA[4839829ccdc26bc6d39b2a9a63d062c5]]></item>
+		<item id="/tpl/default/js/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/tpl/default/js/jquery-1.4.2.min.js"><![CDATA[10092eee563dec2dca82b77d2cf5a1ae]]></item>
+		<item id="/tpl/default/js/msg.js"><![CDATA[bc493a67ada76b7d36faa4e896400928]]></item>
+		<item id="/tpl/default/js/msg_utf8.js"><![CDATA[a7509e869e2c905f3e032fc92a0533ec]]></item>
+		<item id="/tpl/default/js/sanree_brand_maps.js"><![CDATA[ba73e0335db17012bfa2795c46f03f65]]></item>
+		<item id="/tpl/default/preview.jpg"><![CDATA[83346e866b2e40d53e6fef27113a8ba4]]></item>
+		<item id="/tpl/default/preview_large.jpg"><![CDATA[843c5d3d65f751a0c3ca543affa8723a]]></item>
+		<item id="/tpl/default/sanree_brand_maps.css"><![CDATA[c77e787ef0d5e888779d7d81ec227a1a]]></item>
+		<item id="/tpl/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/uninstall.php"><![CDATA[5ae2f88486b1347d4887f57b43334a89]]></item>
+		<item id="/validator.xml"><![CDATA[c670eba86245cef5960bde2a228811f8]]></item>
+	</item>
+</root>

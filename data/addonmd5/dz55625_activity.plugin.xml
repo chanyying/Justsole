@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[dz55625_activity.plugin]]></item>
+	<item id="RevisionID"><![CDATA[5980]]></item>
+	<item id="SN"><![CDATA[2014051814I6nM2I26MZ]]></item>
+	<item id="RevisionDateline"><![CDATA[1368519149]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_dz55625_activity_SC_GBK.xml"><![CDATA[bf18bb98373c40fd8deebe392760193f]]></item>
+		<item id="/discuz_plugin_dz55625_activity_SC_UTF8.xml"><![CDATA[f87fb59b20f9df61c0426a39edd8a97b]]></item>
+		<item id="/discuz_plugin_dz55625_activity_TC_BIG5.xml"><![CDATA[245577655e19ebbd6023cec3d30d5d73]]></item>
+		<item id="/discuz_plugin_dz55625_activity_TC_UTF8.xml"><![CDATA[aec3944280a2ddf544ae7b9fa7e928e8]]></item>
+		<item id="/function.php"><![CDATA[84dc41af6a39438a4c0d1c6ff5ab12bd]]></item>
+		<item id="/huodong.inc.php"><![CDATA[1cba32be583f2b09b4757fb817221c8c]]></item>
+		<item id="/huodong_bm.inc.php"><![CDATA[8807ef82e986fa5a1ef3c15d689d5497]]></item>
+		<item id="/huodong_gx.inc.php"><![CDATA[ff37226b786381bca8bec85ecba64a70]]></item>
+		<item id="/huodong_ls.inc.php"><![CDATA[b7e741dbb86e921f2d86719b0aa151cc]]></item>
+		<item id="/huodong_user.inc.php"><![CDATA[9d66cf8dcaa172f3227bb5d5f08f06a1]]></item>
+		<item id="/images/baomingIco.png"><![CDATA[d35174409699ae24ca8055be7e66c602]]></item>
+		<item id="/images/body.css"><![CDATA[d598382a4cc5241cc56b73debc105b18]]></item>
+		<item id="/images/egg.gif"><![CDATA[67b440fd7d02e8523e81fbcbc474df51]]></item>
+		<item id="/images/flower.gif"><![CDATA[d058adfcb9f4b68ece8bffa158a4c3b7]]></item>
+		<item id="/images/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/images/jquery.min.js"><![CDATA[10092eee563dec2dca82b77d2cf5a1ae]]></item>
+		<item id="/images/jsIco.png"><![CDATA[f71f088589c6c67cbb8ed9df2586dfd2]]></item>
+		<item id="/images/jxIco.png"><![CDATA[64aed8f6e43e48c8f41e807c0719c4b3]]></item>
+		<item id="/images/xiangqingIco.jpg"><![CDATA[9bfe2ed7bb18d6802a8c643d8ba9b4c4]]></item>
+		<item id="/install.php"><![CDATA[5302b06c403d8aefb65415ab2a9cc421]]></item>
+		<item id="/template/admin_edit.htm"><![CDATA[118c1a34d927c002803316b289f1326b]]></item>
+		<item id="/template/admin_list.htm"><![CDATA[7b3b68651d6f261fe7b1f03aa2cb9e3c]]></item>
+		<item id="/template/haodian.htm"><![CDATA[1a0b20891ff1c33dc3020c6b183ea82d]]></item>
+		<item id="/template/huodong_add.htm"><![CDATA[f6c289e5317dd0780161f85cda20e735]]></item>
+		<item id="/template/huodong_bm.htm"><![CDATA[5cb435886bf4f9768e754622c7412a62]]></item>
+		<item id="/template/huodong_index.htm"><![CDATA[f1c8a0055d3f1da4dcdea19551288dde]]></item>
+		<item id="/template/huodong_rchakan.htm"><![CDATA[559aa2ac2e403ccb9251afd15e2719f5]]></item>
+		<item id="/template/huodong_user.htm"><![CDATA[39ef8a5c638c295e719aa6ffccaeba3e]]></item>
+		<item id="/template/huodong_view.htm"><![CDATA[f15e507ddfdc9c634b260c917ebda81a]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/uninstall.php"><![CDATA[61ff159c869956c90c7e030d76557a30]]></item>
+		<item id="/upgrade.php"><![CDATA[4ffd9c50a63df32c2b2659cefec0afc7]]></item>
+		<item id="/upimg/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+	</item>
+</root>

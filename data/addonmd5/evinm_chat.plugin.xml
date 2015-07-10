@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[evinm_chat.plugin]]></item>
+	<item id="RevisionID"><![CDATA[13559]]></item>
+	<item id="SN"><![CDATA[20130416224LnyO8y4P5]]></item>
+	<item id="RevisionDateline"><![CDATA[1364197497]]></item>
+	<item id="Data">
+		<item id="/admincp.inc.php"><![CDATA[b2be4bb7d9b9b2c13a453e6592534770]]></item>
+		<item id="/backend.inc.php"><![CDATA[62c694506b4f50f125ea2ff63aab1527]]></item>
+		<item id="/chatroom.class.php"><![CDATA[eb4bd9356a180a30012d83e59974f498]]></item>
+		<item id="/discuz_plugin_evinm_chat_SC_GBK.xml"><![CDATA[4951176d0976e9b39323c10f4998cb62]]></item>
+		<item id="/discuz_plugin_evinm_chat_SC_UTF8.xml"><![CDATA[3940723c87f58fed44f525d64eaeacf8]]></item>
+		<item id="/discuz_plugin_evinm_chat_TC_BIG5.xml"><![CDATA[5ca2f9e3e86a3c490f53343892655942]]></item>
+		<item id="/discuz_plugin_evinm_chat_TC_UTF8.xml"><![CDATA[7b93df3e7389fb219859f686e715767d]]></item>
+		<item id="/do.inc.php"><![CDATA[d8f95e53bb14e3700ba15d3877080aa9]]></item>
+		<item id="/images/cclear.jpg"><![CDATA[2fb6caa46ad8712d6d1e584ca1e92dbf]]></item>
+		<item id="/images/chat_tit.gif"><![CDATA[029978f3b0e61c0b99fe6f0e3b9b54b3]]></item>
+		<item id="/images/hide_side.png"><![CDATA[881944b82ed2bf95d38286998f9f0269]]></item>
+		<item id="/images/loading.gif"><![CDATA[50c5e3e79b276c92df6cc52caeb464f0]]></item>
+		<item id="/images/moreonlines.gif"><![CDATA[a88d18e857fa2a565e0f3bb24029e1f4]]></item>
+		<item id="/images/samallad.jpg"><![CDATA[28bfa86bd1a40c8903d71db1570c499f]]></item>
+		<item id="/images/sb1.gif"><![CDATA[73e8e366c83539eebfc1879b3e60e019]]></item>
+		<item id="/images/sb2.gif"><![CDATA[fc792c8957ac526a3b873fe028533640]]></item>
+		<item id="/images/sb3.gif"><![CDATA[8f19a6de515e3be887a38f1a4f909dbe]]></item>
+		<item id="/images/sendchat.png"><![CDATA[113ea443b822a1c390be7c257dd14a49]]></item>
+		<item id="/images/set.png"><![CDATA[f0d6f18e39016c48dbc43870a023bd65]]></item>
+		<item id="/images/sex1.gif"><![CDATA[412cbd69870abb005cd4359971b51cdf]]></item>
+		<item id="/images/sex2.gif"><![CDATA[e7947263013a6c27699a0e1cc1a832bb]]></item>
+		<item id="/images/show_side.png"><![CDATA[e06ae786f755bab389c44b8e634a8bcc]]></item>
+		<item id="/images/sidead.jpg"><![CDATA[247e5ed45ce3f181184948cbe6e3c1d0]]></item>
+		<item id="/images/s_chat.png"><![CDATA[4e89dd9ef2961bb78dd5a7bb000ce471]]></item>
+		<item id="/install.php"><![CDATA[235c8e9938176e2b1658ab506adf54df]]></item>
+		<item id="/installsql.php"><![CDATA[8c0fff51e2c50f9a5fe24090910257f4]]></item>
+		<item id="/js/jquery.min.js"><![CDATA[397754ba49e9e0cf4e7c190da78dda05]]></item>
+		<item id="/js/jquery.vticker-min.js"><![CDATA[7133a6341a0165ed21882643dabd5340]]></item>
+		<item id="/model/index.inc.php"><![CDATA[bc9cb0b28a9003b6b0468c6ed8c14636]]></item>
+		<item id="/model/install.class.php"><![CDATA[f2503581b77e7ed0a8a6160f3edab1fc]]></item>
+		<item id="/template/aaaextend_common.css"><![CDATA[7597fec1aedb051bd988f36829e56494]]></item>
+		<item id="/template/chat.htm"><![CDATA[9c82a1728c23b21da910f1798a93d0f3]]></item>
+		<item id="/template/userset.htm"><![CDATA[5cd9703ca87af9c40d5c0a7cb1505606]]></item>
+		<item id="/uninstall.php"><![CDATA[856cb5f37bf5fe948631f49ab8c0fccc]]></item>
+		<item id="/upgrade.php"><![CDATA[f4b7959df4bdfcfcd94eb1b05e0d7e1a]]></item>
+		<item id="/userset.inc.php"><![CDATA[d7c1b47bdd90706781bb90067dd50ede]]></item>
+		<item id="/userset_do.inc.php"><![CDATA[58466bb234d2bcd4aceb1d2974bd51be]]></item>
+	</item>
+</root>

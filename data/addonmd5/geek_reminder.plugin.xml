@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[geek_reminder.plugin]]></item>
+	<item id="RevisionID"><![CDATA[15135]]></item>
+	<item id="SN"><![CDATA[20130723197DD4XwSAZF]]></item>
+	<item id="RevisionDateline"><![CDATA[1366269200]]></item>
+	<item id="Data">
+		<item id="/common/function.inc.php"><![CDATA[a96ca4b7f4064a685e844f923be4dab3]]></item>
+		<item id="/discuz_plugin_geek_reminder_SC_GBK.xml"><![CDATA[2ec219d0aae91a5653789e0994fe586a]]></item>
+		<item id="/discuz_plugin_geek_reminder_SC_UTF8.xml"><![CDATA[486c09be0e30826cdf162b20eb09df3a]]></item>
+		<item id="/discuz_plugin_geek_reminder_TC_BIG5.xml"><![CDATA[a6fa6890298458200e01197e699fed0a]]></item>
+		<item id="/discuz_plugin_geek_reminder_TC_UTF8.xml"><![CDATA[cd4f5a808602e40119b14a003c5b526d]]></item>
+		<item id="/geek_list.inc.php"><![CDATA[a7d09e3e4480f138817abeffb084189e]]></item>
+		<item id="/geek_manage.inc.php"><![CDATA[546caa81977181bdd4c1a78dcff89eb3]]></item>
+		<item id="/geek_reminder.class.php"><![CDATA[23068478c7d85ba6fdaa8bc5d7bc93de]]></item>
+	</item>
+</root>

@@ -1,0 +1,91 @@
+<!--{subtemplate common/header}-->
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&rsaquo;</em><a href="plugin.php?id=fx_checkin:list">{lang fx_checkin:l_hit1}</a>
+	</div> 
+</div>
+<!--{if $_G['cache']['plugin']['fx_checkin']['fun_colorname']>0}-->
+	<div id="fx_checkin_icon_or_menu" class="tip tip_2 moods_tip" style="display: none; "><div class="tip_horn"></div>
+	<div class="pic"><i class="or_n"></i></div>
+	<div class="item">{lang fx_checkin:l_fun_colorname}</div>
+	<div class="item2">{lang fx_checkin:l_fun_colorname2}</div></div>
+<!--{/if}-->
+<!--{if $_G['cache']['plugin']['fx_checkin']['fun_double']>0}-->
+	<div id="fx_checkin_icon_dou_menu" class="tip tip_2 moods_tip" style="display: none; "><div class="tip_horn"></div>
+	<div class="pic"><i class="dou_n"></i></div>
+	<div class="item">{lang fx_checkin:l_fun_double}</div>
+	<div class="item2">{lang fx_checkin:l_fun_double2}</div></div>
+<!--{/if}-->
+<div id="fx_checkin_icon_wait_menu" class="tip tip_2 moods_tip" style="display: none; "><div class="tip_horn"></div>
+<div class="pic"><i class="wait_n"></i></div>
+<div class="item"><p><br><b>{lang fx_checkin:l_fun_more}</b></p></div></div>
+<div id="ct" class="ct2 wp cl">
+	<div class="fx_hit"><ul><li><a href="plugin.php?id=fx_checkin:list&type=0"{if !$type} class="hit"{/if}>{lang fx_checkin:l_hit01}</a></li><li><a href="plugin.php?id=fx_checkin:list&type=1"{if $type==1} class="hit"{/if}>{lang fx_checkin:l_hit02}</a></li><li><a href="plugin.php?id=fx_checkin:list&type=2"{if $type==2} class="hit"{/if}>{lang fx_checkin:l_hit03}</a></li></ul><span>{lang fx_checkin:l_hit2}</span></div>
+	<div class="fx_725">
+	
+	  <table class="fx_table">
+        <thead>
+          <tr>
+            <th class="header" width='84'>{if !$type}{lang fx_checkin:l_hitall}{/if}{lang fx_checkin:l_hit3}</th>
+            <th class="header tl" width='240'>{lang fx_checkin:l_hit4}</th>
+            <th class="header" width='90'>{lang fx_checkin:l_hit5}</th>
+            <th class="header" width='90'>{lang fx_checkin:l_hit6}</th>
+            <th class="header" width='90'>{lang fx_checkin:l_hit7}</th>
+            <th class="header" width='90'>{if $type == 2}{lang fx_checkin:l_hit81}{else}{lang fx_checkin:l_hit8}{/if}</th>
+          </tr>
+        </thead>
+        <tbody>
+		<!--{loop $LIST $key $item}-->
+          <tr {if ($key % 2)}class="bg"{/if}>
+            <td><!--{if $item['nlevel'] == 1}--><i class="l1">1</i><!--{elseif $item['nlevel'] == 2}--><i class="l2">2</i><!--{elseif $item['nlevel'] == 3}--><i class="l3">3</i><!--{else}-->$item['nlevel']<!--{/if}--></td>
+            <td class="tl"><div class="fx_face"><!--{avatar($item['uid'],small)}--><em><a href="space-uid-{$item['uid']}.html">$item['username']</a></em></div></td>
+            <td>$item['constant']</td>
+            <td>$item['days']</td>
+            <td><!--{if $item['up'] > 0}--><i class="u1"></i><!--{elseif $item['up'] < 0}--><i class="u2"></i><!--{else}--><i class="u0"></i><!--{/if}-->$item['up2']</td>
+            <td>{if $type == 2}$item['time2']{else}<!--{if $item['today'] >0}--><span>{lang fx_checkin:l_today}</span><!--{else}-->{lang fx_checkin:l_today0}<!--{/if}-->{/if}</td>
+          </tr>
+		<!--{/loop}--> 
+        </tbody>
+      </table>
+		$multipage
+	</div>
+	<div class="fx_225">
+		<ul class="fx_site-stats">
+			<li><i class="icon-user"></i> <strong>$COUNT</strong> <small>{lang fx_checkin:l_hit9}</small></li>
+			<li><i class="icon-today"></i> <strong>$SYSCON['rank']</strong> <small>{lang fx_checkin:l_hit10}</small></li>
+			<li><i class="icon-today"></i> <strong>$SYSCONY['rank']</strong> <small>{lang fx_checkin:l_hit101}</small></li>
+		</ul>
+		<div class="fx_widget-box">
+			<div class="widget-title"><span class="fx_icon"><i class="icon-my"></i></span><h5>{lang fx_checkin:l_hit11}</h5><!--{if $SELF['time'] >= $TDTIME}--><span class="label" title="{lang fx_checkin:l_checkin1}">{lang fx_checkin:l_checkin2}</span><!--{else}--><span class="label" >{lang fx_checkin:l_hit12}</span><!--{/if}--></div>
+			<div class="widget-content">
+				<div class="cl">
+					<div class="user-thumb">
+						<!--{avatar($_G[uid],small)}-->
+					</div>
+					<ul class="fx_user-info ">
+						<li>$_G['username']</li>
+						<!--{if $SELF}-->
+						<li>{lang fx_checkin:l_checkin3}</li>
+						<li class="l">{lang fx_checkin:l_hit13} <span>$SELF['level']</span><i class="u1"></i><em>$SELF['up']</em></li>
+						<!--{else}-->
+						<li>{lang fx_checkin:l_hit14}</li>
+						<!--{/if}-->
+						
+					</ul>
+				</div>
+				<div class="fx_inner">
+				<!--{if $_G['cache']['plugin']['fx_checkin']['fun_colorname']<$_G['cache']['plugin']['fx_checkin']['fun_double']}-->
+				<i class="icon_or{if $SELF['constant'] < $_G['cache']['plugin']['fx_checkin']['fun_colorname']}_g{/if}" id="fx_checkin_icon_or" onmouseover="showMenu({'ctrlid':'fx_checkin_icon_or','pos':'34','duration':2});"></i>
+				<i class="icon_dou{if $SELF['constant'] < $_G['cache']['plugin']['fx_checkin']['fun_double']}_g{/if}" id="fx_checkin_icon_dou" onmouseover="showMenu({'ctrlid':'fx_checkin_icon_dou','pos':'34','duration':2});"></i>
+				<!--{else}-->
+				<i class="icon_dou{if $SELF['constant'] < $_G['cache']['plugin']['fx_checkin']['fun_double']}_g{/if}" id="fx_checkin_icon_dou" onmouseover="showMenu({'ctrlid':'fx_checkin_icon_dou','pos':'34','duration':2});"></i>
+				<i class="icon_or{if $SELF['constant'] < $_G['cache']['plugin']['fx_checkin']['fun_colorname']}_g{/if}" id="fx_checkin_icon_or" onmouseover="showMenu({'ctrlid':'fx_checkin_icon_or','pos':'34','duration':2});"></i>
+				<!--{/if}-->
+				<i class="icon_wait_g" id="fx_checkin_icon_wait" onmouseover="showMenu({'ctrlid':'fx_checkin_icon_wait','pos':'34','duration':2});"></i>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--{subtemplate common/footer}-->

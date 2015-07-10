@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[tuan800_nav.plugin]]></item>
+	<item id="RevisionID"><![CDATA[2941]]></item>
+	<item id="SN"><![CDATA[2013042614tP5iQaPf15]]></item>
+	<item id="RevisionDateline"><![CDATA[1366852686]]></item>
+	<item id="Data">
+		<item id="/admincp.inc.php"><![CDATA[d1c74308f21c459d8876ef582540b8c9]]></item>
+		<item id="/discuz_plugin_tuan800_nav_SC_GBK.xml"><![CDATA[4cd3e0ed5788be04ae390aa302676916]]></item>
+		<item id="/discuz_plugin_tuan800_nav_SC_UTF8.xml"><![CDATA[f607ca714245f2bdb6b05fa9fe6185bf]]></item>
+		<item id="/discuz_plugin_tuan800_nav_TC_BIG5.xml"><![CDATA[a9f7b6c59844b5843bf53d2252dd51e7]]></item>
+		<item id="/discuz_plugin_tuan800_nav_TC_UTF8.xml"><![CDATA[e7e16085de81c112d9a7578987256550]]></item>
+		<item id="/install.php"><![CDATA[6b9aaab9be20458fea12df1c9cbf6ebe]]></item>
+		<item id="/template/nav.htm"><![CDATA[0f69d52bdb986f7df674e504bdb1ac69]]></item>
+		<item id="/template/proxy.htm"><![CDATA[fe13f6c57d87b07f803520ad15584b24]]></item>
+		<item id="/tuan800_nav.inc.php"><![CDATA[ca051b86ff39d683bdded096af29565e]]></item>
+		<item id="/uninstall.php"><![CDATA[cf0783e91cfece29e8e65588a6ab2a57]]></item>
+		<item id="/upgrade.php"><![CDATA[71e1b93b5b7595ba341a88958c413c24]]></item>
+	</item>
+</root>

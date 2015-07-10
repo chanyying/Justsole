@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[aliyunrec.plugin]]></item>
+	<item id="RevisionID"><![CDATA[12259]]></item>
+	<item id="SN"><![CDATA[2013061218ibI1vWon4m]]></item>
+	<item id="RevisionDateline"><![CDATA[1386813601]]></item>
+	<item id="Data">
+		<item id="/aliyunrec.class.php"><![CDATA[a9bc4cb51369f9d9cce6f0be7a420e6f]]></item>
+		<item id="/api.inc.php"><![CDATA[cfde026b7bd297e661a0caf1dcbcc43d]]></item>
+		<item id="/common/aliyunrec.common.config.service.php"><![CDATA[dd74161a73e9eacb6a951c56b8bbadf5]]></item>
+		<item id="/common/aliyunrec.common.general.service.php"><![CDATA[797e537072792069ea605edf5a63fe05]]></item>
+		<item id="/common/aliyunrec.common.proxy.service.php"><![CDATA[ebde27d3a570a8c1ecd5388868337667]]></item>
+		<item id="/config/common.const.php"><![CDATA[c50e704e5b760f6d7a2b577e20bd9cfb]]></item>
+		<item id="/config/common.language.php"><![CDATA[09249946c4e21f41a1680c28caa0565d]]></item>
+		<item id="/config/template.option.php"><![CDATA[8757c307d600c2b87f5d3dc600865453]]></item>
+		<item id="/config/template.request.php"><![CDATA[b80a1af472e173fe138c07be4d26d75f]]></item>
+		<item id="/config/template.send.php"><![CDATA[b1cd204ce1d33ba0ad74ba25a87ae453]]></item>
+		<item id="/config/template.tag.php"><![CDATA[9d7a6283a81c8566577d9404a7f12f4e]]></item>
+		<item id="/discuz_plugin_aliyunrec_SC_GBK.xml"><![CDATA[18489fc330987c4de2874f94e4c56985]]></item>
+		<item id="/discuz_plugin_aliyunrec_SC_UTF8.xml"><![CDATA[32afaa4fb6afc6981c822b18d55ca1b0]]></item>
+		<item id="/discuz_plugin_aliyunrec_TC_BIG5.xml"><![CDATA[7f98d79180c2c076ae3ffed39508b41d]]></item>
+		<item id="/discuz_plugin_aliyunrec_TC_UTF8.xml"><![CDATA[a816f10a209fb2d97da0ba492437c750]]></item>
+		<item id="/help.inc.php"><![CDATA[ff88f091bd2623b46dd0e373003eeaf6]]></item>
+		<item id="/install.php"><![CDATA[1b08f4fac36bd92f15143c737ec695e6]]></item>
+		<item id="/notice.inc.php"><![CDATA[0f0a41e181c952cc8609a256a7a2aefe]]></item>
+		<item id="/setting.inc.php"><![CDATA[417020d58a1749eb47ff0255648d0a4f]]></item>
+		<item id="/table/json.class.php"><![CDATA[c599d20d4d88430ffac01ab4e737d3dc]]></item>
+		<item id="/table/table_common_plugin_aliyunrec.php"><![CDATA[cf66d29dfd61e4014c8a90d2f41159e7]]></item>
+		<item id="/uninstall.php"><![CDATA[ddaea562d4511caa39fa90ae3e189593]]></item>
+		<item id="/upgrade.php"><![CDATA[da0fc0416728187419b9b91430d4785d]]></item>
+	</item>
+</root>

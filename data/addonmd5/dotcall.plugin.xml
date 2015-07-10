@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[dotcall.plugin]]></item>
+	<item id="RevisionID"><![CDATA[15278]]></item>
+	<item id="SN"><![CDATA[2013042413p2QQUpefW2]]></item>
+	<item id="RevisionDateline"><![CDATA[1366709531]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_dotcall_SC_GBK.xml"><![CDATA[9c97592e7a13647193bb9a40b1d5c7df]]></item>
+		<item id="/discuz_plugin_dotcall_SC_UTF8.xml"><![CDATA[8e51e51c75476ea616a0d9fd7332a207]]></item>
+		<item id="/documents/images/0.png"><![CDATA[78bacf67ac51b981a681901fc415092f]]></item>
+		<item id="/documents/images/1.png"><![CDATA[25e9f90e812ab4897a410387e9392e58]]></item>
+		<item id="/documents/images/2.png"><![CDATA[3be8148fac4e7ef7302a1792d8896969]]></item>
+		<item id="/documents/readme.rst"><![CDATA[605232b108f18bbb52a9aae57213f135]]></item>
+		<item id="/dotcall.class.php"><![CDATA[3e4044da228867d5f29430f6aa7ac592]]></item>
+	</item>
+</root>

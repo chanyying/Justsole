@@ -1,0 +1,13 @@
+<div class="ly_weibo_box">
+	<div class="ly_weibo_description">
+		<h3>{lang liyou_weibo:ly_weibo_head_tip}</h3>
+		<p>{lang liyou_weibo:ly_weibo_description}</>
+	</div>
+	<div class="ly_weibo_bind_status">
+	<!--{if empty($discuzUserInfo)}-->
+	<a href="plugin.php?id=liyou_weibo:login"><img src="source/plugin/liyou_weibo/image/bind_btn.png" class="vm" alt="{lang liyou_weibo:header_bind}" /></a>
+	<!--{else}-->
+	<a href="plugin.php?id=liyou_weibo:ly_weibo_unbind">{lang liyou_weibo:ly_weibo_unbind}</a>
+	<!--{/if}-->
+	</div>
+</div>

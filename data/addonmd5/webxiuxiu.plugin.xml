@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[webxiuxiu.plugin]]></item>
+	<item id="RevisionID"><![CDATA[1576]]></item>
+	<item id="SN"><![CDATA[2013041119OBjYYE36yG]]></item>
+	<item id="RevisionDateline"><![CDATA[1352196538]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_webxiuxiu_SC_GBK.xml"><![CDATA[a71bf61409cc4d3590d2e2a1888fef68]]></item>
+		<item id="/discuz_plugin_webxiuxiu_SC_UTF8.xml"><![CDATA[017d01e83e8a8496422815ad9249bde5]]></item>
+		<item id="/discuz_plugin_webxiuxiu_TC_UTF8.xml"><![CDATA[4222dbb1ad83a45c1d04c062d336b4ea]]></item>
+		<item id="/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+		<item id="/template/index.html"><![CDATA[0ef7833231da81c493c7d76822eb1654]]></item>
+		<item id="/template/webxiuxiu.htm"><![CDATA[7e2802d6fa80f8622197d8c3604b9d32]]></item>
+		<item id="/webxiuxiu.inc.php"><![CDATA[30b723a4f1868e046f88d18e9d77b325]]></item>
+	</item>
+</root>

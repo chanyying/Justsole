@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[hy_bqbg.plugin]]></item>
+	<item id="RevisionID"><![CDATA[8803]]></item>
+	<item id="SN"><![CDATA[20130503168msK0DtGLd]]></item>
+	<item id="RevisionDateline"><![CDATA[1354259729]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_hy_bqbg_SC_GBK.xml"><![CDATA[df02a2b537412b50fe90f97a9af5ca0a]]></item>
+		<item id="/discuz_plugin_hy_bqbg_SC_UTF8.xml"><![CDATA[4ff5089d3f7a6d40f2f86eae7f313bab]]></item>
+		<item id="/discuz_plugin_hy_bqbg_TC_BIG5.xml"><![CDATA[40a12c72df39f1d7fe02546240e23c2c]]></item>
+		<item id="/discuz_plugin_hy_bqbg_TC_UTF8.xml"><![CDATA[d8e401c8471cd16c3329da5d51316599]]></item>
+		<item id="/hy_bqbg.class.php"><![CDATA[8d71c5af47c7ef84c687e5a37093831e]]></item>
+		<item id="/hy_bqbg.inc.php"><![CDATA[e0ee8b1ea3d552fc3d9c88a6f77f4375]]></item>
+		<item id="/hy_bqbg.js"><![CDATA[825c1f5e5d4db6acadb6640a6ea616ee]]></item>
+		<item id="/install.php"><![CDATA[6c5a708a2f448d95e2c67f3cd398ca98]]></item>
+		<item id="/template/hy_bqbg.htm"><![CDATA[265a3c7a224ab0cacb359f9c817ca38b]]></item>
+		<item id="/uninstall.php"><![CDATA[b5d3aebaf7c48722c0393bd5dbd5a449]]></item>
+	</item>
+</root>
